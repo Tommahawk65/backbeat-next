@@ -4,25 +4,25 @@ const members = [
   {
     name: "Liam",
     role: "Vocals",
-    photo: "/images/band/1.jpeg",
+    photo: "/images/band/1.jpg",
     body: "Started out playing guitar at 13 — a few years later he discovered his ability to hold a tune and never looked back. An experienced frontman who keeps the party going all night. Favourite to sing: Summer of 69.",
   },
   {
     name: "Pete",
     role: "Guitar",
-    photo: "/images/band/2.jpeg",
+    photo: "/images/band/2.jpg",
     body: "Picked up the guitar at 9 and 22 years on he hasn't stopped. On stage he keeps the songs rocking and the beat swinging. Favourite to play: 'Shut Up and Dance' — an absolute belter with an epic solo.",
   },
   {
     name: "Tom",
     role: "Bass",
-    photo: "/images/band/3.jpeg",
+    photo: "/images/band/3.jpg",
     body: "On bass, keeps the songs driving and the dance floor moving. Picked up the bass at 14 and hasn't put it down since. Favourite to play: 'Mr. Brightside' — a guaranteed crowd-pleaser.",
   },
   {
     name: "Harvey",
     role: "Drums",
-    photo: "/images/band/4.jpeg",
+    photo: "/images/band/4.jpg",
     body: "From a first tour at 17 to playing Download Festival two years later — no stranger to hitting the stage. Favourite to drum along to: 'Smells Like Teen Spirit'.",
   },
 ];
