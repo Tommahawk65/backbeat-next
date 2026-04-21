@@ -5,17 +5,33 @@ import { EnquiryTrigger } from "@/components/EnquiryTrigger";
 
 export function About() {
   return (
-    <section id="about" className="bg-cream py-24 sm:py-32">
+    <section id="about" className="bg-cream py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
-          <div className="reveal-left md:sticky md:top-28 md:self-start">
-            <div className="relative aspect-[9/10] overflow-hidden rounded-sm">
-              <Image
-                src="/images/about.webp"
-                alt="Backbeat wedding band performing"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+          <div className="reveal-left hidden md:sticky md:top-28 md:block md:self-start">
+            <div className="@container relative aspect-[9/10]">
+              <div className="absolute right-0 top-0 aspect-[2/3] w-[48%] overflow-hidden rounded-xl">
+                <Image
+                  src="/images/band/3.jpg"
+                  alt="Backbeat wedding band on stage"
+                  fill
+                  sizes="(max-width: 768px) 48vw, 24vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute bottom-0 left-0 aspect-[2/3] w-[56%] overflow-hidden rounded-xl">
+                <Image
+                  src="/images/gallery/4.jpg"
+                  alt="Backbeat wedding band performing live"
+                  fill
+                  sizes="(max-width: 768px) 56vw, 28vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div
+                aria-hidden
+                className="absolute left-[52%] top-[64%] h-[28cqw] w-[28cqw] -translate-x-1/2 -translate-y-1/2 rounded-full border-[3.5cqw] border-cream"
               />
             </div>
           </div>
@@ -51,7 +67,7 @@ export function About() {
                   From £1,900
                 </p>
                 <p className="mt-1 text-sm text-zinc-500">
-                  Pricing depends on event, date and setup
+                  Live sets &middot; full PA &amp; lighting &middot; DJ between &amp; after
                 </p>
               </div>
               <EnquiryTrigger className="group inline-flex items-center justify-center gap-2 rounded-full bg-primary-dark px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition hover:bg-primary">

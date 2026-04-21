@@ -43,9 +43,9 @@ export function Hero() {
             </h1>
 
             <div className="mt-5 grid gap-6 md:mt-6 md:grid-cols-[1fr_auto] md:items-end md:gap-12">
-              <p className="max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
-                Indie &amp; rock live music, built for the big night. Packages
-                from <span className="text-white">£1,900</span>.
+              <p className="max-w-lg text-lg leading-relaxed text-white/85 sm:text-xl">
+                Indie &amp; rock live music, built for the big night. From{" "}
+                <span className="font-semibold text-white">£1,900</span>.
               </p>
 
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center md:flex-row">

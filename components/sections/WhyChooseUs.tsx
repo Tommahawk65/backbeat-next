@@ -3,47 +3,51 @@ import { Sparkles, Award, ShieldCheck, FileCheck } from "lucide-react";
 const items = [
   {
     Icon: Sparkles,
-    title: "Bespoke service",
-    body: "Expert guidance through the whole booking process. Smooth and hassle-free from first enquiry to last song.",
+    title: "Built around your day",
+    body: "We'll learn your first dance — or any song that matters — at no extra cost.",
   },
   {
     Icon: Award,
-    title: "Industry experts",
-    body: "World-class musicians with hundreds of weddings and events delivered across the South Coast.",
+    title: "Seasoned players",
+    body: "Professional full-time musicians. Festival stages and wedding rooms on the same CV.",
   },
   {
     Icon: ShieldCheck,
-    title: "Peace of mind",
-    body: "Every booking includes a professional contract so everything is clear, secure and stress-free.",
+    title: "Nothing left to chance",
+    body: "PAT-tested kit, sound-limiter ready, and a dedicated bandleader running the night.",
   },
   {
     Icon: FileCheck,
-    title: "Fully covered",
-    body: "PLI insured and PAT certified — compliant and welcome at any venue across the UK.",
+    title: "Arrive, plug in, play",
+    body: "Full PA, stage lighting, DJ sets between and after. Self-contained. PLI insured.",
   },
 ];
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-zinc-50 py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">Why Backbeat</span>
           <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-zinc-900 sm:text-5xl md:text-6xl">
             Built for the big day.
           </h2>
+          <p className="mt-6 text-base leading-relaxed text-zinc-600 sm:text-lg">
+            Four things we hold ourselves to on every booking.
+          </p>
         </div>
 
-        <div className="mt-16 grid gap-px overflow-hidden rounded-sm bg-zinc-200 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map(({ Icon, title, body }) => (
             <div
               key={title}
-              className="reveal-up flex flex-col bg-white p-8 sm:p-10"
+              className="reveal-up group flex flex-col items-center rounded-sm bg-white p-8 text-center shadow-[0_1px_2px_rgba(0,0,0,0.04)] ring-1 ring-zinc-100 transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)] sm:p-10"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
-                <Icon className="h-6 w-6" strokeWidth={1.5} />
-              </div>
-              <h3 className="mt-6 text-lg font-semibold tracking-tight text-zinc-900">
+              <Icon
+                className="h-9 w-9 text-accent transition duration-500 group-hover:scale-110"
+                strokeWidth={1.25}
+              />
+              <h3 className="mt-8 text-lg font-semibold tracking-tight text-zinc-900">
                 {title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">

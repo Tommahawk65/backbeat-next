@@ -29,41 +29,45 @@ const members = [
 
 export function MeetTheBand() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-primary-dark py-16 text-white sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">The line-up</span>
-          <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-zinc-900 sm:text-5xl md:text-6xl">
+          <span className="eyebrow eyebrow--on-dark">The line-up</span>
+          <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl">
             Meet the band.
           </h2>
+          <p className="mt-6 text-base leading-relaxed text-white/60 sm:text-lg">
+            Four players. One dance floor.
+          </p>
         </div>
-
-        <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="mt-16 grid grid-cols-2 gap-1 overflow-hidden rounded-sm md:grid-cols-4">
           {members.map((m) => (
             <article
               key={m.name}
-              className="reveal-up group flex flex-col"
+              className="group relative overflow-hidden bg-zinc-900"
             >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-zinc-100">
+              <div className="relative aspect-[7/9]">
                 <Image
                   src={m.photo}
                   alt={`${m.name} — ${m.role}`}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover grayscale transition duration-700 group-hover:grayscale-0"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition-all duration-700 group-hover:scale-105 group-hover:blur-sm group-hover:brightness-50"
                 />
+                <div className="absolute inset-x-0 bottom-0 p-6 text-white transition-transform duration-500 group-hover:-translate-y-1">
+                  <span className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-accent-light">
+                    {m.role}
+                  </span>
+                  <h3 className="font-display text-4xl leading-none">
+                    {m.name}
+                  </h3>
+                </div>
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <p className="text-center text-sm leading-relaxed text-white/90">
+                    {m.body}
+                  </p>
+                </div>
               </div>
-              <div className="mt-5 flex items-baseline justify-between gap-3">
-                <h3 className="font-display text-3xl leading-none text-zinc-900 sm:text-4xl">
-                  {m.name}
-                </h3>
-                <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-                  {m.role}
-                </span>
-              </div>
-              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
-                {m.body}
-              </p>
             </article>
           ))}
         </div>
