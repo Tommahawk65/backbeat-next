@@ -1,26 +1,241 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #242426;
+  --color-primary-light: #2f2f31;
+  --color-primary-dark: #141416;
+  --color-accent: #b8884a;
+  --color-accent-light: #d3a262;
+  --color-accent-dark: #89683f;
+
+  --color-cream: #f6f2ec;
+  --color-cream-dark: #ece5d8;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-anton), "Impact", "Haettenschweiler",
+    "Arial Narrow Bold", sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --foreground: #141416;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  color: var(--foreground);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+.eyebrow--on-dark {
+  color: var(--color-accent-light);
+}
+
+.field-input {
+  width: 100%;
+  border-radius: 0;
+  padding: 0.9rem 0;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease, color 200ms ease;
+}
+.field-input:focus {
+  border-bottom-color: var(--color-accent);
+}
+.field-input[aria-invalid="true"] {
+  border-bottom-color: #f87171;
+}
+.field-input.resize-y {
+  resize: vertical;
+  min-height: 4.5rem;
+}
+
+.field-input--dark {
+  color: #fff;
+  color-scheme: dark;
+  border-bottom-color: rgba(255, 255, 255, 0.18);
+}
+.field-input--dark::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+.field-input--dark:-webkit-autofill,
+.field-input--dark:-webkit-autofill:hover,
+.field-input--dark:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 9999s ease-out;
+  caret-color: #fff;
+}
+.field-input--light:-webkit-autofill,
+.field-input--light:-webkit-autofill:hover,
+.field-input--light:-webkit-autofill:focus {
+  -webkit-text-fill-color: #141416;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 9999s ease-out;
+  caret-color: #141416;
+}
+
+.field-input--light {
+  color: #141416;
+  border-bottom-color: rgba(20, 20, 22, 0.18);
+}
+.field-input--light::placeholder {
+  color: rgba(20, 20, 22, 0.4);
+}
+
+dialog.enquiry-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  width: min(640px, 94vw);
+  max-width: 94vw;
+  max-height: 90dvh;
+  color: inherit;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+dialog.enquiry-dialog::backdrop {
+  background-color: rgba(10, 10, 12, 0.72);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+dialog.enquiry-dialog[open] {
+  animation: dialog-in 180ms ease-out both;
+}
+dialog.enquiry-dialog[open]::backdrop {
+  animation: backdrop-in 180ms ease-out both;
+}
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body:has(dialog.enquiry-dialog[open]) {
+  overflow: hidden;
+}
+
+/* Scroll-driven reveal animations.
+   Compositor-powered via animation-timeline: view() — zero main-thread cost.
+   Elements remain fully visible in browsers without support. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal-up {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 25%;
+    }
+
+    .reveal-in {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 25%;
+    }
+
+    .reveal-left {
+      animation: reveal-left linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 25%;
+    }
+
+    .reveal-right {
+      animation: reveal-right linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 25%;
+    }
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes reveal-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
