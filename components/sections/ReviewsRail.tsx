@@ -178,20 +178,20 @@ export function ReviewsRail({ reviews }: { reviews: Review[] }) {
       {loop.map((r, i) => (
         <figure
           key={`${r.name}-${i}`}
-          className="flex w-[85vw] shrink-0 flex-col rounded-sm bg-white p-8 ring-1 ring-zinc-200 shadow-[0_1px_2px_rgba(0,0,0,0.03)] sm:w-[360px]"
+          className="flex w-[85vw] shrink-0 flex-col rounded-sm bg-white/[0.04] p-8 ring-1 ring-white/10 sm:w-[360px]"
         >
           <div className="flex gap-0.5 text-accent" aria-label="5 out of 5">
             {Array.from({ length: 5 }).map((_, j) => (
               <Star key={j} className="h-4 w-4 fill-current" />
             ))}
           </div>
-          <blockquote className="mt-5 flex-1 text-base leading-relaxed text-zinc-700">
+          <blockquote className="mt-5 flex-1 text-base leading-relaxed text-white/80">
             &ldquo;{r.body}&rdquo;
           </blockquote>
           <figcaption className="mt-6 flex flex-col">
-            <span className="text-sm font-semibold text-zinc-900">{r.name}</span>
+            <span className="text-sm font-semibold text-white">{r.name}</span>
             {r.event && (
-              <span className="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500">
+              <span className="mt-1 text-xs uppercase tracking-[0.18em] text-white/50">
                 {r.event}
               </span>
             )}

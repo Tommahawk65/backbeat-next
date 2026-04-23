@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Facebook, Instagram, Plus, Youtube } from "lucide-react";
-
-import { EnquiryTrigger } from "@/components/EnquiryTrigger";
+import { Facebook, Instagram, Plus, Youtube } from "lucide-react";
 
 const socials = [
   {
@@ -57,79 +55,6 @@ export function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
       <section
-        id="book"
-        className="scroll-mt-24 bg-cream py-16 text-zinc-900 sm:py-24 md:py-32"
-      >
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <span className="eyebrow">Check availability</span>
-          <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl">
-            Let&apos;s make it a night.
-          </h2>
-          <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-zinc-600">
-            Tell us about your event and we&apos;ll come straight back with
-            availability and a tailored quote — usually within a few hours.
-          </p>
-          <p className="mx-auto mt-3 max-w-md text-sm font-medium text-accent-dark">
-            Saturdays book up fast — peak season (May–Sept) goes early.
-          </p>
-          <div className="mt-10 flex flex-col items-center gap-4">
-            <EnquiryTrigger className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold tracking-wide text-white shadow-lg transition hover:bg-accent-light">
-              Check availability
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </EnquiryTrigger>
-            <p className="text-sm text-zinc-500">
-              Or message us on{" "}
-              <a
-                href="https://wa.me/447000000000"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-zinc-700 underline decoration-zinc-300 underline-offset-4 transition hover:text-accent hover:decoration-accent"
-              >
-                WhatsApp
-              </a>
-              {" "}&middot;{" "}
-              <a
-                href="mailto:hello@backbeat-band.co.uk"
-                className="font-medium text-zinc-700 underline decoration-zinc-300 underline-offset-4 transition hover:text-accent hover:decoration-accent"
-              >
-                email
-              </a>
-            </p>
-          </div>
-          <dl className="mx-auto mt-14 grid max-w-2xl grid-cols-2 gap-8 text-sm sm:grid-cols-4">
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-zinc-500">
-                From
-              </dt>
-              <dd className="mt-1 font-display text-2xl text-zinc-900">
-                £1,900
-              </dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-zinc-500">
-                Response
-              </dt>
-              <dd className="mt-1 font-display text-2xl text-zinc-900">
-                &lt; 24 hrs
-              </dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-zinc-500">
-                Base
-              </dt>
-              <dd className="mt-1 text-zinc-900">Hampshire</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-zinc-500">
-                Travel
-              </dt>
-              <dd className="mt-1 text-zinc-900">South Coast &amp; UK-wide</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section
         id="faqs"
         className="scroll-mt-24 border-b border-white/10 py-14 sm:py-20 md:py-24"
       >
@@ -168,8 +93,8 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="py-14 sm:py-20 md:py-24">
-        <div className="mx-auto max-w-4xl px-6 text-center">
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 px-6 py-6 sm:flex-row sm:justify-between sm:gap-8">
           <Link
             href="/"
             aria-label="Backbeat home"
@@ -180,13 +105,10 @@ export function Footer() {
               alt="Backbeat"
               width={470}
               height={290}
-              className="mx-auto h-20 w-auto sm:h-24"
+              className="h-14 w-auto"
             />
           </Link>
-          <p className="mt-6 text-sm uppercase tracking-[0.32em] text-white/50">
-            See you on the dance floor
-          </p>
-          <div className="mt-10 flex justify-center gap-2">
+          <div className="flex items-center gap-2">
             {socials.map(({ href, label, Icon }) => (
               <a
                 key={href}
@@ -194,19 +116,16 @@ export function Footer() {
                 target="_blank"
                 rel="me noopener noreferrer"
                 aria-label={`Follow us on ${label}`}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white/80 transition hover:border-accent hover:text-accent"
+                className="flex h-9 w-9 items-center justify-center rounded-full text-white/60 transition hover:text-accent"
               >
                 <Icon className="h-4 w-4" strokeWidth={1.5} />
               </a>
             ))}
           </div>
         </div>
-      </section>
-
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-6 py-6 text-sm text-white/50 sm:flex-row sm:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-2 px-6 pb-5 text-xs text-white/40 sm:flex-row sm:justify-between">
           <p>&copy; {new Date().getFullYear()} Backbeat Wedding Band</p>
-          <p className="text-xs uppercase tracking-widest text-white/40">
+          <p className="uppercase tracking-widest">
             Managed by Impact Entertainment
           </p>
         </div>

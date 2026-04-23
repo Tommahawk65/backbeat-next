@@ -4,7 +4,10 @@ import { headers } from "next/headers";
 
 import { enquirySchema } from "@/lib/validation/enquiry";
 import { createCrmLead } from "@/lib/crm/createLead";
-import { sendEnquiryNotification } from "@/lib/email/resend";
+import {
+  sendEnquiryConfirmation,
+  sendEnquiryNotification,
+} from "@/lib/email/resend";
 import { sendMetaCapiLead } from "@/lib/tracking/metaCapi";
 
 export type ActionResult =
@@ -38,9 +41,10 @@ export async function submitEnquiry(input: unknown): Promise<ActionResult> {
   const userAgent = h.get("user-agent") ?? undefined;
   const referer = h.get("referer") ?? undefined;
 
-  const [crm, email, capi] = await Promise.allSettled([
+  const [crm, email, confirmation, capi] = await Promise.allSettled([
     createCrmLead(data),
     sendEnquiryNotification(data),
+    sendEnquiryConfirmation(data),
     sendMetaCapiLead(data, {
       clientIp,
       userAgent,
@@ -48,14 +52,15 @@ export async function submitEnquiry(input: unknown): Promise<ActionResult> {
     }),
   ]);
 
-  // Business rule: if the notification email fails we surface an error so the
-  // user can retry. CRM or CAPI failures are logged but don't block success —
-  // losing a lead is worse than a missing CRM row.
+  // Business rule: if the notification email to the band fails we surface an
+  // error so the user can retry. CRM, the customer confirmation, and CAPI
+  // failures are logged but don't block success — losing a lead is worse than
+  // a missing CRM row or a missed auto-reply.
   const emailOk =
     email.status === "fulfilled" && (email.value.ok || email.value.skipped);
 
   if (!emailOk) {
-    console.error("[enquiry] email failed", email);
+    console.error("[enquiry] band notification failed", email);
     return {
       status: "error",
       message: "We couldn't send your enquiry right now. Please try again.",
@@ -64,6 +69,12 @@ export async function submitEnquiry(input: unknown): Promise<ActionResult> {
 
   if (crm.status !== "fulfilled" || (!crm.value.ok && !crm.value.skipped)) {
     console.error("[enquiry] CRM failed", crm);
+  }
+  if (
+    confirmation.status !== "fulfilled" ||
+    (!confirmation.value.ok && !confirmation.value.skipped)
+  ) {
+    console.error("[enquiry] customer confirmation failed", confirmation);
   }
   if (capi.status !== "fulfilled" || (!capi.value.ok && !capi.value.skipped)) {
     console.error("[enquiry] CAPI failed", capi);

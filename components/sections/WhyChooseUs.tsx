@@ -37,11 +37,11 @@ export function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {items.map(({ Icon, title, body }) => (
             <div
               key={title}
-              className="reveal-up group flex flex-col items-center rounded-sm bg-white p-8 text-center shadow-[0_1px_2px_rgba(0,0,0,0.04)] ring-1 ring-zinc-100 transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)] sm:p-10"
+              className="reveal-up group flex flex-col items-center rounded-sm bg-white p-5 text-center shadow-[0_1px_2px_rgba(0,0,0,0.04)] ring-1 ring-zinc-100 transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)] sm:p-8 lg:p-10"
             >
               <Icon
                 className="h-9 w-9 text-accent transition duration-500 group-hover:scale-110"

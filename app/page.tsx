@@ -7,6 +7,7 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Gallery } from "@/components/sections/Gallery";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { MeetTheBand } from "@/components/sections/MeetTheBand";
+import { MakeItANight } from "@/components/sections/MakeItANight";
 import { Footer } from "@/components/sections/Footer";
 import { EnquiryDialog } from "@/components/sections/EnquiryDialog";
 
@@ -20,9 +21,10 @@ export default function Home() {
         <About />
         <Showreel videoId="oRG6h3bYXWE" />
         <WhyChooseUs />
-        <Gallery />
         <MeetTheBand />
+        <Gallery />
         <Testimonials />
+        <MakeItANight />
       </main>
       <Footer />
       <EnquiryDialog />

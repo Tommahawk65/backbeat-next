@@ -58,7 +58,7 @@ export function Header() {
             <Link
               key={l.href}
               href={l.href}
-              className="relative pl-[0.14em] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-white/70 transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 hover:after:scale-x-100 lg:pl-[0.18em] lg:text-[0.8rem] lg:tracking-[0.18em]"
+              className="relative pl-[0.14em] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-white transition hover:text-accent after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 hover:after:scale-x-100 lg:pl-[0.18em] lg:text-[0.8rem] lg:tracking-[0.18em]"
             >
               {l.label}
             </Link>

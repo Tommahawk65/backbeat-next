@@ -70,7 +70,7 @@ export function About() {
                   Live sets &middot; full PA &amp; lighting &middot; DJ between &amp; after
                 </p>
               </div>
-              <EnquiryTrigger className="group inline-flex items-center justify-center gap-2 rounded-full bg-primary-dark px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition hover:bg-primary">
+              <EnquiryTrigger className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold tracking-wide text-white shadow-lg transition hover:bg-accent-light">
                 Check availability
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </EnquiryTrigger>

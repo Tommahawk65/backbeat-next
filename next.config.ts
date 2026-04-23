@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
+  serverExternalPackages: ["lightningcss"],
   images: {
     formats: ["image/avif", "image/webp"],
   },

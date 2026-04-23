@@ -15,7 +15,7 @@ export function Showreel({
   return (
     <section
       id="video"
-      className="scroll-mt-24 bg-primary-dark py-16 text-white sm:py-24 md:py-32"
+      className="scroll-mt-24 bg-primary-dark py-12 text-white sm:py-24 md:py-32"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1.8fr)] md:items-center md:gap-16 lg:gap-20">
@@ -36,7 +36,7 @@ export function Showreel({
             </div>
           </div>
 
-          <div className="reveal-up relative aspect-video w-full overflow-hidden rounded-sm shadow-2xl">
+          <div className="reveal-up relative -mx-3 aspect-video overflow-hidden rounded-sm shadow-2xl sm:mx-0">
             {active ? (
               <iframe
                 src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`}
@@ -68,12 +68,12 @@ export function Showreel({
                   aria-hidden
                   className="absolute inset-0 flex items-center justify-center"
                 >
-                  <span className="relative flex h-28 w-28 items-center justify-center rounded-full bg-accent text-white shadow-2xl transition group-hover:scale-110">
+                  <span className="relative flex h-16 w-16 items-center justify-center rounded-full bg-accent text-white shadow-2xl transition group-hover:scale-110 sm:h-24 sm:w-24 lg:h-28 lg:w-28">
                     <span
                       aria-hidden
                       className="absolute inset-0 rounded-full bg-accent opacity-60 animate-ping"
                     />
-                    <Play className="relative ml-1 h-11 w-11 fill-white" />
+                    <Play className="relative ml-0.5 h-6 w-6 fill-white sm:ml-1 sm:h-9 sm:w-9 lg:h-11 lg:w-11" />
                   </span>
                 </span>
               </button>
