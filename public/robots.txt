@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://www.backbeat-band.co.uk/sitemap.xml

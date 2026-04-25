@@ -1,50 +1,5 @@
-import { ReviewsRail, type Review } from "./ReviewsRail";
-
-const featured: Review = {
-  body: "The band were incredible — very professional and helpful throughout. The music was divine and they had people on the dance floor right up until the end. Would absolutely recommend them to anyone.",
-  name: "Jemima Juster",
-  event: "Wedding · Royal Military Academy",
-};
-
-const reviews: Review[] = [
-  {
-    body: "All very efficient and the band was excellent — especially their rendition of Hava Nagila which they had learnt for the event. Really made the day. Certainly would recommend and use again.",
-    name: "Ruth Rowlands",
-    event: "Party · Center Parcs, Woburn Forest",
-  },
-  {
-    body: "The band were absolutely brilliant and we had a wonderful time. They were polite and reliable and performed superbly. Great set-up too.",
-    name: "Anthony & Timothy",
-    event: "Party · Wolfson College, Oxford",
-  },
-  {
-    body: "The band were excellent — very professional, helped set our friends up to play our first song, and got the dance floor going. It made the evening great for all our guests.",
-    name: "Anthony & Lauren",
-    event: "Wedding · The Elvetham Hotel, Hook",
-  },
-  {
-    body: "The band were absolutely fantastic! They learnt and played our first dance song and did a brilliant job. The dance floor always had someone on it — which is all you can ask for.",
-    name: "Sophie",
-    event: "Wedding · Gate Street Barn, Surrey",
-  },
-  {
-    body: "A really good mix of music — very professional, and such a good sound they created. Really made the evening.",
-    name: "Mandy",
-    event: "Wedding · Manor Farmhouse, Warnford",
-  },
-  {
-    body: "First class. Good modern mixes with old classics that had the dance floor pumping all evening. Great feedback from guests on the choice of band — and we had a lot of them.",
-    name: "Matthew",
-    event: "Wedding · St George's Hill Golf Club",
-  },
-  {
-    body: "A great band, perfect for my 50th party — and really lovely people too.",
-    name: "Gary",
-    event: "50th · Halstead House",
-  },
-];
-
-const all: Review[] = [featured, ...reviews];
+import { ReviewsRail } from "./ReviewsRail";
+import { allReviews } from "@/lib/data/testimonials";
 
 export function Testimonials() {
   return (
@@ -69,7 +24,7 @@ export function Testimonials() {
           aria-hidden
           className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-primary-dark to-transparent"
         />
-        <ReviewsRail reviews={all} />
+        <ReviewsRail reviews={allReviews} />
       </div>
     </section>
   );

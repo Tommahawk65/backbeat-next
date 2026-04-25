@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "email": "EMAIL_ASSETS_URL=http://localhost:3000 email dev --dir ./emails --port 3001"
+    "email": "EMAIL_ASSETS_URL=http://localhost:3000 NEXT_PUBLIC_SITE_URL=https://www.backbeat-band.co.uk email dev --dir ./emails --port 3001"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -21,6 +21,7 @@
     "react-email": "^6.0.0",
     "react-hook-form": "^7.73.1",
     "resend": "^6.12.2",
+    "vanilla-cookieconsent": "^3.1.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -29,8 +30,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
+    "eslint": "^9.39.4",
     "eslint-config-next": "16.2.4",
+    "playwright": "^1.59.1",
     "tailwindcss": "^4",
     "typescript": "^5.9.3"
   }

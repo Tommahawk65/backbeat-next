@@ -66,7 +66,7 @@ export async function sendEnquiryConfirmation(input: EnquiryInput) {
 
   const eventDate = dateFmt.format(input.eventDate);
   const from = process.env.RESEND_FROM_EMAIL ?? DEFAULT_FROM;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://backbeat-band.co.uk";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.backbeat-band.co.uk";
 
   try {
     const result = await resend.emails.send({

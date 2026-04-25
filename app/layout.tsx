@@ -4,10 +4,20 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
-import { GoogleTagManagerNoscript } from "@/components/tracking/GoogleTagManager";
-import { MetaPixelNoscript } from "@/components/tracking/MetaPixel";
-import { ConsentGatedTracking } from "@/components/tracking/ConsentGatedTracking";
+import {
+  GoogleTagManager,
+  GoogleTagManagerNoscript,
+} from "@/components/tracking/GoogleTagManager";
+import {
+  MetaPixel,
+  MetaPixelNoscript,
+} from "@/components/tracking/MetaPixel";
+import { ConsentDefault } from "@/components/tracking/ConsentDefault";
 import { CookieConsent } from "@/components/tracking/CookieConsent";
+import { Header } from "@/components/sections/Header";
+import { Footer } from "@/components/sections/Footer";
+import { EnquiryDialog } from "@/components/sections/EnquiryDialog";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -72,12 +82,19 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${anton.variable} h-full overflow-x-clip overscroll-none antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col overflow-x-clip overscroll-none bg-primary-dark">
+        <ConsentDefault />
+        <OrganizationSchema />
         {gtmId ? <GoogleTagManagerNoscript gtmId={gtmId} /> : null}
         {pixelId ? <MetaPixelNoscript pixelId={pixelId} /> : null}
+        <Header />
         {children}
-        <ConsentGatedTracking gtmId={gtmId} pixelId={pixelId} />
+        <Footer />
+        <EnquiryDialog />
+        {gtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
+        {pixelId ? <MetaPixel pixelId={pixelId} /> : null}
         <CookieConsent />
         <Analytics />
         <SpeedInsights />

@@ -39,11 +39,11 @@ const value = {
 };
 
 export function EnquiryNotification({
-  name = "Jane Smith",
-  email = "jane@example.com",
-  eventDateFormatted = "Saturday, 12 September 2026",
-  venue = "The Elvetham, Hook",
-  message = "We'd love you to learn our first dance — 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
+  name,
+  email,
+  eventDateFormatted,
+  venue,
+  message,
   fbclid,
   gclid,
 }: EnquiryNotificationProps) {
@@ -53,7 +53,7 @@ export function EnquiryNotification({
   ].filter(Boolean) as string[];
 
   return (
-    <Layout preview={`New enquiry from ${name} — ${eventDateFormatted}`}>
+    <Layout preview={`New enquiry from ${name} for ${eventDateFormatted} at ${venue}. Reply directly to respond.`}>
       <Text style={eyebrow}>New enquiry</Text>
       <Heading
         as="h1"
@@ -77,7 +77,7 @@ export function EnquiryNotification({
           borderRadius: "10px",
         }}
       >
-        <div style={{ padding: "16px 22px" }}>
+        <div className="email-card-row" style={{ padding: "16px 22px" }}>
           <Text style={label}>Email</Text>
           <Text style={value}>
             <a
@@ -89,6 +89,7 @@ export function EnquiryNotification({
           </Text>
         </div>
         <div
+          className="email-card-row"
           style={{
             borderTop: `1px solid ${brand.creamDark}`,
             padding: "16px 22px",
@@ -98,6 +99,7 @@ export function EnquiryNotification({
           <Text style={value}>{eventDateFormatted}</Text>
         </div>
         <div
+          className="email-card-row"
           style={{
             borderTop: `1px solid ${brand.creamDark}`,
             padding: "16px 22px",
@@ -108,6 +110,7 @@ export function EnquiryNotification({
         </div>
         {message ? (
           <div
+            className="email-card-row"
             style={{
               borderTop: `1px solid ${brand.creamDark}`,
               padding: "16px 22px",
@@ -155,5 +158,14 @@ export function EnquiryNotification({
     </Layout>
   );
 }
+
+EnquiryNotification.PreviewProps = {
+  name: "Jane Smith",
+  email: "jane@example.com",
+  eventDateFormatted: "Saturday, 12 September 2026",
+  venue: "The Elvetham, Hook",
+  message:
+    "We'd love you to learn our first dance — 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
+} satisfies EnquiryNotificationProps;
 
 export default EnquiryNotification;

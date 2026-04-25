@@ -1,59 +1,93 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import * as CC from "vanilla-cookieconsent";
+import "vanilla-cookieconsent/dist/cookieconsent.css";
+import "./cookieConsent.css";
 
-import { getStoredConsent, setStoredConsent } from "@/lib/consent";
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function pushConsentUpdate() {
+  const analytics = CC.acceptedCategory("analytics");
+  const marketing = CC.acceptedCategory("marketing");
+  window.gtag?.("consent", "update", {
+    analytics_storage: analytics ? "granted" : "denied",
+    ad_storage: marketing ? "granted" : "denied",
+    ad_user_data: marketing ? "granted" : "denied",
+    ad_personalization: marketing ? "granted" : "denied",
+  });
+}
 
 export function CookieConsent() {
-  const [visible, setVisible] = useState(false);
-
   useEffect(() => {
-    if (getStoredConsent() === "unset") setVisible(true);
+    document.documentElement.classList.add("cc--darkmode");
+
+    CC.run({
+      guiOptions: {
+        consentModal: {
+          layout: "box",
+          position: "bottom left",
+          equalWeightButtons: false,
+        },
+        preferencesModal: { layout: "box" },
+      },
+      categories: {
+        necessary: { enabled: true, readOnly: true },
+        analytics: {},
+        marketing: {},
+      },
+      onFirstConsent: pushConsentUpdate,
+      onConsent: pushConsentUpdate,
+      onChange: pushConsentUpdate,
+      language: {
+        default: "en",
+        translations: {
+          en: {
+            consentModal: {
+              title: "We use cookies",
+              description:
+                'We use cookies to measure traffic and improve your experience. Analytics and marketing cookies only run if you accept. See our <a href="/privacy" class="cc__link">privacy &amp; cookies policy</a>.',
+              acceptAllBtn: "Accept all",
+              acceptNecessaryBtn: "Reject",
+              showPreferencesBtn: "Manage preferences",
+            },
+            preferencesModal: {
+              title: "Cookie preferences",
+              acceptAllBtn: "Accept all",
+              acceptNecessaryBtn: "Reject all",
+              savePreferencesBtn: "Save preferences",
+              closeIconLabel: "Close",
+              sections: [
+                {
+                  title: "Strictly necessary",
+                  description:
+                    "Required for the site to function and cannot be switched off.",
+                  linkedCategory: "necessary",
+                },
+                {
+                  title: "Analytics",
+                  description:
+                    "Help us understand how visitors use the site so we can improve it.",
+                  linkedCategory: "analytics",
+                },
+                {
+                  title: "Marketing",
+                  description:
+                    "Used to measure ad performance and personalise ads on Facebook and Google.",
+                  linkedCategory: "marketing",
+                },
+              ],
+            },
+          },
+        },
+      },
+    });
   }, []);
 
-  if (!visible) return null;
-
-  const decide = (value: "accepted" | "rejected") => {
-    setStoredConsent(value);
-    setVisible(false);
-  };
-
-  return (
-    <div
-      role="dialog"
-      aria-live="polite"
-      aria-label="Cookie consent"
-      className="fixed inset-x-3 bottom-3 z-[60] mx-auto max-w-3xl rounded-xl bg-primary-dark/95 p-4 text-sm text-white shadow-2xl ring-1 ring-white/10 backdrop-blur sm:p-5"
-    >
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-white/85">
-          We use cookies to measure traffic and improve your experience.
-          Analytics &amp; marketing cookies only run if you accept.{" "}
-          <a
-            href="/privacy"
-            className="underline underline-offset-2 hover:text-accent"
-          >
-            Learn more
-          </a>
-          .
-        </p>
-        <div className="flex shrink-0 gap-2">
-          <button
-            type="button"
-            onClick={() => decide("rejected")}
-            className="rounded-full px-4 py-2 text-white/80 ring-1 ring-white/20 transition hover:bg-white/5"
-          >
-            Reject
-          </button>
-          <button
-            type="button"
-            onClick={() => decide("accepted")}
-            className="rounded-full bg-accent px-4 py-2 font-semibold text-primary-dark transition hover:bg-accent/90"
-          >
-            Accept
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+  return null;
 }

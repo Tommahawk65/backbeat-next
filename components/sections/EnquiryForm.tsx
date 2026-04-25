@@ -10,7 +10,7 @@ import { submitEnquiry } from "@/lib/actions/submitEnquiry";
 
 declare global {
   interface Window {
-    dataLayer?: Record<string, unknown>[];
+    dataLayer?: unknown[];
     fbq?: (...args: unknown[]) => void;
   }
 }

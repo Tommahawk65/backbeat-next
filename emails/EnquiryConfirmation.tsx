@@ -37,17 +37,17 @@ const value = {
 };
 
 export function EnquiryConfirmation({
-  name = "Jane Smith",
-  eventDateFormatted = "Saturday, 12 September 2026",
-  venue = "The Elvetham, Hook",
-  message = "We'd love you to learn our first dance — 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
-  siteUrl = "https://backbeat-band.co.uk",
+  name,
+  eventDateFormatted,
+  venue,
+  message,
+  siteUrl = "https://www.backbeat-band.co.uk",
 }: EnquiryConfirmationProps) {
   const firstName = name.split(" ")[0];
 
   return (
     <Layout
-      preview={`Thanks ${firstName}, we've got your enquiry — we'll be in touch shortly.`}
+      preview={`Thanks ${firstName}, we've got your enquiry for ${eventDateFormatted} at ${venue}. We'll check availability and come back with a tailored quote shortly.`}
     >
       <Text style={eyebrow}>Enquiry received</Text>
       <Heading
@@ -78,17 +78,18 @@ export function EnquiryConfirmation({
 
       <Section
         style={{
-          marginTop: "28px",
+          marginTop: "16px",
           padding: "4px 0",
           backgroundColor: brand.cream,
           borderRadius: "10px",
         }}
       >
-        <div style={{ padding: "16px 22px" }}>
+        <div className="email-card-row" style={{ padding: "16px 22px" }}>
           <Text style={label}>Event date</Text>
           <Text style={value}>{eventDateFormatted}</Text>
         </div>
         <div
+          className="email-card-row"
           style={{
             borderTop: `1px solid ${brand.creamDark}`,
             padding: "16px 22px",
@@ -99,6 +100,7 @@ export function EnquiryConfirmation({
         </div>
         {message ? (
           <div
+            className="email-card-row"
             style={{
               borderTop: `1px solid ${brand.creamDark}`,
               padding: "16px 22px",
@@ -197,5 +199,13 @@ export function EnquiryConfirmation({
     </Layout>
   );
 }
+
+EnquiryConfirmation.PreviewProps = {
+  name: "Jane Smith",
+  eventDateFormatted: "Saturday, 12 September 2026",
+  venue: "The Elvetham, Hook",
+  message:
+    "We'd love you to learn our first dance — 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
+} satisfies EnquiryConfirmationProps;
 
 export default EnquiryConfirmation;

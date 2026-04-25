@@ -1,20 +1,90 @@
 import Image from "next/image";
 
 const photos = [
-  { i: 1, w: 1486, h: 2229 },
-  { i: 2, w: 1486, h: 2229 },
-  { i: 3, w: 1486, h: 2229 },
-  { i: 4, w: 1443, h: 2165 },
-  { i: 5, w: 1342, h: 2014 },
-  { i: 6, w: 1270, h: 1905 },
-  { i: 7, w: 2004, h: 1336 },
-  { i: 9, w: 2021, h: 1347 },
-  { i: 11, w: 2160, h: 1215 },
-  { i: 12, w: 1972, h: 1314 },
-  { i: 13, w: 1985, h: 1323 },
-  { i: 14, w: 1392, h: 1392 },
-  { i: 15, w: 2066, h: 1378 },
-  { i: 17, w: 1486, h: 1486 },
+  {
+    i: 1,
+    w: 1486,
+    h: 2229,
+    alt: "Backbeat lead vocalist performing live at a wedding reception",
+  },
+  {
+    i: 2,
+    w: 1486,
+    h: 2229,
+    alt: "Backbeat guitarist playing on stage at a Hampshire wedding",
+  },
+  {
+    i: 3,
+    w: 1486,
+    h: 2229,
+    alt: "Backbeat bassist mid-set at a south coast wedding",
+  },
+  {
+    i: 4,
+    w: 1443,
+    h: 2165,
+    alt: "Live wedding band performing under stage lights",
+  },
+  {
+    i: 5,
+    w: 1342,
+    h: 2014,
+    alt: "Backbeat indie wedding band performing live on stage",
+  },
+  {
+    i: 6,
+    w: 1270,
+    h: 1905,
+    alt: "Wedding band frontman singing into the microphone",
+  },
+  {
+    i: 7,
+    w: 2004,
+    h: 1336,
+    alt: "Backbeat full band on stage at a UK wedding reception",
+  },
+  {
+    i: 9,
+    w: 2021,
+    h: 1347,
+    alt: "Wedding dance floor packed with guests during a live band set",
+  },
+  {
+    i: 11,
+    w: 2160,
+    h: 1215,
+    alt: "Backbeat performing late-night at a Hampshire wedding venue",
+  },
+  {
+    i: 12,
+    w: 1972,
+    h: 1314,
+    alt: "Live wedding band performing with full lighting rig",
+  },
+  {
+    i: 13,
+    w: 1985,
+    h: 1323,
+    alt: "Backbeat playing for a busy dance floor at a wedding reception",
+  },
+  {
+    i: 14,
+    w: 1392,
+    h: 1392,
+    alt: "Backbeat wedding band guitarist mid-performance",
+  },
+  {
+    i: 15,
+    w: 2066,
+    h: 1378,
+    alt: "Backbeat live on stage at a south of England wedding",
+  },
+  {
+    i: 17,
+    w: 1486,
+    h: 1486,
+    alt: "Backbeat indie & rock wedding band performing live",
+  },
 ] as const;
 
 type Photo = (typeof photos)[number];
@@ -71,7 +141,7 @@ function ColTile({
     >
       <Image
         src={`/images/gallery/${n}.jpg`}
-        alt={`Backbeat live — ${n}`}
+        alt={p.alt}
         fill
         sizes={sizes}
         priority={priority}

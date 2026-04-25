@@ -28,7 +28,7 @@ export const brand = {
 };
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://backbeat-band.co.uk";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.backbeat-band.co.uk";
 const ASSETS_URL = process.env.EMAIL_ASSETS_URL ?? SITE_URL;
 
 export function Layout({
@@ -40,7 +40,14 @@ export function Layout({
 }) {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <style>
+          {`@media only screen and (max-width: 600px) {
+            .email-body-section { padding: 28px 14px 32px !important; }
+            .email-card-row { padding: 14px 12px !important; }
+          }`}
+        </style>
+      </Head>
       <Preview>{preview}</Preview>
       <Body
         style={{
@@ -53,9 +60,9 @@ export function Layout({
       >
         <Container
           style={{
-            maxWidth: "580px",
+            maxWidth: "640px",
             margin: "0 auto",
-            padding: "32px 16px",
+            padding: "16px 8px",
           }}
         >
           <Section
@@ -104,14 +111,15 @@ export function Layout({
                 letterSpacing: "0.24em",
               }}
             >
-              Hampshire Wedding Band
+              Live Wedding &amp; Party Band
             </Text>
           </Section>
 
           <Section
+            className="email-body-section"
             style={{
               backgroundColor: brand.white,
-              padding: "40px 36px",
+              padding: "28px 28px 32px",
             }}
           >
             {children}

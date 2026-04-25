@@ -1,0 +1,61 @@
+#cc-main {
+  --cc-bg: #141416;
+  --cc-primary-color: #f6f2ec;
+  --cc-secondary-color: #a1a1aa;
+  --cc-border-radius: 12px;
+
+  --cc-btn-primary-bg: #b8884a;
+  --cc-btn-primary-color: #ffffff;
+  --cc-btn-primary-hover-bg: #d3a262;
+  --cc-btn-primary-hover-color: #ffffff;
+
+  --cc-btn-secondary-bg: rgba(255, 255, 255, 0.06);
+  --cc-btn-secondary-color: #f6f2ec;
+  --cc-btn-secondary-border-color: rgba(255, 255, 255, 0.14);
+  --cc-btn-secondary-hover-bg: rgba(255, 255, 255, 0.12);
+  --cc-btn-secondary-hover-color: #ffffff;
+  --cc-btn-secondary-hover-border-color: rgba(255, 255, 255, 0.2);
+
+  --cc-separator-border-color: rgba(255, 255, 255, 0.08);
+
+  --cc-cookie-category-block-bg: rgba(255, 255, 255, 0.04);
+  --cc-cookie-category-block-border: rgba(255, 255, 255, 0.08);
+  --cc-cookie-category-block-bg-hover: rgba(255, 255, 255, 0.08);
+  --cc-cookie-category-block-border-hover: rgba(255, 255, 255, 0.14);
+  --cc-cookie-category-expanded-block-bg: rgba(255, 255, 255, 0.02);
+
+  --cc-toggle-on-bg: #b8884a;
+  --cc-toggle-off-bg: #3f3f46;
+  --cc-toggle-readonly-bg: rgba(255, 255, 255, 0.1);
+  --cc-toggle-on-knob-bg: #ffffff;
+  --cc-toggle-off-knob-bg: #d4d4d8;
+}
+
+#cc-main .cm__btn[data-role="necessary"],
+#cc-main .cm__btn[data-role="show"] {
+  background: transparent;
+  border: none;
+  color: rgba(246, 242, 236, 0.55);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  padding: 0.5rem 0.25rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  box-shadow: none;
+}
+
+#cc-main .cm__btn[data-role="necessary"]:hover,
+#cc-main .cm__btn[data-role="show"]:hover {
+  background: transparent;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+#cc-main .cc__link {
+  color: #d3a262;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+#cc-main .cc__link:hover {
+  color: #ffffff;
+}

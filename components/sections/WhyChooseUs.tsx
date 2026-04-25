@@ -14,7 +14,7 @@ const items = [
   {
     Icon: ShieldCheck,
     title: "Nothing left to chance",
-    body: "PAT-tested kit, sound-limiter ready, and a dedicated bandleader running the night.",
+    body: "PAT-tested kit, sound-limiter ready, and a trusted dep-musician network if anyone's unwell.",
   },
   {
     Icon: FileCheck,
@@ -56,6 +56,10 @@ export function WhyChooseUs() {
             </div>
           ))}
         </div>
+
+        <p className="mt-10 text-center text-xs font-medium uppercase tracking-[0.18em] text-zinc-500 sm:mt-12 sm:text-sm">
+          Public liability insured &middot; PAT-tested annually &middot; Dep cover for illness &middot; Sound-limiter ready
+        </p>
       </div>
     </section>
   );
