@@ -25,7 +25,7 @@ export function LocationCTA({
             {body}
           </p>
         ) : null}
-        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-center gap-3">
           <EnquiryTrigger className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-base font-semibold tracking-wide text-white shadow-lg transition hover:bg-accent-light">
             Check availability
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

@@ -4,8 +4,10 @@ const SITE_URL =
 const BAND_ID = `${SITE_URL}/#band`;
 
 type LocationSchemaProps = {
-  /** Page slug, e.g. "hampshire-weddings" */
-  slug: string;
+  /** Page slug or path. Either "hampshire-weddings" or "wedding-bands/hampshire" */
+  slug?: string;
+  /** Page path including leading slash, e.g. "/wedding-bands/hampshire" */
+  path?: string;
   /** H1 / page name */
   pageName: string;
   /** Region, county or city served */
@@ -18,12 +20,14 @@ type LocationSchemaProps = {
 
 export function LocationSchema({
   slug,
+  path,
   pageName,
   areaServed,
   subAreas,
   description,
 }: LocationSchemaProps) {
-  const pageUrl = `${SITE_URL}/${slug}`;
+  const resolvedPath = path ?? (slug ? `/${slug}` : "/");
+  const pageUrl = `${SITE_URL}${resolvedPath}`;
 
   const data = {
     "@context": "https://schema.org",

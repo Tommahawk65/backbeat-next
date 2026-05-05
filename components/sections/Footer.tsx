@@ -98,6 +98,12 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} Backbeat Wedding Band</p>
           <div className="flex items-center gap-5">
             <Link
+              href="/wedding-bands"
+              className="transition hover:text-white/80"
+            >
+              Wedding bands by county
+            </Link>
+            <Link
               href="/privacy"
               className="transition hover:text-white/80"
             >

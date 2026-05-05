@@ -6,12 +6,14 @@ type LocationIntroProps = {
   eyebrow: string;
   heading: React.ReactNode;
   children: React.ReactNode;
+  disclaimer?: React.ReactNode;
 };
 
 export function LocationIntro({
   eyebrow,
   heading,
   children,
+  disclaimer,
 }: LocationIntroProps) {
   return (
     <section className="bg-cream py-16 sm:py-24 md:py-32">
@@ -26,6 +28,12 @@ export function LocationIntro({
         <div className="mx-auto mt-10 max-w-3xl space-y-5 text-base leading-relaxed text-zinc-700 sm:mt-12 sm:text-lg">
           {children}
         </div>
+
+        {disclaimer ? (
+          <p className="mx-auto mt-8 max-w-3xl text-xs leading-relaxed text-zinc-500">
+            {disclaimer}
+          </p>
+        ) : null}
 
         <div className="mx-auto mt-12 flex max-w-3xl flex-col gap-6 border-t border-zinc-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <div>

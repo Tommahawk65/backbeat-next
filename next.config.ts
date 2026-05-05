@@ -10,7 +10,21 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   async redirects() {
-    return [];
+    const counties = [
+      "hampshire",
+      "surrey",
+      "berkshire",
+      "west-sussex",
+      "dorset",
+      "wiltshire",
+      "oxfordshire",
+      "isle-of-wight",
+    ];
+    return counties.map((slug) => ({
+      source: `/${slug}-weddings`,
+      destination: `/wedding-bands/${slug}`,
+      permanent: true,
+    }));
   },
 };
 
