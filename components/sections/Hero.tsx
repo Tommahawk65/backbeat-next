@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
 
 import { EnquiryTrigger } from "@/components/EnquiryTrigger";
+import { HeroVideo } from "@/components/sections/HeroVideo";
 
 export function Hero() {
   return (
@@ -10,17 +12,15 @@ export function Hero() {
       className="relative isolate w-full overflow-hidden bg-primary-dark text-white"
     >
       <div className="relative h-[calc(100dvh-10rem)] min-h-[480px] w-full md:h-[calc(100dvh-12rem)] md:min-h-[560px]">
-        <video
-          src="/videos/hero/hero.mp4"
-          poster="/images/hero.jpg"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          aria-hidden
-          className="absolute inset-0 h-full w-full object-cover object-center"
+        <Image
+          src="/images/hero.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
+        <HeroVideo />
         <div
           aria-hidden
           className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/20 to-black/60"

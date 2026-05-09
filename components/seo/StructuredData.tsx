@@ -69,6 +69,11 @@ export function OrganizationSchema() {
           addressRegion: "Hampshire",
           addressCountry: "GB",
         },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: "51.05",
+          longitude: "-1.3",
+        },
         areaServed: AREAS_SERVED.map((name) => ({
           "@type": "AdministrativeArea",
           name,
@@ -79,6 +84,13 @@ export function OrganizationSchema() {
           name,
           roleName: role,
         })),
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5",
+          reviewCount: String(allReviews.length),
+          bestRating: "5",
+          worstRating: "1",
+        },
         offers: {
           "@type": "Offer",
           name: "Live Music Package",
@@ -116,13 +128,6 @@ export function HomePageSchema() {
       {
         "@type": "MusicGroup",
         "@id": BAND_ID,
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5",
-          reviewCount: String(allReviews.length),
-          bestRating: "5",
-          worstRating: "1",
-        },
         review: reviewSchema,
       },
       {
