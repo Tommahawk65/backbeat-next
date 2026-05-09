@@ -13,12 +13,21 @@ export function Hero() {
     >
       <div className="relative h-[calc(100dvh-10rem)] min-h-[480px] w-full md:h-[calc(100dvh-12rem)] md:min-h-[560px]">
         <Image
-          src="/images/hero.jpg"
+          src="/images/gallery/4.jpg"
           alt=""
           fill
           priority
-          sizes="100vw"
-          className="object-cover object-center"
+          sizes="(max-width: 767px) 100vw, 0px"
+          className="object-cover object-center md:hidden"
+        />
+        <Image
+          src="/images/hero.jpg"
+          alt=""
+          fill
+          loading="eager"
+          fetchPriority="high"
+          sizes="(min-width: 768px) 100vw, 0px"
+          className="hidden object-cover object-center md:block"
         />
         <HeroVideo />
         <div
