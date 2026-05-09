@@ -13,10 +13,11 @@ export function Hero() {
     >
       <div className="relative h-[calc(100dvh-10rem)] min-h-[480px] w-full md:h-[calc(100dvh-12rem)] md:min-h-[560px]">
         <Image
-          src="/images/gallery/4.jpg"
+          src="/images/hero-mobile.jpg"
           alt=""
           fill
           priority
+          fetchPriority="high"
           sizes="(max-width: 767px) 100vw, 0px"
           className="object-cover object-center md:hidden"
         />
