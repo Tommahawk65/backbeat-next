@@ -53,12 +53,11 @@ export function Showreel({
                 aria-label={`Play ${title}`}
               >
                 <Image
-                  src={`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`}
+                  src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
                   alt={title}
                   fill
                   sizes="(max-width: 1024px) 100vw, 1280px"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  unoptimized
                 />
                 <span
                   aria-hidden
