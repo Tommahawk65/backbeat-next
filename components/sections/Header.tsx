@@ -48,7 +48,8 @@ export function Header() {
             alt="Backbeat"
             width={470}
             height={290}
-            priority
+            fetchPriority="high"
+            loading="eager"
             className="h-14 w-auto sm:h-20"
           />
         </Link>
