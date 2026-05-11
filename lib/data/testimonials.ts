@@ -1,54 +1,35 @@
-import type { Review } from "@/components/sections/ReviewsRail";
+// Reviews from Backbeat's Google Business Profile.
+// Verified live: https://share.google/kNphlS9D7DoZHeQe9
+// Update this file whenever new reviews come in on the GBP.
 
-export const featuredReview: Review = {
-  body: "Divine music, and they had people on the dance floor right up until the end. Incredible — very professional and helpful throughout. Would absolutely recommend them to anyone.",
-  name: "Jemima Juster",
-  event: "Wedding · Royal Military Academy",
+export type GoogleReview = {
+  /** First name + last initial, matching Google's display convention */
+  name: string;
+  /** When the review was posted (year is enough — Google shows relative time) */
+  date: string;
+  /** 1-5 stars */
+  rating: number;
+  /** Verbatim review text */
+  body: string;
 };
 
-export const reviews: Review[] = [
+export const googleReviewsUrl =
+  "https://share.google/kNphlS9D7DoZHeQe9";
+
+export const googleAggregateRating: number = 5.0;
+export const googleReviewCount: number = 2;
+
+export const googleReviews: GoogleReview[] = [
   {
-    body: "All very efficient and the band was excellent — especially their rendition of Hava Nagila which they had learnt for the event. Really made the day. Certainly would recommend and use again.",
-    name: "Ruth Rowlands",
-    event: "Party · Center Parcs, Woburn Forest",
+    name: "Ben F.",
+    date: "2025",
+    rating: 5,
+    body: "Hired these guys for my mate's wedding, could not recommend them highly enough! Such a good bunch of guys, super communicative, easy to book/organise and extremely helpful. They acted very professionally and with the utmost respect for us as 'customers'. Played a set of absolute bangers and had everyone up and dancing. Definitely going to book them again next time I need to hire a band. Thanks so much chaps 🤘",
   },
   {
-    body: "Polite, reliable, and performed superbly — great set-up too. Absolutely brilliant. We had a wonderful time.",
-    name: "Anthony & Timothy",
-    event: "Party · Wolfson College, Oxford",
-  },
-  {
-    body: "They helped set our friends up to play our first song, then got the dance floor going — made the evening great for all our guests. Excellent and very professional.",
-    name: "Anthony & Lauren",
-    event: "Wedding · The Elvetham Hotel, Hook",
-  },
-  {
-    body: "The dance floor always had someone on it — which is all you can ask for. They learnt our first dance song and played it brilliantly. Absolutely fantastic.",
-    name: "Sophie",
-    event: "Wedding · Gate Street Barn, Surrey",
-  },
-  {
-    body: "A really good mix of music — very professional, and such a good sound they created. Really made the evening.",
-    name: "Mandy",
-    event: "Wedding · Manor Farmhouse, Warnford",
-  },
-  {
-    body: "First class. Good modern mixes with old classics that had the dance floor pumping all evening. Great feedback from guests on the choice of band — and we had a lot of them.",
-    name: "Matthew",
-    event: "Wedding · St George's Hill Golf Club",
-  },
-  {
-    body: "A great band, perfect for my 50th party — and really lovely people too.",
-    name: "Gary",
-    event: "50th · Halstead House",
+    name: "Toby Joe L.",
+    date: "2025",
+    rating: 5,
+    body: "Such an incredible band with great energy! Would be a great pick for a wedding or office party!!",
   },
 ];
-
-export const allReviews: Review[] = [featuredReview, ...reviews];
-
-/** Pick a subset of reviews by author name, in the order given. */
-export function pickReviews(names: string[]): Review[] {
-  return names
-    .map((n) => allReviews.find((r) => r.name === n))
-    .filter((r): r is Review => Boolean(r));
-}

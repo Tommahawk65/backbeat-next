@@ -94,25 +94,27 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-2 px-6 pb-5 text-xs text-white/40 sm:flex-row sm:justify-between">
-          <p>&copy; {new Date().getFullYear()} Backbeat Wedding Band</p>
-          <div className="flex items-center gap-5">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-6 pb-5 text-xs text-white/40 sm:flex-row sm:justify-between sm:gap-8">
+          <div className="flex flex-col items-center gap-1 sm:flex-row sm:items-center sm:gap-5">
+            <p>&copy; {new Date().getFullYear()} Backbeat Wedding Band</p>
+            <span aria-hidden className="hidden h-3 w-px bg-white/20 sm:inline-block" />
             <Link
               href="/wedding-bands"
               className="transition hover:text-white/80"
             >
-              Wedding bands by county
+              Areas we cover
             </Link>
+            <span aria-hidden className="hidden h-3 w-px bg-white/20 sm:inline-block" />
             <Link
               href="/privacy"
               className="transition hover:text-white/80"
             >
               Privacy &amp; cookies
             </Link>
-            <p className="uppercase tracking-widest">
-              Managed by Impact Entertainment
-            </p>
           </div>
+          <p className="uppercase tracking-widest">
+            Managed by Impact Entertainment
+          </p>
         </div>
       </div>
     </footer>

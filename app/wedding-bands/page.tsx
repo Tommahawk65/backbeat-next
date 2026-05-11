@@ -62,7 +62,7 @@ export default function WeddingBandsHubPage() {
               id="counties-heading"
               className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-900 sm:text-5xl md:text-6xl"
             >
-              Wedding bands by county.
+              Browse by county.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-zinc-600 sm:text-lg">
               Pick your county for venues, set timings, curfew quirks and the
@@ -114,7 +114,7 @@ export default function WeddingBandsHubPage() {
               id="cities-heading"
               className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-900 sm:text-5xl md:text-6xl"
             >
-              Wedding bands by city.
+              Browse by city.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-zinc-600 sm:text-lg">
               City-specific pages with venue lists, parking quirks and
@@ -159,7 +159,7 @@ export default function WeddingBandsHubPage() {
               id="venues-heading"
               className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-900 sm:text-5xl md:text-6xl"
             >
-              Wedding bands by venue.
+              Browse by venue.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-zinc-600 sm:text-lg">
               Venue-specific pages with the brief, the room and the dance

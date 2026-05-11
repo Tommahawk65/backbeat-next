@@ -114,8 +114,7 @@ function SectionIntro() {
         </h2>
       </div>
       <p className="max-w-sm text-sm leading-relaxed text-zinc-600">
-        Real nights, real weddings &mdash; shots from across the South Coast
-        and beyond.
+        Stage shots and session photos of the band.
       </p>
     </div>
   );

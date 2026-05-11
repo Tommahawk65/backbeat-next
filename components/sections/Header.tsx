@@ -21,14 +21,35 @@ export function Header() {
 
   useEffect(() => {
     if (!open) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const prev = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      right: body.style.right,
+      width: body.style.width,
+    };
+
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.left = "0";
+    body.style.right = "0";
+    body.style.width = "100%";
+
     const onEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
     };
     window.addEventListener("keydown", onEsc);
+
     return () => {
-      document.body.style.overflow = prev;
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.left = prev.left;
+      body.style.right = prev.right;
+      body.style.width = prev.width;
+      window.scrollTo(0, scrollY);
       window.removeEventListener("keydown", onEsc);
     };
   }, [open]);
@@ -90,17 +111,24 @@ export function Header() {
         </div>
       </header>
 
-      {open ? (
-        <>
+      <>
           <button
             type="button"
             aria-label="Close menu"
+            tabIndex={open ? 0 : -1}
             onClick={close}
-            className="fixed inset-0 z-[55] bg-black/60 backdrop-blur-sm md:hidden"
+            className={`fixed inset-0 z-[55] bg-black/60 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+              open
+                ? "opacity-100 pointer-events-auto"
+                : "opacity-0 pointer-events-none"
+            }`}
           />
           <aside
             id="mobile-nav"
-            className="fixed inset-y-0 right-0 z-[60] flex w-80 max-w-[85vw] flex-col overflow-y-auto border-l border-white/10 bg-primary-dark shadow-2xl md:hidden"
+            aria-hidden={!open}
+            className={`fixed inset-y-0 right-0 z-[60] flex w-80 max-w-[85vw] flex-col overflow-y-auto border-l border-white/10 bg-primary-dark shadow-2xl transition-transform duration-300 ease-out md:hidden ${
+              open ? "translate-x-0" : "translate-x-full"
+            }`}
           >
             <div className="relative flex items-start justify-between border-b-2 border-accent bg-primary px-6 pt-8 pb-6">
               <div>
@@ -146,7 +174,6 @@ export function Header() {
             </nav>
           </aside>
         </>
-      ) : null}
     </>
   );
 }

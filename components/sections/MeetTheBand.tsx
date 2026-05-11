@@ -36,9 +36,6 @@ export function MeetTheBand() {
           <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl">
             Meet the band.
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-white/60 sm:text-lg">
-            Four players. One dance floor.
-          </p>
         </div>
         <div className="mt-16 grid grid-cols-2 gap-1 overflow-hidden rounded-sm md:grid-cols-4">
           {members.map((m) => (

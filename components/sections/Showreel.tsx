@@ -22,17 +22,18 @@ export function Showreel({
           <div className="reveal-left">
             <span className="eyebrow eyebrow--on-dark">Showreel</span>
             <h2 className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-5xl lg:text-6xl">
-              Watch us light up a dance floor.
+              Hear what we sound like.
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-white/70 sm:text-lg">
-              A two-minute cut of the dance-floor moments that keep couples
-              coming back — real weddings, real energy, and a band that knows
-              how to play a room.
+              Six minutes of Backbeat performing. Indie and rock with
+              the choruses dialled up, built for a wedding dance floor.
+              The sound, the feel, and the band as we&rsquo;d play your
+              day.
             </p>
             <div className="mt-8 flex items-center gap-6 text-xs font-medium uppercase tracking-[0.22em] text-white/50">
-              <span>2 min watch</span>
+              <span>6 min watch</span>
               <span aria-hidden className="h-px w-8 bg-white/20" />
-              <span>Wedding highlights</span>
+              <span>Indie &amp; rock</span>
             </div>
           </div>
 
@@ -53,7 +54,7 @@ export function Showreel({
                 aria-label={`Play ${title}`}
               >
                 <Image
-                  src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
+                  src={`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`}
                   alt={title}
                   fill
                   sizes="(max-width: 1024px) 100vw, 1280px"

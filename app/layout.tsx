@@ -17,6 +17,7 @@ import { CookieConsent } from "@/components/tracking/CookieConsent";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 import { EnquiryDialog } from "@/components/sections/EnquiryDialog";
+import { MobileStickyCTA } from "@/components/MobileStickyCTA";
 import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const inter = Inter({
@@ -92,6 +93,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <MobileStickyCTA />
         <EnquiryDialog />
         {gtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
         {pixelId ? <MetaPixel pixelId={pixelId} /> : null}

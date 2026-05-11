@@ -1,4 +1,8 @@
-import { allReviews } from "@/lib/data/testimonials";
+import {
+  googleAggregateRating,
+  googleReviewCount,
+  googleReviews,
+} from "@/lib/data/testimonials";
 import { faqs } from "@/lib/data/faqs";
 
 const SITE_URL =
@@ -86,8 +90,8 @@ export function OrganizationSchema() {
         })),
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "5",
-          reviewCount: String(allReviews.length),
+          ratingValue: googleAggregateRating.toFixed(1),
+          reviewCount: String(googleReviewCount),
           bestRating: "5",
           worstRating: "1",
         },
@@ -109,13 +113,14 @@ export function OrganizationSchema() {
 }
 
 export function HomePageSchema() {
-  const reviewSchema = allReviews.map((r) => ({
+  const reviewSchema = googleReviews.map((r) => ({
     "@type": "Review",
     author: { "@type": "Person", name: r.name },
     reviewBody: r.body,
+    datePublished: r.date,
     reviewRating: {
       "@type": "Rating",
-      ratingValue: "5",
+      ratingValue: String(r.rating),
       bestRating: "5",
       worstRating: "1",
     },

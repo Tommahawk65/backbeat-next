@@ -40,7 +40,7 @@ export function MakeItANight() {
               Response
             </dt>
             <dd className="mt-1 font-display text-2xl text-zinc-900">
-              &lt; 24 hrs
+              Fast
             </dd>
           </div>
           <div>

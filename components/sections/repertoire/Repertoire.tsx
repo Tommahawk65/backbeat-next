@@ -30,18 +30,20 @@ export function Repertoire() {
     <section className="bg-cream py-16 sm:py-24 md:py-32">
       <Intro />
       <div className="mx-auto mt-16 max-w-6xl px-6">
-        <div className="mb-8 flex items-baseline justify-between border-b border-zinc-300 pb-3">
+        <div className="mb-8 flex flex-col gap-2 border-b border-zinc-300 pb-3 sm:flex-row sm:items-baseline sm:justify-between sm:gap-0">
           <span className="eyebrow">Party classics</span>
-          <span className="text-[0.65rem] uppercase tracking-[0.32em] text-zinc-500">
-            {partyClassics.length} songs · Reception &amp; floor
+          <span className="text-[0.65rem] uppercase tracking-[0.32em] [word-spacing:0.4em] text-zinc-500">
+            {partyClassics.length}
+            {" "}songs · Reception &amp; floor
           </span>
         </div>
         <SongList songs={partyClassics} />
 
-        <div className="mt-20 mb-8 flex items-baseline justify-between border-b border-zinc-300 pb-3">
+        <div className="mt-20 mb-8 flex flex-col gap-2 border-b border-zinc-300 pb-3 sm:flex-row sm:items-baseline sm:justify-between sm:gap-0">
           <span className="eyebrow">Acoustic add-on</span>
-          <span className="text-[0.65rem] uppercase tracking-[0.32em] text-zinc-500">
-            {acoustic.length} songs · Ceremony &amp; drinks
+          <span className="text-[0.65rem] uppercase tracking-[0.32em] [word-spacing:0.4em] text-zinc-500">
+            {acoustic.length}
+            {" "}songs · Ceremony &amp; drinks
           </span>
         </div>
         <SongList songs={acoustic} />

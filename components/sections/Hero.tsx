@@ -11,7 +11,7 @@ export function Hero() {
       id="hero"
       className="relative isolate w-full overflow-hidden bg-primary-dark text-white"
     >
-      <div className="relative h-[calc(100dvh-10rem)] min-h-[480px] w-full md:h-[calc(100dvh-12rem)] md:min-h-[560px]">
+      <div className="relative h-[calc(100svh-9rem)] min-h-[480px] w-full md:h-[calc(100svh-11rem)] md:min-h-[560px]">
         <Image
           src="/images/hero-mobile.jpg"
           alt=""
