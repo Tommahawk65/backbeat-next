@@ -135,7 +135,7 @@ export function EnquiryForm({ onSuccess, variant = "dark" }: EnquiryFormProps) {
           Message received
         </h3>
         <p className="mx-auto mt-4 max-w-sm text-sm opacity-75">
-          Thanks — we&apos;ll come back to you shortly with availability and a
+          Thanks. We&apos;ll come back to you shortly with availability and a
           tailored quote.
         </p>
       </div>

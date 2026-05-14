@@ -4,7 +4,7 @@ const items = [
   {
     Icon: Sparkles,
     title: "Built around your day",
-    body: "We'll learn your first dance — or any song that matters — at no extra cost.",
+    body: "We'll learn your first dance, or any song that matters, at no extra cost.",
   },
   {
     Icon: Award,

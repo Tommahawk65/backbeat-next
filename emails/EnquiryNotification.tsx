@@ -165,7 +165,7 @@ EnquiryNotification.PreviewProps = {
   eventDateFormatted: "Saturday, 12 September 2026",
   venue: "The Elvetham, Hook",
   message:
-    "We'd love you to learn our first dance — 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
+    "We'd love you to learn our first dance, 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
 } satisfies EnquiryNotificationProps;
 
 export default EnquiryNotification;

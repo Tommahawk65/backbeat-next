@@ -204,6 +204,17 @@ body:has(dialog.enquiry-dialog[open]) {
   }
 }
 
+/* On-load reveals: same keyframes, time-based instead of scroll-driven.
+   For content already visible at page load (e.g. peeking above the fold). */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-left-load {
+    animation: reveal-left 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .reveal-right-load {
+    animation: reveal-right 800ms 100ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
 @keyframes reveal-up {
   from {
     opacity: 0;
@@ -258,3 +269,4 @@ body:has(dialog.enquiry-dialog[open]) {
     filter: blur(0) saturate(1);
   }
 }
+

@@ -11,7 +11,7 @@ export function Hero() {
       id="hero"
       className="relative isolate w-full overflow-hidden bg-primary-dark text-white"
     >
-      <div className="relative h-[calc(100svh-9rem)] min-h-[480px] w-full md:h-[calc(100svh-11rem)] md:min-h-[560px]">
+      <div className="relative h-[calc(100svh-14rem)] min-h-[440px] w-full md:h-[calc(100svh-18rem)] md:min-h-[490px]">
         <Image
           src="/images/hero-mobile.jpg"
           alt=""
@@ -19,7 +19,7 @@ export function Hero() {
           priority
           fetchPriority="high"
           sizes="(max-width: 767px) 100vw, 0px"
-          className="object-cover object-center md:hidden"
+          className="object-cover object-[center_25%] md:hidden"
         />
         <Image
           src="/images/hero.jpg"
@@ -40,13 +40,13 @@ export function Hero() {
           className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"
         />
 
-        <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-10 sm:px-10 sm:pb-14 md:pb-16">
+        <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-5 sm:px-10 sm:pb-8 md:pb-10">
           <div>
             <span className="eyebrow eyebrow--on-dark">
               Hampshire &middot; South Coast &middot; UK-wide
             </span>
 
-            <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="mt-3 max-w-4xl text-3xl font-semibold leading-[1.05] tracking-tight text-white sm:mt-4 sm:text-5xl md:text-6xl lg:text-7xl">
               Weddings that end up
               <br className="hidden sm:block" />{" "}
               on the dance floor.

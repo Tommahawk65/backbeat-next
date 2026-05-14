@@ -51,11 +51,6 @@ export function HeroTrustBar() {
             <span>Hampshire &middot; UK-wide</span>
           </li>
 
-          <li className="hidden items-center gap-4 md:flex md:gap-7">
-            <Divider />
-            <span>DJ between &amp; after</span>
-          </li>
-
           <li className="flex items-center gap-4 sm:hidden">
             <Divider />
             <span>From &pound;1,900</span>

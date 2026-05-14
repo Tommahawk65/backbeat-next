@@ -61,7 +61,7 @@ export function EnquiryConfirmation({
           letterSpacing: "-0.02em",
         }}
       >
-        Thanks {firstName} — we&apos;ve got it.
+        Thanks {firstName}, we&apos;ve got it.
       </Heading>
 
       <Text
@@ -129,10 +129,10 @@ export function EnquiryConfirmation({
             color: brand.zinc700,
           }}
         >
-          Have a browse through our setlist — 60+ indie anthems, rock classics
+          Have a browse through our setlist: 60+ indie anthems, rock classics
           and modern chart hits that keep dance floors packed. And for your
-          first dance, pick any song you like — we&apos;ll learn it for you at
-          no extra cost.
+          first dance, pick any song you like and we&apos;ll learn it for you
+          at no extra cost.
         </Text>
         <div style={{ marginTop: "20px" }}>
           <Button
@@ -179,7 +179,7 @@ export function EnquiryConfirmation({
             fontWeight: 600,
           }}
         >
-          — Backbeat
+          Backbeat
         </Text>
         <Text
           style={{
@@ -205,7 +205,7 @@ EnquiryConfirmation.PreviewProps = {
   eventDateFormatted: "Saturday, 12 September 2026",
   venue: "The Elvetham, Hook",
   message:
-    "We'd love you to learn our first dance — 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
+    "We'd love you to learn our first dance, 'Better Together' by Jack Johnson. Let us know if that's something you could do!",
 } satisfies EnquiryConfirmationProps;
 
 export default EnquiryConfirmation;

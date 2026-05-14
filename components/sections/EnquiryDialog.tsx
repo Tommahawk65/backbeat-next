@@ -47,7 +47,7 @@ export function EnquiryDialog() {
           Let&apos;s make it a night.
         </h2>
         <p className="mt-3 text-sm text-white/65">
-          Tell us about your event &mdash; we&apos;ll reply quickly with
+          Tell us about your event. We&apos;ll reply quickly with
           availability and a tailored quote.
         </p>
         <div className="mt-8">

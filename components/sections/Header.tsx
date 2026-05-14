@@ -3,21 +3,69 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight, Mail } from "lucide-react";
 
 import { EnquiryTrigger } from "@/components/EnquiryTrigger";
 
 const navLinks = [
   { href: "/#video", label: "Video" },
-  { href: "/#gallery", label: "Gallery" },
   { href: "/#reviews", label: "Reviews" },
+  { href: "/#gallery", label: "Gallery" },
   { href: "/#faqs", label: "FAQs" },
   { href: "/repertoire", label: "Repertoire" },
 ];
 
+const homepageSectionIds = ["video", "reviews", "gallery", "faqs"] as const;
+
 export function Header() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const close = () => setOpen(false);
+
+  useEffect(() => {
+    if (pathname !== "/") {
+      setActiveSection(null);
+      return;
+    }
+    const elements = homepageSectionIds
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => Boolean(el));
+    if (elements.length === 0) return;
+
+    const visibility = new Map<string, number>();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          visibility.set(entry.target.id, entry.intersectionRatio);
+        }
+        let bestId: string | null = null;
+        let bestRatio = 0;
+        for (const [id, ratio] of visibility) {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = id;
+          }
+        }
+        setActiveSection(bestRatio > 0 ? bestId : null);
+      },
+      {
+        rootMargin: "-30% 0px -55% 0px",
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [pathname]);
+
+  const isActive = (href: string) => {
+    if (href.startsWith("/#")) {
+      return pathname === "/" && activeSection === href.slice(2);
+    }
+    return pathname === href || pathname?.startsWith(`${href}/`);
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -61,7 +109,7 @@ export function Header() {
         <Link
           href="/"
           onClick={close}
-          aria-label="Backbeat — Home"
+          aria-label="Backbeat Home"
           className="flex items-center"
         >
           <Image
@@ -76,15 +124,23 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-4 md:flex lg:gap-9">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="relative pl-[0.14em] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-white transition hover:text-accent after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 hover:after:scale-x-100 lg:pl-[0.18em] lg:text-[0.8rem] lg:tracking-[0.18em]"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {navLinks.map((l) => {
+            const active = isActive(l.href);
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                aria-current={active ? "page" : undefined}
+                className={`relative pl-[0.14em] text-[0.7rem] font-medium uppercase tracking-[0.14em] transition after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-accent after:transition-transform after:duration-300 hover:text-accent hover:after:scale-x-100 lg:pl-[0.18em] lg:text-[0.8rem] lg:tracking-[0.18em] ${
+                  active
+                    ? "text-accent after:scale-x-100"
+                    : "text-white after:scale-x-0"
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
           <EnquiryTrigger className="whitespace-nowrap rounded-full bg-accent px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-accent-light lg:px-5 lg:py-2.5 lg:text-[0.75rem] lg:tracking-[0.12em]">
             Check availability
           </EnquiryTrigger>

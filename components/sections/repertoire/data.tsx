@@ -101,7 +101,7 @@ export function groupByLetter(songs: Song[]) {
 export function Intro({
   eyebrow = "The setlist",
   title = "Floor-fillers, by request.",
-  blurb = "Over sixty tracks that keep dance floors packed — plus one song we'll learn just for you, at no extra cost.",
+  blurb = "Over sixty tracks that keep dance floors packed. Plus one song we'll learn just for you, at no extra cost.",
 }: {
   eyebrow?: string;
   title?: string;

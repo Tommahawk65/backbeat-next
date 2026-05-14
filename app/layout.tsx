@@ -14,6 +14,7 @@ import {
 } from "@/components/tracking/MetaPixel";
 import { ConsentDefault } from "@/components/tracking/ConsentDefault";
 import { CookieConsent } from "@/components/tracking/CookieConsent";
+import { FAQ } from "@/components/sections/FAQ";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 import { EnquiryDialog } from "@/components/sections/EnquiryDialog";
@@ -92,6 +93,7 @@ export default function RootLayout({
         {pixelId ? <MetaPixelNoscript pixelId={pixelId} /> : null}
         <Header />
         {children}
+        <FAQ />
         <Footer />
         <MobileStickyCTA />
         <EnquiryDialog />

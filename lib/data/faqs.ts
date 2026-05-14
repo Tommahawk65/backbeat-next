@@ -3,11 +3,11 @@ export type Faq = { q: string; a: string };
 export const faqs: Faq[] = [
   {
     q: "How much does it cost to book us?",
-    a: "Live music packages from £1,900. Pricing depends on event location, performance duration, and specific requirements — send us your event details for a tailored quote.",
+    a: "Live music packages from £1,900. Pricing depends on event location, performance duration, and specific requirements. Send us your event details for a tailored quote.",
   },
   {
     q: "How far do you travel?",
-    a: "We perform across Hampshire, Dorset, Surrey and beyond — whether your event is across the country or abroad, we're ready to bring live performance to you.",
+    a: "We perform across Hampshire, Dorset, Surrey and beyond. Whether your event is across the country or abroad, we're ready to bring live performance to you.",
   },
   {
     q: "How much time do you need for set-up?",
@@ -19,7 +19,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Can you provide music for our drinks reception?",
-    a: "Yes — we offer a 60-minute acoustic live-lounge duo set, ideal for setting the ambiance during drinks reception or dinner.",
+    a: "Yes. We offer a 60-minute acoustic live-lounge duo set, ideal for setting the ambiance during drinks reception or dinner.",
   },
   {
     q: "Does the band provide all their own equipment?",
@@ -27,6 +27,6 @@ export const faqs: Faq[] = [
   },
   {
     q: "Do you take requests?",
-    a: "Absolutely. As part of our service we'll learn a special song at no extra cost — whether it's your first dance or a standout main-set moment, let us know and we'll include it.",
+    a: "Absolutely. As part of our service we'll learn a special song at no extra cost, whether it's your first dance or a standout main-set moment. Let us know and we'll include it.",
   },
 ];

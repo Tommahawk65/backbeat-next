@@ -1,5 +1,6 @@
 import path from "node:path";
 import type { NextConfig } from "next";
+import { withSentryConfig } from "@sentry/nextjs";
 
 const nextConfig: NextConfig = {
   turbopack: {
@@ -35,4 +36,15 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withSentryConfig(nextConfig, {
+  // Auth — sourced from .env.local at build time; safe to leave undefined locally.
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+  authToken: process.env.SENTRY_AUTH_TOKEN,
+
+  // Quiet output unless a build is failing.
+  silent: !process.env.CI,
+
+  // Upload source maps so stack traces are readable. Only runs when auth token is present.
+  widenClientFileUpload: true,
+});

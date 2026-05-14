@@ -5,10 +5,10 @@ import { EnquiryTrigger } from "@/components/EnquiryTrigger";
 
 export function About() {
   return (
-    <section id="about" className="bg-cream py-16 sm:py-24 md:py-32">
+    <section id="about" className="bg-cream pt-12 pb-14 sm:pt-14 sm:pb-24 md:pt-20 md:pb-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
-          <div className="reveal-left hidden md:sticky md:top-28 md:block md:self-start">
+          <div className="reveal-left-load hidden md:sticky md:top-28 md:block md:self-start">
             <div className="@container relative aspect-[9/10]">
               <div className="absolute right-0 top-0 aspect-[2/3] w-[48%] overflow-hidden rounded-xl">
                 <Image
@@ -36,7 +36,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="reveal-right flex flex-col justify-center">
+          <div className="reveal-right-load flex flex-col justify-center">
             <span className="eyebrow">About the band</span>
             <h2 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-900 sm:text-5xl md:text-6xl">
               Hampshire&rsquo;s premier

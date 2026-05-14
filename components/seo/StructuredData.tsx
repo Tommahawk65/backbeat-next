@@ -62,7 +62,7 @@ export function OrganizationSchema() {
         name: "Backbeat",
         alternateName: "Backbeat Wedding Band",
         description:
-          "Hampshire's premier indie & rock wedding band. Live music packages from £1,900 — covering weddings, parties and corporate events across the South Coast and beyond.",
+          "Hampshire's premier indie & rock wedding band. Live music packages from £1,900, covering weddings, parties and corporate events across the South Coast and beyond.",
         url: SITE_URL,
         logo: `${SITE_URL}/images/logo-light.png`,
         image: `${SITE_URL}/images/hero.jpg`,

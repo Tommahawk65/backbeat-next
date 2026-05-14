@@ -15,10 +15,10 @@ export function MakeItANight() {
         </h2>
         <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-zinc-600">
           Tell us about your event and we&apos;ll come straight back with
-          availability and a tailored quote — usually within a few hours.
+          availability and a tailored quote, usually within a few hours.
         </p>
         <p className="mx-auto mt-3 max-w-md text-sm font-medium text-accent-dark">
-          Saturdays book up fast — peak season (May–Sept) goes early.
+          Saturdays book up fast. Peak season (May to Sept) goes early.
         </p>
         <div className="mt-10 flex flex-col items-center gap-4">
           <EnquiryTrigger className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold tracking-wide text-white shadow-lg transition hover:bg-accent-light">
@@ -26,39 +26,27 @@ export function MakeItANight() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </EnquiryTrigger>
         </div>
-        <dl className="mx-auto mt-14 grid max-w-2xl grid-cols-2 gap-8 text-sm sm:grid-cols-4">
-          <div>
-            <dt className="text-xs uppercase tracking-widest text-zinc-500">
-              From
-            </dt>
-            <dd className="mt-1 font-display text-2xl text-zinc-900">
-              £1,900
-            </dd>
-          </div>
-          <div>
-            <dt className="text-xs uppercase tracking-widest text-zinc-500">
-              Response
-            </dt>
-            <dd className="mt-1 font-display text-2xl text-zinc-900">
-              Fast
-            </dd>
-          </div>
-          <div>
-            <dt className="text-xs uppercase tracking-widest text-zinc-500">
-              Base
-            </dt>
-            <dd className="mt-1 font-display text-2xl text-zinc-900">
-              Hampshire
-            </dd>
-          </div>
-          <div>
-            <dt className="text-xs uppercase tracking-widest text-zinc-500">
-              Travel
-            </dt>
-            <dd className="mt-1 font-display text-2xl text-zinc-900">
-              South Coast &amp; UK-wide
-            </dd>
-          </div>
+        <dl className="mx-auto mt-14 grid max-w-2xl grid-cols-2 gap-y-8 text-sm sm:grid-cols-4">
+          {[
+            { label: "From", value: "£1,900" },
+            { label: "Response", value: "Fast" },
+            { label: "Base", value: "Hampshire" },
+            { label: "Travel", value: "UK & abroad" },
+          ].map((item, i) => (
+            <div
+              key={item.label}
+              className={`px-4 ${
+                i % 2 === 0 ? "border-r border-zinc-300" : ""
+              } sm:border-r sm:border-zinc-300 sm:[&:nth-child(4)]:border-r-0`}
+            >
+              <dt className="text-xs uppercase tracking-widest text-zinc-500">
+                {item.label}
+              </dt>
+              <dd className="mt-1 font-display text-2xl text-zinc-900">
+                {item.value}
+              </dd>
+            </div>
+          ))}
         </dl>
       </div>
     </section>

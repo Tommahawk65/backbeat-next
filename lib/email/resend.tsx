@@ -36,7 +36,7 @@ export async function sendEnquiryNotification(input: EnquiryInput) {
       from,
       to: [to],
       replyTo: input.email,
-      subject: `New enquiry — ${input.name} (${eventDate})`,
+      subject: `New enquiry: ${input.name} (${eventDate})`,
       react: (
         <EnquiryNotification
           name={input.name}
@@ -48,6 +48,67 @@ export async function sendEnquiryNotification(input: EnquiryInput) {
           gclid={input.gclid || undefined}
         />
       ),
+    });
+    if (result.error) {
+      return { ok: false, error: result.error.message };
+    }
+    return { ok: true, id: result.data?.id };
+  } catch (err) {
+    return { ok: false, error: err instanceof Error ? err.message : "unknown" };
+  }
+}
+
+export type FailureDetail = { step: string; detail: unknown };
+
+export async function sendFailureAlert(input: {
+  enquiry: EnquiryInput;
+  failures: FailureDetail[];
+}) {
+  const resend = getClient();
+  const to = process.env.RESEND_TO_EMAIL;
+  if (!resend || !to) {
+    return { ok: false, skipped: true, reason: "Resend not configured" as const };
+  }
+
+  const eventDate = dateFmt.format(input.enquiry.eventDate);
+  const from = process.env.RESEND_FROM_EMAIL ?? DEFAULT_FROM;
+
+  const failureLines = input.failures
+    .map((f) => {
+      let detail: string;
+      try {
+        detail = JSON.stringify(f.detail);
+      } catch {
+        detail = String(f.detail);
+      }
+      return `  - ${f.step}: ${detail.slice(0, 500)}`;
+    })
+    .join("\n");
+
+  const text = `One or more deferred steps failed for a new enquiry.
+
+The band notification email itself went through, so the lead is captured.
+You may need to manually action the items below.
+
+Enquiry:
+  Name:   ${input.enquiry.name}
+  Email:  ${input.enquiry.email}
+  Date:   ${eventDate}
+  Venue:  ${input.enquiry.venue}
+  Msg:    ${input.enquiry.message ?? "(none)"}
+  fbclid: ${input.enquiry.fbclid ?? "(none)"}
+  gclid:  ${input.enquiry.gclid ?? "(none)"}
+
+Failures:
+${failureLines}
+`;
+
+  try {
+    const result = await resend.emails.send({
+      from,
+      to: [to],
+      subject: `[ALERT] Enquiry from ${input.enquiry.name}: deferred steps failed`,
+      text,
     });
     if (result.error) {
       return { ok: false, error: result.error.message };
@@ -73,7 +134,7 @@ export async function sendEnquiryConfirmation(input: EnquiryInput) {
       from,
       to: [input.email],
       replyTo: process.env.RESEND_TO_EMAIL ?? undefined,
-      subject: `Thanks ${input.name.split(" ")[0]} — we've got your enquiry`,
+      subject: `Thanks ${input.name.split(" ")[0]}, we've got your enquiry`,
       react: (
         <EnquiryConfirmation
           name={input.name}

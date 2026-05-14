@@ -13,7 +13,7 @@ export function Partners() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="border-y border-zinc-200 py-6">
           <p className="eyebrow mb-4 block text-center">
-            Past audiences include couples across the South &mdash; and
+            Past audiences include couples across the South, and
             brands like
           </p>
           <div className="reveal-in flex flex-wrap items-center justify-center gap-x-12 gap-y-6 sm:justify-between sm:gap-x-8">

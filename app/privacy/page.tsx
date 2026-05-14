@@ -49,25 +49,25 @@ export default function PrivacyPage() {
             <p>When you use this site we may collect the following:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong>Enquiry form data</strong> — your name, email address,
+                <strong>Enquiry form data:</strong> your name, email address,
                 event date, venue or town, and any message you choose to
                 include.
               </li>
               <li>
-                <strong>Advertising click identifiers</strong> — where you
+                <strong>Advertising click identifiers:</strong> where you
                 arrive via a Google or Meta advert, we capture the{" "}
                 <code>gclid</code> / <code>fbclid</code> parameters so we can
                 attribute your enquiry to the correct campaign.
               </li>
               <li>
-                <strong>Technical data</strong> — your IP address, browser user
+                <strong>Technical data:</strong> your IP address, browser user
                 agent and referring page, collected automatically by our
                 hosting and security layers and used to protect against abuse
                 and to improve event-match quality for advertising (see
                 &ldquo;How we use your information&rdquo;).
               </li>
               <li>
-                <strong>Cookie and device data</strong> — see{" "}
+                <strong>Cookie and device data:</strong> see{" "}
                 <a
                   href="#cookies"
                   className="font-medium text-accent-dark underline"
@@ -111,18 +111,18 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong>Contract / pre-contractual steps</strong> — to respond
+                <strong>Contract / pre-contractual steps:</strong> to respond
                 to your enquiry and prepare a quote.
               </li>
               <li>
-                <strong>Legitimate interests</strong> — to secure our site, to
+                <strong>Legitimate interests:</strong> to secure our site, to
                 measure advertising effectiveness for campaigns you interacted
                 with, and to maintain CRM records of business enquiries. We
                 have assessed that these uses do not override your rights and
                 freedoms.
               </li>
               <li>
-                <strong>Consent</strong> — for all non-essential cookies and
+                <strong>Consent:</strong> for all non-essential cookies and
                 tracking (analytics and marketing). You can grant or withdraw
                 consent at any time via the cookie banner.
               </li>
@@ -137,20 +137,20 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong>Hosting and infrastructure providers</strong> — to run
+                <strong>Hosting and infrastructure providers:</strong> to run
                 the website and keep it secure.
               </li>
               <li>
-                <strong>Email delivery providers</strong> — to send you a
+                <strong>Email delivery providers:</strong> to send you a
                 confirmation and notify us of your enquiry.
               </li>
               <li>
-                <strong>Booking and CRM providers</strong> — so we can track
+                <strong>Booking and CRM providers:</strong> so we can track
                 and follow up on your enquiry.
               </li>
               <li>
                 <strong>Analytics and advertising providers</strong> (e.g.
-                Google, Meta) — to measure site usage and advertising
+                Google, Meta), to measure site usage and advertising
                 performance, only where you have given consent or where we
                 rely on legitimate interests for server-side conversion
                 reporting (see section 6).
@@ -174,7 +174,7 @@ export default function PrivacyPage() {
             <div className="mt-4 space-y-6">
               <CookieCategory
                 title="Strictly necessary"
-                purpose="Required for the site to function — remembering your consent choice, security, and form submission."
+                purpose="Required for the site to function. Remembering your consent choice, security, and form submission."
                 examples="cc_cookie (our consent record)"
                 consent="Always on"
               />
@@ -196,7 +196,7 @@ export default function PrivacyPage() {
               Conversions API) after you submit the enquiry form, we process
               only a hashed form of your email alongside technical data (IP,
               user-agent) on the basis of legitimate interest. You may object
-              to this use — see &ldquo;Your rights&rdquo; below.
+              to this use. See &ldquo;Your rights&rdquo; below.
             </p>
           </Section>
 
@@ -207,20 +207,20 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong>Enquiry and booking records</strong> — kept for as
+                <strong>Enquiry and booking records:</strong> kept for as
                 long as we have an active relationship with you, plus a
                 reasonable period afterwards to handle follow-up questions or
                 disputes. Where you become a client, we keep records for the
                 period required by UK tax and accounting law.
               </li>
               <li>
-                <strong>Analytics and advertising data</strong> — kept
+                <strong>Analytics and advertising data:</strong> kept
                 according to the standard retention periods set by the
                 relevant provider (for example, Google Analytics and Meta),
-                which are typically in the region of 12–14 months.
+                which are typically in the region of 12 to 14 months.
               </li>
               <li>
-                <strong>Consent records</strong> — kept for a reasonable
+                <strong>Consent records:</strong> kept for a reasonable
                 period so we can demonstrate that valid consent was given.
               </li>
             </ul>
