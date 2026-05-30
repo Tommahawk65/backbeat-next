@@ -14,9 +14,9 @@ export const exeter: CityRecord = {
   slug: "exeter",
   name: "Exeter",
   meta: {
-    title: "Exeter Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Exeter | Backbeat — From £1,900",
     description,
-    ogTitle: "Exeter Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Exeter | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Exeter",
@@ -34,8 +34,8 @@ export const exeter: CityRecord = {
     eyebrow: "Exeter · East Devon · Cathedral city",
     heading: (
       <>
-        An Exeter
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Exeter.
       </>
     ),
     subhead: (

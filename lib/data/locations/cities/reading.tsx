@@ -14,9 +14,9 @@ export const reading: CityRecord = {
   slug: "reading",
   name: "Reading",
   meta: {
-    title: "Reading Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Reading | Backbeat — From £1,900",
     description,
-    ogTitle: "Reading Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Reading | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Reading",
@@ -34,8 +34,8 @@ export const reading: CityRecord = {
     eyebrow: "Reading · Berkshire · Thames Valley",
     heading: (
       <>
-        A Reading
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Reading.
       </>
     ),
     subhead: (

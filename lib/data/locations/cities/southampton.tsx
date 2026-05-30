@@ -14,9 +14,9 @@ export const southampton: CityRecord = {
   slug: "southampton",
   name: "Southampton",
   meta: {
-    title: "Southampton Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Southampton | Backbeat — From £1,900",
     description,
-    ogTitle: "Southampton Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Southampton | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Southampton",
@@ -34,8 +34,8 @@ export const southampton: CityRecord = {
     eyebrow: "Southampton · Hampshire · Solent",
     heading: (
       <>
-        A Southampton
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Southampton.
       </>
     ),
     subhead: (

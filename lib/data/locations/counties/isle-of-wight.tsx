@@ -13,9 +13,9 @@ export const isleOfWight: CountyRecord = {
   slug: "isle-of-wight",
   name: "Isle of Wight",
   meta: {
-    title: "Isle of Wight Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Isle of Wight | Backbeat — From £1,900",
     description,
-    ogTitle: "Isle of Wight Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Isle of Wight | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Isle of Wight",
@@ -33,8 +33,8 @@ export const isleOfWight: CountyRecord = {
     eyebrow: "Isle of Wight · Solent · Ferry-ready",
     heading: (
       <>
-        A wedding band
-        <br className="hidden sm:block" /> for your Isle of Wight day.
+        Wedding bands
+        <br className="hidden sm:block" /> on the Isle of Wight.
       </>
     ),
     subhead: (

@@ -13,9 +13,9 @@ export const hampshire: CountyRecord = {
   slug: "hampshire",
   name: "Hampshire",
   meta: {
-    title: "Hampshire Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Hampshire | Backbeat — From £1,900",
     description,
-    ogTitle: "Hampshire Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Hampshire | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Hampshire",
@@ -33,8 +33,8 @@ export const hampshire: CountyRecord = {
     eyebrow: "Hampshire · South Coast · UK-wide",
     heading: (
       <>
-        Hampshire&rsquo;s premier
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Hampshire.
       </>
     ),
     subhead: (

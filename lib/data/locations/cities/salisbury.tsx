@@ -14,9 +14,9 @@ export const salisbury: CityRecord = {
   slug: "salisbury",
   name: "Salisbury",
   meta: {
-    title: "Salisbury Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Salisbury | Backbeat — From £1,900",
     description,
-    ogTitle: "Salisbury Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Salisbury | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Salisbury",
@@ -34,8 +34,8 @@ export const salisbury: CityRecord = {
     eyebrow: "Salisbury · Wiltshire · Cathedral city",
     heading: (
       <>
-        A Salisbury
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Salisbury.
       </>
     ),
     subhead: (

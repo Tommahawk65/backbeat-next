@@ -13,9 +13,9 @@ export const wiltshire: CountyRecord = {
   slug: "wiltshire",
   name: "Wiltshire",
   meta: {
-    title: "Wiltshire Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Wiltshire | Backbeat — From £1,900",
     description,
-    ogTitle: "Wiltshire Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Wiltshire | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Wiltshire",
@@ -33,7 +33,7 @@ export const wiltshire: CountyRecord = {
     eyebrow: "Wiltshire · Salisbury Plain · UK-wide",
     heading: (
       <>
-        A Wiltshire wedding band
+        Wedding bands in Wiltshire
         <br className="hidden sm:block" /> for manor houses and big nights.
       </>
     ),

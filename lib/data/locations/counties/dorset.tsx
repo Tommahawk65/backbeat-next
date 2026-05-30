@@ -13,9 +13,9 @@ export const dorset: CountyRecord = {
   slug: "dorset",
   name: "Dorset",
   meta: {
-    title: "Dorset Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Dorset | Backbeat — From £1,900",
     description,
-    ogTitle: "Dorset Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Dorset | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Dorset",
@@ -33,7 +33,7 @@ export const dorset: CountyRecord = {
     eyebrow: "Dorset · Jurassic Coast · UK-wide",
     heading: (
       <>
-        A Dorset wedding band
+        Wedding bands in Dorset
         <br className="hidden sm:block" /> with the soundtrack to match.
       </>
     ),

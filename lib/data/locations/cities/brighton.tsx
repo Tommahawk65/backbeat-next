@@ -14,9 +14,9 @@ export const brighton: CityRecord = {
   slug: "brighton",
   name: "Brighton",
   meta: {
-    title: "Brighton Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Brighton | Backbeat — From £1,900",
     description,
-    ogTitle: "Brighton Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Brighton | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Brighton",
@@ -34,8 +34,8 @@ export const brighton: CityRecord = {
     eyebrow: "Brighton · East Sussex · South Coast",
     heading: (
       <>
-        A Brighton
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Brighton.
       </>
     ),
     subhead: (

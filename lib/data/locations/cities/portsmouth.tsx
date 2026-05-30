@@ -14,9 +14,9 @@ export const portsmouth: CityRecord = {
   slug: "portsmouth",
   name: "Portsmouth",
   meta: {
-    title: "Portsmouth Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Portsmouth | Backbeat — From £1,900",
     description,
-    ogTitle: "Portsmouth Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Portsmouth | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Portsmouth",
@@ -34,8 +34,8 @@ export const portsmouth: CityRecord = {
     eyebrow: "Portsmouth · Hampshire · Solent",
     heading: (
       <>
-        A Portsmouth
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Portsmouth.
       </>
     ),
     subhead: (

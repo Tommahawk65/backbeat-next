@@ -40,25 +40,25 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Hampshire's Premier Wedding & Party Band | Backbeat",
+    default: "Backbeat | Live Indie & Rock Wedding Band — From £1,900",
     template: "%s | Backbeat",
   },
   description:
-    "Award-winning Hampshire wedding band delivering unforgettable live performances for weddings, parties and events across Southampton, Portsmouth and the South Coast.",
+    "Backbeat are a live indie and rock wedding band based in Southampton, covering the south of England and beyond. Packages from £1,900 with full PA, lighting and DJ between sets. Check availability for your date.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Backbeat Wedding Band",
     url: siteUrl,
-    title: "Hampshire's Premier Wedding & Party Band | Backbeat",
+    title: "Backbeat | Live Indie & Rock Wedding Band — From £1,900",
     description:
-      "Award-winning Hampshire wedding band. Live music packages from £1,900.",
+      "Live indie and rock wedding band. Packages from £1,900. Based in Southampton, covering the south of England.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hampshire's Premier Wedding & Party Band | Backbeat",
+    title: "Backbeat | Live Indie & Rock Wedding Band — From £1,900",
     description:
-      "Award-winning Hampshire wedding band. Live music packages from £1,900.",
+      "Live indie and rock wedding band. Packages from £1,900. Based in Southampton, covering the south of England.",
   },
   icons: { icon: "/icon.png", apple: "/icon.png" },
   other: {

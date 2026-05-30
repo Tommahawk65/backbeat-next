@@ -14,9 +14,9 @@ export const tunbridgeWells: CityRecord = {
   slug: "tunbridge-wells",
   name: "Tunbridge Wells",
   meta: {
-    title: "Tunbridge Wells Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Tunbridge Wells | Backbeat — From £1,900",
     description,
-    ogTitle: "Tunbridge Wells Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Tunbridge Wells | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Tunbridge Wells",
@@ -34,8 +34,8 @@ export const tunbridgeWells: CityRecord = {
     eyebrow: "Tunbridge Wells · Kent · West Kent",
     heading: (
       <>
-        A Tunbridge Wells
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Tunbridge Wells.
       </>
     ),
     subhead: (

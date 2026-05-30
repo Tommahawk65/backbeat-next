@@ -14,9 +14,9 @@ export const bournemouth: CityRecord = {
   slug: "bournemouth",
   name: "Bournemouth",
   meta: {
-    title: "Bournemouth Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Bournemouth | Backbeat — From £1,900",
     description,
-    ogTitle: "Bournemouth Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Bournemouth | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Bournemouth",
@@ -34,8 +34,8 @@ export const bournemouth: CityRecord = {
     eyebrow: "Bournemouth · Dorset · Jurassic Coast",
     heading: (
       <>
-        A Bournemouth
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Bournemouth.
       </>
     ),
     subhead: (

@@ -14,9 +14,9 @@ export const oxford: CityRecord = {
   slug: "oxford",
   name: "Oxford",
   meta: {
-    title: "Oxford Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Oxford | Backbeat — From £1,900",
     description,
-    ogTitle: "Oxford Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Oxford | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Oxford",
@@ -34,7 +34,7 @@ export const oxford: CityRecord = {
     eyebrow: "Oxford · Oxfordshire · Colleges",
     heading: (
       <>
-        An Oxford wedding band
+        Wedding bands in Oxford
         <br className="hidden sm:block" /> the colleges have already booked.
       </>
     ),

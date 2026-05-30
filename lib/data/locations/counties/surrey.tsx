@@ -13,9 +13,9 @@ export const surrey: CountyRecord = {
   slug: "surrey",
   name: "Surrey",
   meta: {
-    title: "Surrey Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Surrey | Backbeat — From £1,900",
     description,
-    ogTitle: "Surrey Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Surrey | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Surrey",
@@ -33,7 +33,7 @@ export const surrey: CountyRecord = {
     eyebrow: "Surrey · Hampshire borders · UK-wide",
     heading: (
       <>
-        A Surrey wedding band
+        Wedding bands in Surrey
         <br className="hidden sm:block" /> the dance floor remembers.
       </>
     ),

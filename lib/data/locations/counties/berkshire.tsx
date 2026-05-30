@@ -13,9 +13,9 @@ export const berkshire: CountyRecord = {
   slug: "berkshire",
   name: "Berkshire",
   meta: {
-    title: "Berkshire Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Berkshire | Backbeat — From £1,900",
     description,
-    ogTitle: "Berkshire Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Berkshire | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Berkshire",
@@ -33,8 +33,8 @@ export const berkshire: CountyRecord = {
     eyebrow: "Berkshire · Royal County · UK-wide",
     heading: (
       <>
-        A Berkshire wedding band
-        <br className="hidden sm:block" /> that lifts the room.
+        Wedding bands in Berkshire
+        <br className="hidden sm:block" /> that lift the room.
       </>
     ),
     subhead: (

@@ -13,9 +13,9 @@ export const greaterLondon: CountyRecord = {
   slug: "greater-london",
   name: "Greater London",
   meta: {
-    title: "London Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in London | Backbeat — From £1,900",
     description,
-    ogTitle: "London Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in London | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Greater London",
@@ -33,7 +33,7 @@ export const greaterLondon: CountyRecord = {
     eyebrow: "Greater London · Capital · UK-wide",
     heading: (
       <>
-        A London wedding band
+        Wedding bands in London
         <br className="hidden sm:block" /> for the capital.
       </>
     ),

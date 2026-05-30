@@ -13,9 +13,9 @@ export const oxfordshire: CountyRecord = {
   slug: "oxfordshire",
   name: "Oxfordshire",
   meta: {
-    title: "Oxfordshire Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Oxfordshire | Backbeat — From £1,900",
     description,
-    ogTitle: "Oxfordshire Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Oxfordshire | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Oxfordshire",
@@ -33,7 +33,7 @@ export const oxfordshire: CountyRecord = {
     eyebrow: "Oxfordshire · Cotswolds · UK-wide",
     heading: (
       <>
-        An Oxfordshire wedding band
+        Wedding bands in Oxfordshire
         <br className="hidden sm:block" /> the colleges have already booked.
       </>
     ),

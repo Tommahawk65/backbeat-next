@@ -13,9 +13,9 @@ export const eastDevon: CountyRecord = {
   slug: "east-devon",
   name: "East Devon",
   meta: {
-    title: "East Devon Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in East Devon | Backbeat — From £1,900",
     description,
-    ogTitle: "East Devon Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in East Devon | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "East Devon",
@@ -33,8 +33,8 @@ export const eastDevon: CountyRecord = {
     eyebrow: "East Devon · Jurassic Coast · UK-wide",
     heading: (
       <>
-        A wedding band
-        <br className="hidden sm:block" /> for East Devon weddings.
+        Wedding bands
+        <br className="hidden sm:block" /> in East Devon.
       </>
     ),
     subhead: (

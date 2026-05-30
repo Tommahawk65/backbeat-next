@@ -13,9 +13,9 @@ export const somerset: CountyRecord = {
   slug: "somerset",
   name: "Somerset",
   meta: {
-    title: "Somerset Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Somerset | Backbeat — From £1,900",
     description,
-    ogTitle: "Somerset Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Somerset | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Somerset",
@@ -33,7 +33,7 @@ export const somerset: CountyRecord = {
     eyebrow: "Somerset · Bath · Mendips",
     heading: (
       <>
-        A Somerset wedding band
+        Wedding bands in Somerset
         <br className="hidden sm:block" /> for Bath and beyond.
       </>
     ),

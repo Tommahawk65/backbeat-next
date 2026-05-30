@@ -13,9 +13,9 @@ export const buckinghamshire: CountyRecord = {
   slug: "buckinghamshire",
   name: "Buckinghamshire",
   meta: {
-    title: "Buckinghamshire Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Buckinghamshire | Backbeat — From £1,900",
     description,
-    ogTitle: "Buckinghamshire Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Buckinghamshire | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Buckinghamshire",
@@ -33,7 +33,7 @@ export const buckinghamshire: CountyRecord = {
     eyebrow: "Buckinghamshire · Chilterns · Thames",
     heading: (
       <>
-        A Buckinghamshire wedding band
+        Wedding bands in Buckinghamshire
         <br className="hidden sm:block" /> for the Chilterns and the Thames.
       </>
     ),

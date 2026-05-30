@@ -14,9 +14,9 @@ export const chichester: CityRecord = {
   slug: "chichester",
   name: "Chichester",
   meta: {
-    title: "Chichester Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Chichester | Backbeat — From £1,900",
     description,
-    ogTitle: "Chichester Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Chichester | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Chichester",
@@ -34,8 +34,8 @@ export const chichester: CityRecord = {
     eyebrow: "Chichester · West Sussex · South Downs",
     heading: (
       <>
-        A Chichester
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Chichester.
       </>
     ),
     subhead: (

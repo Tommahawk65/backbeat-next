@@ -14,9 +14,9 @@ export const marlow: CityRecord = {
   slug: "marlow",
   name: "Marlow",
   meta: {
-    title: "Marlow Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Marlow | Backbeat — From £1,900",
     description,
-    ogTitle: "Marlow Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Marlow | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Marlow",
@@ -34,8 +34,8 @@ export const marlow: CityRecord = {
     eyebrow: "Marlow · Buckinghamshire · Thames",
     heading: (
       <>
-        A Marlow
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Marlow.
       </>
     ),
     subhead: (

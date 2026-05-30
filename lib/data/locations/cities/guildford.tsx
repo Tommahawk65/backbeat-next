@@ -14,9 +14,9 @@ export const guildford: CityRecord = {
   slug: "guildford",
   name: "Guildford",
   meta: {
-    title: "Guildford Wedding Band | Live Music From £1,900",
+    title: "Wedding Bands in Guildford | Backbeat — From £1,900",
     description,
-    ogTitle: "Guildford Wedding Band | Backbeat. From £1,900",
+    ogTitle: "Wedding Bands in Guildford | Backbeat — From £1,900",
   },
   schema: {
     areaServed: "Guildford",
@@ -34,8 +34,8 @@ export const guildford: CityRecord = {
     eyebrow: "Guildford · Surrey · Surrey Hills",
     heading: (
       <>
-        A Guildford
-        <br className="hidden sm:block" /> wedding band.
+        Wedding bands
+        <br className="hidden sm:block" /> in Guildford.
       </>
     ),
     subhead: (
