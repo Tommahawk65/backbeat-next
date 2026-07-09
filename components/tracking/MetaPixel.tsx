@@ -1,16 +1,10 @@
-"use client";
-
 import Script from "next/script";
-
-import { useMarketingConsent } from "@/lib/consent";
 
 type Props = { pixelId: string };
 
 export function MetaPixel({ pixelId }: Props) {
-  const granted = useMarketingConsent();
-  if (!granted) return null;
   return (
-    <Script id="meta-pixel" strategy="lazyOnload">
+    <Script id="meta-pixel" strategy="afterInteractive">
       {`!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};n.push=n;n.loaded=!0;n.version='2.0';

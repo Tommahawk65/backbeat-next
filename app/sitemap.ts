@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${SITE_URL}/corporate-events`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     ...counties.map((county) => ({
       url: `${SITE_URL}/wedding-bands/${county.slug}`,
       lastModified,
