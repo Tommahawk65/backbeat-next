@@ -13,9 +13,9 @@ export const buckinghamshire: CountyRecord = {
   slug: "buckinghamshire",
   name: "Buckinghamshire",
   meta: {
-    title: "Wedding Bands in Buckinghamshire | Backbeat — From £1,900",
+    title: "Wedding Bands in Buckinghamshire — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Buckinghamshire | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Buckinghamshire — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Buckinghamshire",

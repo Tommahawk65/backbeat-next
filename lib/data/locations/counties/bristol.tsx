@@ -13,9 +13,9 @@ export const bristol: CountyRecord = {
   slug: "bristol",
   name: "Bristol",
   meta: {
-    title: "Wedding Bands in Bristol | Backbeat — From £1,900",
+    title: "Wedding Bands in Bristol — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Bristol | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Bristol — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Bristol",

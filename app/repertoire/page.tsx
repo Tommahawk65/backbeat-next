@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { Repertoire } from "@/components/sections/repertoire/Repertoire";
+import { WherePlay } from "@/components/sections/WherePlay";
 
 export const metadata: Metadata = {
   title: "Wedding Band Setlist: 60+ Songs",
@@ -20,6 +21,7 @@ export default function RepertoirePage() {
   return (
     <main className="flex flex-1 flex-col overflow-x-clip">
       <Repertoire />
+      <WherePlay />
     </main>
   );
 }

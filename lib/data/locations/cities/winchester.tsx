@@ -14,9 +14,9 @@ export const winchester: CityRecord = {
   slug: "winchester",
   name: "Winchester",
   meta: {
-    title: "Wedding Bands in Winchester | Backbeat — From £1,900",
+    title: "Wedding Bands in Winchester — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Winchester | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Winchester — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Winchester",

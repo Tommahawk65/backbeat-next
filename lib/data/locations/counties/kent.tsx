@@ -13,9 +13,9 @@ export const kent: CountyRecord = {
   slug: "kent",
   name: "Kent",
   meta: {
-    title: "Wedding Bands in Kent | Backbeat — From £1,900",
+    title: "Wedding Bands in Kent — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Kent | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Kent — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Kent",

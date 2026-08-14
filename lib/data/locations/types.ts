@@ -31,6 +31,13 @@ export type LocationCTACopy = {
   body: ReactNode;
 };
 
+export type LocationFAQ = {
+  /** Question — must be phrased as an actual question a couple would type. */
+  q: string;
+  /** Answer — plain text (no JSX). Also used for FAQPage schema. */
+  a: string;
+};
+
 export type LocationMeta = {
   title: string;
   description: string;
@@ -51,6 +58,8 @@ type LocationBase = {
   intro: LocationIntroCopy;
   venues: LocationVenuesCopy;
   cta: LocationCTACopy;
+  /** Optional location-specific FAQs. Rendered as accordion + emitted as FAQPage schema. */
+  faqs?: LocationFAQ[];
 };
 
 export type CountyRecord = LocationBase & {

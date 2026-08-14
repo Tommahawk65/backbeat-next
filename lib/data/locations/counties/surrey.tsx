@@ -13,9 +13,9 @@ export const surrey: CountyRecord = {
   slug: "surrey",
   name: "Surrey",
   meta: {
-    title: "Wedding Bands in Surrey | Backbeat — From £1,900",
+    title: "Wedding Bands in Surrey — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Surrey | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Surrey — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Surrey",
@@ -177,4 +177,26 @@ export const surrey: CountyRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "Do you travel from Hampshire to Surrey?",
+      a: "Yes. Surrey sits inside our regular season patch, roughly 90 minutes' drive from base. No travel surcharge for standard Surrey coverage. That covers the county from Guildford and Farnham through to Weybridge, Dorking and the M25 belt.",
+    },
+    {
+      q: "Do you know the Surrey wedding venues?",
+      a: "Yes. Well-known Surrey wedding venues include Pennyhill Park, Beaverbrook, Foxhills, Farnham Castle, Loseley Park, Great Fosters (just over the border), Northbrook Park, Burrows Lea and Wotton House. If your venue isn't on that list, tell us — we're happy to talk you through what to expect.",
+    },
+    {
+      q: "What are curfews and sound rules like at Surrey venues?",
+      a: "Country hotels and country-estate venues in Surrey often allow later finishes. Village-hall style venues and residential-neighbour rooms can carry earlier cut-offs from local planning. We confirm the specific curfew, sound-limiter setup and any coordinator's rules the week before, and pace the closing set to land at the actual end of the night.",
+    },
+    {
+      q: "What kind of setlist works for a Surrey wedding?",
+      a: "Surrey crowds are strongly London-commute influenced — the modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) tends to land well alongside the indie/rock backbone (Arctic Monkeys, Kings of Leon, The Killers). Wedding non-negotiables (Mr Brightside, Don't Stop Me Now, Sweet Caroline) hit the back-half peaks. Full set list is on the repertoire page.",
+    },
+    {
+      q: "How quickly can you confirm availability for a Surrey date?",
+      a: "Within 24 hours of your enquiry, normally sooner. Send us the date, venue and any thoughts on the vibe and we'll come back with a tailored quote.",
+    },
+  ],
 };

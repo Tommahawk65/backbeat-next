@@ -8,6 +8,7 @@ import { LocationHero } from "@/components/sections/location/LocationHero";
 import { LocationIntro } from "@/components/sections/location/LocationIntro";
 import { LocationTrustStrip } from "@/components/sections/location/LocationTrustStrip";
 import { LocationVenues } from "@/components/sections/location/LocationVenues";
+import { LocationFAQ } from "@/components/sections/location/LocationFAQ";
 import { LocationCTA } from "@/components/sections/location/LocationCTA";
 import { LocationSchema } from "@/components/seo/LocationSchema";
 
@@ -162,6 +163,14 @@ export default async function WeddingBandLocationPage({
             </ul>
           </div>
         </section>
+      ) : null}
+
+      {location.faqs && location.faqs.length > 0 ? (
+        <LocationFAQ
+          eyebrow={`${location.name} · Common questions`}
+          heading={`${location.name} wedding questions, answered.`}
+          faqs={location.faqs}
+        />
       ) : null}
 
       <LocationCTA

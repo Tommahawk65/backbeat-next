@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     template: "%s | Backbeat",
   },
   description:
-    "Backbeat are a live indie and rock wedding band based in Southampton, covering the south of England and beyond. Packages from £1,900 with full PA, lighting and DJ between sets. Check availability for your date.",
+    "Backbeat are a live indie and rock wedding band based in Hampshire, covering the south of England and beyond. Packages from £1,900 with full PA, lighting and DJ between sets. Check availability for your date.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Backbeat | Live Indie & Rock Wedding Band — From £1,900",
     description:
-      "Live indie and rock wedding band. Packages from £1,900. Based in Southampton, covering the south of England.",
+      "Live indie and rock wedding band. Packages from £1,900. Hampshire-based, covering the south of England.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Backbeat | Live Indie & Rock Wedding Band — From £1,900",
     description:
-      "Live indie and rock wedding band. Packages from £1,900. Based in Southampton, covering the south of England.",
+      "Live indie and rock wedding band. Packages from £1,900. Hampshire-based, covering the south of England.",
   },
   icons: { icon: "/icon.png", apple: "/icon.png" },
   other: {

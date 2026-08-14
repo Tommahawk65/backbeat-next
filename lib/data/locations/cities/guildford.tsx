@@ -14,9 +14,9 @@ export const guildford: CityRecord = {
   slug: "guildford",
   name: "Guildford",
   meta: {
-    title: "Wedding Bands in Guildford | Backbeat — From £1,900",
+    title: "Wedding Bands in Guildford — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Guildford | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Guildford — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Guildford",

@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { CountyRecord } from "../types";
 
 const description =
-  "Isle of Wight wedding band Backbeat. Mainland-based live indie and rock band that travels to weddings across the island. Ferry-experienced, fully self-contained. Packages from £1,900.";
+  "Wedding bands on the Isle of Wight from £1,900. Live indie & rock, ferry-experienced, fully self-contained. 5-star Google reviews. Check availability.";
 
 const linkClass =
   "underline decoration-zinc-300 underline-offset-4 transition hover:text-accent hover:decoration-accent";
@@ -13,9 +13,9 @@ export const isleOfWight: CountyRecord = {
   slug: "isle-of-wight",
   name: "Isle of Wight",
   meta: {
-    title: "Wedding Bands in Isle of Wight | Backbeat — From £1,900",
+    title: "Wedding Bands in Isle of Wight — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Isle of Wight | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Isle of Wight — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Isle of Wight",
@@ -186,4 +186,26 @@ export const isleOfWight: CountyRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "How do you get to the Isle of Wight for a wedding?",
+      a: "By ferry. We use Wightlink Portsmouth-Fishbourne, Red Funnel Southampton-East Cowes, or Wightlink Lymington-Yarmouth depending on which side of the island your venue is on. We factor the crossing cost into your quote up front — no surprises.",
+    },
+    {
+      q: "Do you have to stay overnight on the island?",
+      a: "It depends on your closing time versus the last ferry off the island (typically between 11pm and 12:30am, route-dependent). Either we plan the closing set to make the last sailing with kit packed, or we stay overnight and factor that into the quote. Both are fine — we agree it up front.",
+    },
+    {
+      q: "What if something goes wrong with your kit on the island?",
+      a: "We plan around it. We arrive on an earlier crossing than we strictly need to, and we bring backup cables and spare essentials for the parts that could fail. The answer to \"can we just nip back for it?\" on the Isle of Wight is no, so we don't rely on being able to.",
+    },
+    {
+      q: "Do you know Isle of Wight wedding venues?",
+      a: "Yes. Well-known island wedding venues include Quarr Abbey, Osborne House, Robin Hill, The George Hotel, Tapnell Farm, North House, The Hambrough, Royal Hotel Ventnor, Haven Hall and Cowes Yacht Haven. If yours isn't on that list, tell us — we're happy to talk you through what to expect.",
+    },
+    {
+      q: "How quickly can you confirm availability for an Isle of Wight wedding?",
+      a: "Within 24 hours of your enquiry. Send us the date, venue and any thoughts on your ferry timings and we'll come back with a tailored quote.",
+    },
+  ],
 };

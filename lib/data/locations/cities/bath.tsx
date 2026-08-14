@@ -14,9 +14,9 @@ export const bath: CityRecord = {
   slug: "bath",
   name: "Bath",
   meta: {
-    title: "Wedding Bands in Bath | Backbeat — From £1,900",
+    title: "Wedding Bands in Bath — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Bath | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Bath — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Bath",

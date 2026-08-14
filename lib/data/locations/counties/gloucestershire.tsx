@@ -13,9 +13,9 @@ export const gloucestershire: CountyRecord = {
   slug: "gloucestershire",
   name: "Gloucestershire",
   meta: {
-    title: "Wedding Bands in Gloucestershire | Backbeat — From £1,900",
+    title: "Wedding Bands in Gloucestershire — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Gloucestershire | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Gloucestershire — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Gloucestershire",

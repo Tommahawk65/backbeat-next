@@ -13,9 +13,9 @@ export const wiltshire: CountyRecord = {
   slug: "wiltshire",
   name: "Wiltshire",
   meta: {
-    title: "Wedding Bands in Wiltshire | Backbeat — From £1,900",
+    title: "Wedding Bands in Wiltshire — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Wiltshire | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Wiltshire — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Wiltshire",

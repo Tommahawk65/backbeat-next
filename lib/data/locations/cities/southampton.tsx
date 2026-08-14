@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { CityRecord } from "../types";
 
 const description =
-  "Southampton wedding band Backbeat. Live indie and rock for harbour, hotel and country-estate weddings across Southampton and the New Forest edge. Hampshire-based. Packages from £1,900.";
+  "Wedding bands in Southampton from £1,900. Backbeat: live indie & rock for harbour hotels & country-estate weddings. 5-star Google reviews. Check availability.";
 
 const linkClass =
   "underline decoration-zinc-300 underline-offset-4 transition hover:text-accent hover:decoration-accent";
@@ -14,9 +14,9 @@ export const southampton: CityRecord = {
   slug: "southampton",
   name: "Southampton",
   meta: {
-    title: "Wedding Bands in Southampton | Backbeat — From £1,900",
+    title: "Wedding Bands in Southampton — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Southampton | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Southampton — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Southampton",
@@ -168,4 +168,26 @@ export const southampton: CityRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "Are you actually based in Southampton?",
+      a: "Yes. Backbeat is a Southampton-based band, and the city sits at the centre of our regular wedding-season patch. Home turf for us. No travel surcharge, no overnight accommodation, no anxious 4am drives.",
+    },
+    {
+      q: "Do you know the Southampton wedding venues?",
+      a: "Yes. Well-known Southampton and Southampton-edge wedding venues include Harbour Hotel, Grand Harbour, Pig in the Wall, Botleigh Grange, Botley Park, Solent Hotel & Spa, Rhinefield House, The Master Builder's and Careys Manor. Many Southampton couples marry on the New Forest edge — that's part of our home patch. If yours isn't listed, tell us.",
+    },
+    {
+      q: "What are curfews like at Southampton venues?",
+      a: "Harbourside hotels sometimes carry earlier cut-offs from residential neighbours. Country-estate venues on the New Forest edge often allow later finishes. We confirm the specific curfew, sound-limiter setup and coordinator's rules the week before, and pace the closing set to land at the actual end of the night.",
+    },
+    {
+      q: "What setlist works for a Southampton wedding?",
+      a: "Southampton crowds are a mix of Solent locals, Hampshire families and London-weekend guests. Setlist leans Arctic Monkeys, Kings of Leon and The Killers for the late floor, Oasis and Stereophonics for the singalongs, modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) layered through. Wedding non-negotiables (Mr Brightside, Don't Stop Me Now, Sweet Caroline) hit the back-half peaks.",
+    },
+    {
+      q: "How quickly can you confirm availability?",
+      a: "Within 24 hours of your enquiry, normally sooner. Send us the date, venue and any thoughts on the vibe and we'll come back with a tailored quote.",
+    },
+  ],
 };

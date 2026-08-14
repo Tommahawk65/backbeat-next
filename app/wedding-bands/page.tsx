@@ -12,11 +12,11 @@ const description =
   "Backbeat is a Hampshire-based wedding band covering the south of England. Live indie and rock music for weddings within 2 hours 30 of Southampton, across Hampshire, Surrey, Berkshire, Sussex, Kent, Dorset, Wiltshire, Somerset, Gloucestershire, Oxfordshire, Buckinghamshire, Bristol, London and East Devon. Packages from £1,900.";
 
 export const metadata: Metadata = {
-  title: "Wedding Bands | Backbeat. Live Music From £1,900",
+  title: "Wedding Bands Across the South of England",
   description,
   alternates: { canonical: "/wedding-bands" },
   openGraph: {
-    title: "Wedding Bands | Backbeat. Live Music From £1,900",
+    title: "Wedding Bands Across the South of England | Backbeat",
     description,
     url: "/wedding-bands",
     type: "website",

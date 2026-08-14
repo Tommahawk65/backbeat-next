@@ -19,6 +19,15 @@ function initSentry() {
       "Network request failed",
       "Failed to fetch",
       "Load failed",
+      // Facebook / Instagram in-app WebView bridge errors (not our code)
+      /window\.webkit\.messageHandlers/,
+      /webkit\.messageHandlers.*postMessage/,
+      // Other in-app WebView native-bridge noise (WeChat, Line, TikTok, etc.)
+      "WeixinJSBridge is not defined",
+      /TAP_iframe/,
+      // Instagram in-app browser
+      "Can't find variable: FB",
+      /IABTelemetryPlugin/,
     ],
     denyUrls: [
       /^chrome-extension:\/\//i,

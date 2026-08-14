@@ -13,7 +13,7 @@ const description =
   "Live indie & rock band for corporate events, summer parties, brand launches, conferences and award dinners. Hampshire-based, covering the south of England and beyond. Packages from £1,900 with full PA, lighting and DJ between sets.";
 
 export const metadata: Metadata = {
-  title: "Live Band for Corporate Events | Backbeat — From £1,900",
+  title: "Live Band for Corporate Events — From £1,900",
   description,
   alternates: { canonical: PATH },
   openGraph: {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { CountyRecord } from "../types";
 
 const description =
-  "Hampshire wedding band Backbeat. Live indie and rock music for weddings across Southampton, Winchester, Portsmouth and the New Forest. Packages from £1,900.";
+  "Wedding bands in Hampshire & the New Forest from £1,900. Live indie & rock for Southampton, Winchester and Portsmouth weddings. 5-star Google reviews.";
 
 const linkClass =
   "underline decoration-zinc-300 underline-offset-4 transition hover:text-accent hover:decoration-accent";
@@ -13,9 +13,9 @@ export const hampshire: CountyRecord = {
   slug: "hampshire",
   name: "Hampshire",
   meta: {
-    title: "Wedding Bands in Hampshire | Backbeat — From £1,900",
+    title: "Wedding Bands in Hampshire & the New Forest — From £1,900",
     description,
-    ogTitle: "Wedding Bands in Hampshire | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Hampshire & the New Forest — From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Hampshire",
@@ -181,4 +181,26 @@ export const hampshire: CountyRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "Do you charge extra to travel within Hampshire?",
+      a: "No. Backbeat is Hampshire-based, so there's no travel surcharge for weddings anywhere across the county — from New Forest marquees and Winchester country houses to Portsmouth harbour venues. Most of the season we're gigging within a 90-minute drive of base.",
+    },
+    {
+      q: "Do you know the popular Hampshire wedding venues?",
+      a: "Yes. Well-known Hampshire wedding venues include Tylney Hall, Lainston House, Heckfield Place, Rhinefield House, Careys Manor, Beaulieu, The Master Builder's, Four Seasons Hampshire, Marwell Hotel and Audleys Wood. If your venue isn't on that list, tell us — we're happy to talk you through what to expect.",
+    },
+    {
+      q: "What are curfews and sound limits like at Hampshire venues?",
+      a: "It varies venue by venue. Town-centre and residential-neighbour venues typically run earlier cut-offs from local planning conditions. New Forest country houses, South Downs barns and private-land venues often allow later finishes. We confirm the specific curfew, any sound-limiter setup and the coordinator's rules the week before, and pace the closing set to land at the actual end of the night.",
+    },
+    {
+      q: "What kind of setlist do Hampshire wedding crowds respond to?",
+      a: "The late floor leans Arctic Monkeys, Kings of Leon and The Killers. Singalong moments lean Oasis and Stereophonics. We layer in a modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) for the younger guests, and wedding non-negotiables (Mr Brightside, Don't Stop Me Now, Sweet Caroline) hit the back-half peaks. Full set list is on the repertoire page.",
+    },
+    {
+      q: "How quickly can you confirm availability for our Hampshire wedding?",
+      a: "Within 24 hours of your enquiry, normally sooner. Send us the date, venue and any thoughts on the vibe and we'll come back with availability, a tailored quote and answers to anything else you need.",
+    },
+  ],
 };

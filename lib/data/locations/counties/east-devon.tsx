@@ -13,9 +13,9 @@ export const eastDevon: CountyRecord = {
   slug: "east-devon",
   name: "East Devon",
   meta: {
-    title: "Wedding Bands in East Devon | Backbeat — From £1,900",
+    title: "Wedding Bands in East Devon — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in East Devon | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in East Devon — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "East Devon",

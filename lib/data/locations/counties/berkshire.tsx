@@ -13,9 +13,9 @@ export const berkshire: CountyRecord = {
   slug: "berkshire",
   name: "Berkshire",
   meta: {
-    title: "Wedding Bands in Berkshire | Backbeat — From £1,900",
+    title: "Wedding Bands in Berkshire — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Berkshire | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Berkshire — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Berkshire",
@@ -183,4 +183,26 @@ export const berkshire: CountyRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "Do you travel from Hampshire to Berkshire?",
+      a: "Yes. Berkshire sits inside our regular season patch, roughly 90 minutes' drive from base. No travel surcharge for standard Berkshire coverage. That covers the M4 corridor from Reading and Wokingham through to Ascot and Windsor.",
+    },
+    {
+      q: "Do you know the Berkshire wedding venues?",
+      a: "Yes. Well-known Berkshire wedding venues include Cliveden House, Oakley Court, Coworth Park, The Vineyard, Wasing Park, Royal Berkshire Hotel, Beaverbrook (just over the border in Surrey), Great Fosters and the Elephant Hotel. If your venue isn't on that list, tell us — we're happy to talk you through what to expect.",
+    },
+    {
+      q: "What curfews are typical at Berkshire wedding venues?",
+      a: "Country-estate venues (Cliveden, Coworth Park, Wasing Park) generally allow later finishes. Country hotels and village-hall venues in built-up areas may run earlier cut-offs from local planning. We confirm the specific curfew and any sound-limiter setup with the coordinator the week before, and pace the closing set to land at the actual end of the night.",
+    },
+    {
+      q: "What kind of setlist works for a Berkshire wedding?",
+      a: "Berkshire crowds skew slightly more London-commute than typical Hampshire, so the modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) tends to land well alongside the indie/rock backbone (Arctic Monkeys, Kings of Leon, The Killers). Wedding non-negotiables (Mr Brightside, Don't Stop Me Now, Sweet Caroline) hit the back-half peaks. Full set list on the repertoire page.",
+    },
+    {
+      q: "How quickly can you confirm availability for a Berkshire date?",
+      a: "Within 24 hours of your enquiry. Send us the date, venue and any thoughts on the vibe and we'll come back with a tailored quote.",
+    },
+  ],
 };

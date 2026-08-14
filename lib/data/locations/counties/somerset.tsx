@@ -13,9 +13,9 @@ export const somerset: CountyRecord = {
   slug: "somerset",
   name: "Somerset",
   meta: {
-    title: "Wedding Bands in Somerset | Backbeat — From £1,900",
+    title: "Wedding Bands in Somerset — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Somerset | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Somerset — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Somerset",

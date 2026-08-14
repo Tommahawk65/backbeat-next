@@ -13,9 +13,9 @@ export const eastSussex: CountyRecord = {
   slug: "east-sussex",
   name: "East Sussex",
   meta: {
-    title: "Wedding Bands in East Sussex | Backbeat — From £1,900",
+    title: "Wedding Bands in East Sussex — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in East Sussex | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in East Sussex — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "East Sussex",

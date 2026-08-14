@@ -14,9 +14,9 @@ export const cheltenham: CityRecord = {
   slug: "cheltenham",
   name: "Cheltenham",
   meta: {
-    title: "Wedding Bands in Cheltenham | Backbeat — From £1,900",
+    title: "Wedding Bands in Cheltenham — Live Music From £1,900",
     description,
-    ogTitle: "Wedding Bands in Cheltenham | Backbeat — From £1,900",
+    ogTitle: "Wedding Bands in Cheltenham — Live Music From £1,900 | Backbeat",
   },
   schema: {
     areaServed: "Cheltenham",
