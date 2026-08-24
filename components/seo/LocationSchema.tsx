@@ -1,9 +1,3 @@
-import {
-  googleAggregateRating,
-  googleReviewCount,
-  googleReviews,
-} from "@/lib/data/testimonials";
-
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.backbeat-band.co.uk";
 
@@ -26,6 +20,11 @@ type LocationSchemaProps = {
   serviceType?: string;
 };
 
+// Emits WebPage + Service per page. The brand-level MusicGroup/LocalBusiness with
+// AggregateRating is declared once site-wide in OrganizationSchema (root layout),
+// so we don't re-declare it here. AggregateRating on Service is not a supported
+// Google rich-results type — it belongs on the LocalBusiness entity, which the
+// site-wide schema already covers.
 export function LocationSchema({
   slug,
   path,
@@ -37,27 +36,6 @@ export function LocationSchema({
 }: LocationSchemaProps) {
   const resolvedPath = path ?? (slug ? `/${slug}` : "/");
   const pageUrl = `${SITE_URL}${resolvedPath}`;
-
-  const aggregateRating = {
-    "@type": "AggregateRating",
-    ratingValue: googleAggregateRating.toFixed(1),
-    reviewCount: String(googleReviewCount),
-    bestRating: "5",
-    worstRating: "1",
-  };
-
-  const reviewItems = googleReviews.map((r) => ({
-    "@type": "Review",
-    author: { "@type": "Person", name: r.name },
-    reviewBody: r.body,
-    datePublished: r.date,
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: String(r.rating),
-      bestRating: "5",
-      worstRating: "1",
-    },
-  }));
 
   const data = {
     "@context": "https://schema.org",
@@ -73,30 +51,6 @@ export function LocationSchema({
         inLanguage: "en-GB",
       },
       {
-        // Page-scoped LocalBusiness so this page is rich-snippet eligible for
-        // ratings + review stars in the SERP without re-declaring the brand entity.
-        "@type": "LocalBusiness",
-        "@id": `${pageUrl}#business`,
-        name: `Backbeat — ${pageName}`,
-        description,
-        url: pageUrl,
-        image: `${SITE_URL}/images/hero.jpg`,
-        priceRange: "££",
-        telephone: "+44",
-        address: {
-          "@type": "PostalAddress",
-          addressRegion: "Hampshire",
-          addressCountry: "GB",
-        },
-        areaServed: [
-          { "@type": "AdministrativeArea", name: areaServed },
-          ...(subAreas?.map((name) => ({ "@type": "Place", name })) ?? []),
-        ],
-        aggregateRating,
-        review: reviewItems,
-        sameAs: { "@id": BAND_ID },
-      },
-      {
         "@type": "Service",
         "@id": `${pageUrl}#service`,
         name: pageName,
@@ -107,8 +61,6 @@ export function LocationSchema({
           { "@type": "AdministrativeArea", name: areaServed },
           ...(subAreas?.map((name) => ({ "@type": "Place", name })) ?? []),
         ],
-        aggregateRating,
-        review: reviewItems,
         offers: {
           "@type": "Offer",
           priceCurrency: "GBP",
