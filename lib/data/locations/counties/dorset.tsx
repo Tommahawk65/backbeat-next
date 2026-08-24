@@ -49,93 +49,88 @@ export const dorset: CountyRecord = {
     eyebrow: "Wedding band · Dorset",
     heading: (
       <>
-        Coastal weddings.
+        Landscape sets the brief
         <br />
-        Country house weddings.
-        <br />
-        Same packed dance floor.
+        in Dorset.
       </>
     ),
     body: (
       <>
         <p>
-          Dorset has a wedding scene unlike anywhere else on the South Coast.
-          Cliffside ceremonies at Highcliffe and Lulworth, walled-garden
-          weddings at houses like Athelhampton, barn weddings tucked into
-          the Blackmore Vale. Every weekend has its own logistics. Backbeat
-          is set up to roll into any of them.
+          Dorset is one of the more landscape-driven wedding counties
+          in the country. The Jurassic Coast pulls one kind of couple
+          toward clifftop and coastal-castle ceremonies. The
+          Blackmore Vale pulls another toward country barns and rural
+          farm venues. The Christchurch and Poole harbour strip
+          delivers something different again. The landscape itself
+          shapes the room the band plays into.
         </p>
         <p>
-          We&rsquo;re Hampshire-based, which puts most of Dorset within a
-          comfortable drive. Bournemouth, Poole and Christchurch are
-          essentially home turf, and we cover the wider county including
-          Dorchester, Sherborne and the Jurassic Coast without inflating
-          the budget. We also play{" "}
-          <Link href="/wedding-bands/hampshire" className={linkClass}>
-            Hampshire
-          </Link>
-          ,{" "}
+          Dorset sits comfortably inside our regular working radius.
+          Bournemouth, Poole and Christchurch are short hops from
+          base; the Dorchester and Sherborne belt is a longer but
+          familiar run. Same for{" "}
           <Link href="/wedding-bands/wiltshire" className={linkClass}>
             Wiltshire
           </Link>{" "}
           and{" "}
-          <Link href="/wedding-bands/west-sussex" className={linkClass}>
-            West Sussex
+          <Link href="/wedding-bands/hampshire" className={linkClass}>
+            Hampshire
           </Link>{" "}
-          regularly, so the bulk of our season sits inside an hour or
-          so&rsquo;s drive of base. No travel surcharges, no overnight
-          accommodation, no anxious 4am drives back from the coast.
+          on either side. Coastal weddings and Vale barn weddings
+          both fall inside our normal season pattern rather than
+          outside it.
         </p>
         <p>
-          The county splits roughly into four wedding-venue types. Coastal
-          castle and clifftop venues such as Highcliffe and Lulworth,
-          riverside and harbour hotels around Christchurch and Poole,
-          country manor houses inland through Dorchester and Sherborne, and
-          Blackmore Vale barns where the brief is relaxed and the curfew is
-          generous. We brief differently for each. A coastal cliff-edge
-          ceremony with a marquee contingency is a different evening to a
-          Sherborne manor with a 250-guest sit-down, and the set list,
-          lighting rig and stage volume flex around which one you&rsquo;ve
-          booked.
+          Coastal wedding venues in Dorset carry a specific set of
+          practicalities that inland venues don&rsquo;t. Weather
+          contingencies matter more (Lulworth on a September Saturday
+          is not Lulworth on a June one). Load-in routes are often
+          shared with public seafront or car park access. Marquee
+          weddings on cliff-side estates get their own wind
+          considerations. Country estates and Vale barns run under
+          different rules: private grounds, gated drives, generally
+          more permissive on curfew but tighter on single-track access.
         </p>
         <p>
-          Coastal venues come with their own quirks. Weather
-          contingencies and tent backups, salty-air-friendly kit, and
-          tight load-in windows when access roads are shared with the
-          public. We plan for all of it, arrive early, and confirm the
-          specific load-in plan with the coordinator ahead of time
-          rather than learning it on the night.
+          Well-known Dorset wedding venues include Lulworth Castle,
+          Highcliffe Castle, Athelhampton House, Sopley Mill, Upton
+          Country House, Bournemouth Highcliff Marriott, Deans Court,
+          Kingston Country Courtyard and the Blackmore Vale barn
+          circuit. Coverage stretches from the New Forest edge
+          (Rhinefield, The Master Builder&rsquo;s) through to just
+          over the Somerset border. If your venue isn&rsquo;t on that
+          list, tell us.
         </p>
         <p>
-          Dorset weddings tend to span more generations than most. Local
-          couples bringing extended family in from the wider Wessex
-          catchment, plus university friends down from London for the
-          long weekend. The musical mix flatters both ends. We lean
-          Arctic Monkeys, Kings of Leon and The Killers for the indie
-          spine, Oasis and Stereophonics for the singalong moments, and
-          the wedding non-negotiables (Mr Brightside, Don&rsquo;t Stop Me
-          Now, Sweet Caroline) read as crowd peaks rather than checkboxes.
-          Modern-pop crossover (Harry Styles, Dua Lipa, Sam Fender) sits
-          in the back half. Between sets a DJ playlist (collaborated with
-          you) keeps the floor moving. We learn one custom first dance
-          per booking.
+          Dorset wedding crowds tend to span more generations than
+          many county averages. Local couples pulling extended family
+          from the wider Wessex catchment, plus university friends
+          down from London for the long weekend. The music has to
+          land across that spread. Arctic Monkeys, Kings of Leon and
+          The Killers for the late floor. Oasis and Stereophonics for
+          the sing-along middle. Modern chart-pop crossover (Harry
+          Styles, Dua Lipa, Sam Fender) layered through for the
+          younger contingent. Wedding non-negotiables (Mr Brightside,
+          Don&rsquo;t Stop Me Now, Sweet Caroline) hit the back-half
+          peaks. Between sets a DJ playlist, agreed with you in
+          advance, keeps the room moving. One custom first dance per
+          booking is included.
         </p>
         <p>
-          Curfews and sound limits vary venue by venue across Dorset.
-          Town-centre and residential-neighbour hotels typically run
-          earlier cut-offs from local planning conditions. Coastal,
-          country-estate and rural-barn venues on private grounds
-          often allow later finishes, but every venue has its own
-          rules, in-house limiters or coordinator-managed
-          arrangements. We confirm the specific cut-off and any sound
-          restrictions with the venue the week before, and pace the
-          closing set so it lands at the actual end of the night.
+          Sound limits vary meaningfully across the county. Coastal
+          hotels in Bournemouth and Poole with residential neighbours
+          typically run earlier cut-offs. Private-land country
+          estates and Vale barns often allow later finishes. Marquee
+          setups on cliffside private land can go later still but
+          bring their own weather constraints. These get confirmed
+          with the coordinator ahead of time rather than assumed from
+          the postcode.
         </p>
         <p>
-          If you&rsquo;re planning a Dorset wedding and want a band that
-          treats the venue, the timing and the dance floor with equal care,
-          send us a date and we&rsquo;ll come back with availability and
-          pricing.
+          If you&rsquo;re planning a Dorset wedding and want a band
+          that reads the landscape as part of the brief rather than
+          ignoring it, send the date and venue.
         </p>
       </>
     ),
@@ -175,4 +170,26 @@ export const dorset: CountyRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "What's different about a coastal Dorset wedding compared to an inland one?",
+      a: "Coastal weddings carry weather contingencies, shared public-access load-in routes and wind considerations for marquee setups. Inland country-estate and Blackmore Vale barn weddings sit under different rules: private grounds, gated drives, generally more permissive curfews but tighter single-track access. Same county, meaningfully different logistics.",
+    },
+    {
+      q: "How does the Jurassic Coast setting shape a wedding day's music?",
+      a: "The visual drama of clifftop and coastal-castle ceremonies tends to set an expectation for a more theatrical closing set. Guests who've travelled for the setting are usually up for a bigger dance floor. That doesn't change the setlist so much as the sense of moment behind it.",
+    },
+    {
+      q: "Which Dorset sub-areas book most heavily for weddings?",
+      a: "The strongest concentrations sit around Bournemouth and Christchurch (harbour hotels), the Jurassic Coast strip (Lulworth, Highcliffe), the Dorchester and Sherborne belt (country manor houses) and the Blackmore Vale barn circuit. Each sub-area has its own booking pattern and coordinator style.",
+    },
+    {
+      q: "How much of a Dorset wedding guest list travels versus stays local?",
+      a: "Dorset weddings typically pull a more geographically spread guest list than similar-size counties. Local Wessex families, London weekend guests and university friends often mix in roughly equal proportions. The setlist has to flatter across generations more than in urban-centred weddings.",
+    },
+    {
+      q: "Do you cover the New Forest edge that overlaps with Dorset?",
+      a: "Yes. Venues on the New Forest edge (Rhinefield, The Master Builder's, Careys Manor) sit as easily inside Dorset booking geography as they do inside Hampshire's. The drive from our base to Brockenhurst or Beaulieu is 20-30 minutes; the Dorset coast adds another 45-60 minutes on top.",
+    },
+  ],
 };

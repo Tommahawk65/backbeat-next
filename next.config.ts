@@ -28,11 +28,32 @@ const nextConfig: NextConfig = {
       "oxfordshire",
       "isle-of-wight",
     ];
-    return counties.map((slug) => ({
+    const countyRedirects = counties.map((slug) => ({
       source: `/${slug}-weddings`,
       destination: `/wedding-bands/${slug}`,
       permanent: true,
     }));
+
+    // Venue pages pruned Aug 2026 to reduce templated-content surface post-spam-update.
+    // Each redirects to its parent county so any inbound link equity flows there.
+    const prunedVenueRedirects = [
+      { from: "athelhampton", to: "dorset" },
+      { from: "farnham-castle", to: "surrey" },
+      { from: "hartwell-house", to: "buckinghamshire" },
+      { from: "leeds-castle", to: "kent" },
+      { from: "mapperton", to: "dorset" },
+      { from: "smedmore-house", to: "dorset" },
+      { from: "south-lodge", to: "west-sussex" },
+      { from: "the-square-tower", to: "hampshire" },
+      { from: "the-vineyard", to: "berkshire" },
+      { from: "tinwood-estate", to: "west-sussex" },
+    ].map(({ from, to }) => ({
+      source: `/wedding-bands/${from}`,
+      destination: `/wedding-bands/${to}`,
+      permanent: true,
+    }));
+
+    return [...countyRedirects, ...prunedVenueRedirects];
   },
 };
 

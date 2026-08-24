@@ -49,26 +49,31 @@ export const hampshire: CountyRecord = {
     eyebrow: "Wedding band · Hampshire",
     heading: (
       <>
-        Built in Hampshire,
+        Hampshire-based,
         <br />
-        booked across the county.
+        Hampshire-familiar.
       </>
     ),
     body: (
       <>
         <p>
-          Backbeat is a Hampshire-based live wedding band founded by musicians
-          who grew up gigging across the county. Most weeks of the season we
-          play somewhere between the New Forest and the Meon Valley. Country
-          houses near Winchester, coastal venues on the Solent, barn weddings
-          in the South Downs.
+          Backbeat is a Hampshire-based live wedding band. The players
+          grew up gigging across the county, and most weeks of the
+          season we&rsquo;re playing somewhere between the New Forest
+          and the Meon Valley: Winchester, Southampton, Portsmouth, the
+          Solent coast and the South Downs edge. Home ground.
         </p>
         <p>
-          Booking a local band matters more than couples expect. There are no
-          travel surcharges for Hampshire weddings, no overnight accommodation
-          to budget for, and no anxious 4am drives back from the other end of
-          the country. We&rsquo;re packed up and home before the venue staff
-          have finished sweeping the dance floor. We also cover{" "}
+          Being Hampshire-based rather than Hampshire-serving is a
+          distinction couples notice on the day. No motorway fatigue
+          baked into the load-in, no travel budget in the quote, no
+          supplier accommodation to organise. It also means the routes
+          into most Hampshire venues are already familiar: the
+          single-track lane up to a South Downs barn, the load-in gate
+          at a New Forest country house, the coordinator handoff at a
+          Solent hotel. Local knowledge is the practical difference
+          between a local booking and a travelling booking. We also
+          play{" "}
           <Link href="/wedding-bands/surrey" className={linkClass}>
             Surrey
           </Link>
@@ -84,64 +89,56 @@ export const hampshire: CountyRecord = {
           <Link href="/wedding-bands/berkshire" className={linkClass}>
             Berkshire
           </Link>{" "}
-          regularly. The bulk of our season sits inside a 90-minute drive of
-          base.
+          across the season, but the bulk of it sits inside a 90-minute
+          drive of base.
         </p>
         <p>
-          Hampshire weddings have a particular character: long
-          summer evenings, country-house marquees on lawns, sound
-          limiters at restored barns, and late-night sets that
-          need to land regardless of how full the bar got.
-          That&rsquo;s the room we&rsquo;re built for. Our PA is
-          sized for everything from a 120-guest barn to a 250-guest
-          country house. Tylney Hall, Lainston House, Heckfield
-          Place, Rhinefield House, Careys Manor, Beaulieu and The
-          Master Builder&rsquo;s are all regularly booked across
-          the county.
+          Hampshire wedding geography splits into four rough types, each
+          with its own tone. New Forest country houses and marquee
+          venues sit at the western end, with the biggest lawns and the
+          most permissive private-land rules. The Winchester belt
+          covers historic-house venues and cathedral-adjacent hotels.
+          Along the Solent, hotel weddings blend harbour and city
+          energy. Up toward Basingstoke and Hook, restored country-house
+          and barn venues carry different sound-limiter contexts. The
+          set list, stage volume and lighting rig flex around which of
+          these you&rsquo;ve booked.
         </p>
         <p>
-          The county splits roughly into four wedding-venue types:
-          New Forest country houses with private grounds and
-          marquee permissions, South Downs barns, Solent-side
-          hotels, and Winchester and Basingstoke venues that range
-          from grand to relaxed. Each has its own rhythm. A
-          converted barn is a different evening to an open-air New
-          Forest marquee, and the set list, lighting rig and stage
-          volume flex around which one you&rsquo;ve booked.
+          Well-known Hampshire wedding venues include Tylney Hall,
+          Lainston House, Heckfield Place, Rhinefield House, Careys
+          Manor, Beaulieu, The Master Builder&rsquo;s, Four Seasons
+          Hampshire, Marwell Hotel and Audleys Wood. If yours
+          isn&rsquo;t on that list, tell us anyway; the county has more
+          good venues than any one list captures.
         </p>
         <p>
-          We perform full live sets of indie anthems and rock classics, plus a
-          modern pop crossover when the room asks for it. Between sets a DJ
-          playlist (collaborated with you) keeps the floor moving, so your
-          night runs from drinks reception to last call without a flat spot.
+          Hampshire wedding crowds tend to blend Solent locals with
+          London-commute couples bringing city friends down for the
+          weekend. The setlist reflects the mix. Arctic Monkeys, Kings
+          of Leon and The Killers for the late floor. Oasis and
+          Stereophonics for the sing-along middle. Modern chart-pop
+          crossover (Harry Styles, Dua Lipa, Sam Fender) for the
+          younger contingent. Wedding non-negotiables (Mr Brightside,
+          Don&rsquo;t Stop Me Now, Sweet Caroline) hit the back-half
+          peaks. One custom first dance per booking is included.
+          Between sets a DJ playlist, agreed with you in advance, keeps
+          the room moving.
         </p>
         <p>
-          The Hampshire wedding crowd we play to most often runs from Solent
-          locals to London-commute couples bringing City friends down for
-          the weekend. The late floor leans Arctic Monkeys, Kings of Leon
-          and The Killers, the singalong moments lean Oasis and
-          Stereophonics, and we keep a modern-pop crossover layer (Harry
-          Styles, Dua Lipa, Sam Fender) for the chart-aware guests in the
-          room. We learn one custom first dance per booking. If a song
-          genuinely doesn&rsquo;t translate to a four-piece live arrangement
-          we&rsquo;ll talk it through with you, but most do.
+          Curfews and sound limits vary meaningfully across Hampshire.
+          Town-centre and residential-neighbour venues typically run
+          earlier cut-offs from local planning conditions. New Forest
+          country houses, South Downs barns and private-land venues
+          often allow later finishes. Rules like these get confirmed
+          with the venue coordinator before the day, not on it, so the
+          closing set can be paced to land at the actual end of the
+          night rather than in the middle of it.
         </p>
         <p>
-          Curfews and sound limits vary venue by venue across
-          Hampshire. Town-centre and residential-neighbour venues
-          typically run earlier cut-offs from local planning
-          conditions. New Forest country houses, South Downs barns
-          and private-land venues often allow later finishes, but
-          every venue has its own rules, in-house limiters or
-          coordinator-managed arrangements. We confirm the
-          specific cut-off and any sound restrictions with the
-          venue the week before, and pace the closing set so it
-          lands at the actual end of the night.
-        </p>
-        <p>
-          Five-star reviews from Warnford, Hook, Sandhurst and beyond. Local
-          couples booking a local band that genuinely knows the venues, the
-          timings and the dance floor.
+          If you&rsquo;re planning a Hampshire wedding and want a band
+          that treats the county as home rather than as a destination,
+          send the date and venue.
         </p>
       </>
     ),
@@ -183,24 +180,24 @@ export const hampshire: CountyRecord = {
   },
   faqs: [
     {
-      q: "Do you charge extra to travel within Hampshire?",
-      a: "No. Backbeat is Hampshire-based, so there's no travel surcharge for weddings anywhere across the county — from New Forest marquees and Winchester country houses to Portsmouth harbour venues. Most of the season we're gigging within a 90-minute drive of base.",
+      q: "What are the main types of Hampshire wedding venue?",
+      a: "Roughly four groupings. New Forest country houses and marquee venues at the western end. Winchester's historic-house and cathedral-adjacent hotels. Solent hotels blending harbour and city energy. Basingstoke and Hook country-house and barn venues at the northern end. Each has a different closing-set brief and a different sound-limiter context.",
     },
     {
-      q: "Do you know the popular Hampshire wedding venues?",
-      a: "Yes. Well-known Hampshire wedding venues include Tylney Hall, Lainston House, Heckfield Place, Rhinefield House, Careys Manor, Beaulieu, The Master Builder's, Four Seasons Hampshire, Marwell Hotel and Audleys Wood. If your venue isn't on that list, tell us — we're happy to talk you through what to expect.",
+      q: "Are New Forest venue rules stricter than the rest of Hampshire?",
+      a: "It varies. New Forest country houses on private land often allow later finishes and higher stage volumes than the county average. Some New Forest hotels do carry planning-driven cut-offs though, and marquee weddings on National Park land can have specific noise conditions. Rules are venue-by-venue, and worth confirming with the coordinator before the day.",
     },
     {
-      q: "What are curfews and sound limits like at Hampshire venues?",
-      a: "It varies venue by venue. Town-centre and residential-neighbour venues typically run earlier cut-offs from local planning conditions. New Forest country houses, South Downs barns and private-land venues often allow later finishes. We confirm the specific curfew, any sound-limiter setup and the coordinator's rules the week before, and pace the closing set to land at the actual end of the night.",
+      q: "What difference does a Hampshire-based band make versus one that travels in?",
+      a: "The visible difference is on load-in and pack-down: fewer surprises about routes, gates and coordinator handoffs. The hidden difference is in the quote structure. Travel-in bands generally price travel, accommodation and drive-time into the fee. A band based inside the county doesn't need to, which means the same-tier live music tends to work out lower cost for Hampshire couples.",
     },
     {
-      q: "What kind of setlist do Hampshire wedding crowds respond to?",
-      a: "The late floor leans Arctic Monkeys, Kings of Leon and The Killers. Singalong moments lean Oasis and Stereophonics. We layer in a modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) for the younger guests, and wedding non-negotiables (Mr Brightside, Don't Stop Me Now, Sweet Caroline) hit the back-half peaks. Full set list is on the repertoire page.",
+      q: "What guest count does a Hampshire wedding usually sit at?",
+      a: "Most Hampshire weddings we play sit somewhere between 90 and 200 guests. New Forest marquees and country-house venues can go bigger; South Downs barns and Winchester intimate venues can go smaller. Guest count changes stage sizing and lighting rig, not the shape of the set.",
     },
     {
-      q: "How quickly can you confirm availability for our Hampshire wedding?",
-      a: "Within 24 hours of your enquiry, normally sooner. Send us the date, venue and any thoughts on the vibe and we'll come back with availability, a tailored quote and answers to anything else you need.",
+      q: "How do the sub-areas of Hampshire compare — New Forest, Winchester, Portsmouth, Southampton?",
+      a: "Each area has its own wedding character. The New Forest leans country-house, marquee and outdoor. Winchester leans historic and Cathedral-adjacent. Southampton is more harbour-hotel and Solent coast. Portsmouth mixes historic naval venues with Victorian hotel venues. The music that closes each is different, and the running order shapes around which of these you've booked.",
     },
   ],
 };

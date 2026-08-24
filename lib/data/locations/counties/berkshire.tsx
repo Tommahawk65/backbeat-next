@@ -49,101 +49,88 @@ export const berkshire: CountyRecord = {
     eyebrow: "Wedding band · Berkshire",
     heading: (
       <>
-        Polished venues.
+        The M4 corridor
         <br />
-        Properly loud finish.
+        weekend crowd.
       </>
     ),
     body: (
       <>
         <p>
-          Berkshire weddings tend to fall on the more polished end
-          of the spectrum. The area covers Royal County country
-          estates, racing-set venues around Ascot and Sunningdale,
-          and grand riverside hotels around Henley and Marlow. The
-          expectation on suppliers is high, and rightly so.
-          Backbeat is set up for it. Coworth Park, Cliveden House,
-          Royal Berkshire Hotel, Donnington Valley, Stoke Park,
-          The Vineyard, Easthampstead Park and Bisham Abbey are
-          all regularly booked across the county.
+          Berkshire weddings sit inside a specific commercial
+          geography. The M4 pulls one demographic west out of London
+          for the weekend; the county&rsquo;s own residential belt
+          (Reading, Wokingham, Newbury) adds another; and the racing
+          set around Ascot and Windsor overlays a third. What the
+          three have in common is a certain expectation of polish. It
+          shapes how venues brief suppliers and how the closing set
+          has to land.
         </p>
         <p>
-          We&rsquo;re Hampshire-based but Berkshire is comfortably inside our
-          home patch. Reading, Newbury and Wokingham are short hops; Ascot,
-          Windsor and the Thames Valley venues are familiar runs. We also
-          cover{" "}
-          <Link href="/wedding-bands/hampshire" className={linkClass}>
-            Hampshire
-          </Link>
-          ,{" "}
-          <Link href="/wedding-bands/surrey" className={linkClass}>
-            Surrey
-          </Link>{" "}
-          and{" "}
+          Berkshire sits comfortably inside our regular working
+          radius. Reading, Newbury and Wokingham are short hops from
+          base; the Thames Valley from Marlow through Henley is a
+          familiar run. Same for{" "}
           <Link href="/wedding-bands/oxfordshire" className={linkClass}>
             Oxfordshire
           </Link>{" "}
-          regularly, so the bulk of our season sits inside an hour&rsquo;s
-          drive of the Thames Valley. No travel surcharges, no overnight
-          accommodation, no anxious 4am drives back from the other end of
-          the country.
+          and{" "}
+          <Link href="/wedding-bands/surrey" className={linkClass}>
+            Surrey
+          </Link>{" "}
+          on either side. The county doesn&rsquo;t sit outside our home
+          patch even though it&rsquo;s not literally in it.
         </p>
         <p>
-          The county splits roughly into four wedding-venue types:
-          Royal Berkshire country estates, racing-set hotels around
-          Ascot and Sunningdale, Thames Valley riverside venues
-          from Marlow through Henley, and the Reading and Newbury
-          commuter belt where the briefs are slightly more
-          relaxed. Each has its own rhythm. A country-estate
-          ballroom is a different evening to a riverside marquee,
-          and the set list, lighting rig and stage volume flex
-          around which one you&rsquo;ve booked.
+          The wedding-venue mix in Berkshire is genuinely diverse.
+          Country estates like Coworth Park and Cliveden House
+          anchor the top end. Racing-set hotels around Ascot and
+          Sunningdale bring their own bookings. The Thames Valley
+          strip from Marlow through Henley delivers riverside venues
+          with a different energy again. Reading and Newbury contribute
+          a more relaxed, less production-heavy layer. Each of those
+          venue types calls for a different closing set: the ballroom
+          at Cliveden isn&rsquo;t Bisham Abbey&rsquo;s riverside
+          marquee, and the music that carries either is different.
         </p>
         <p>
-          Berkshire has a logistical layer most couples
-          don&rsquo;t expect. Country-estate venues carry their own
-          gated drives, in-house production teams and tight
-          load-in windows. Thames Valley riverside venues sit
-          inside residential streets with tighter vehicle access.
-          M4 traffic on a Friday afternoon shapes when suppliers
-          actually arrive. We confirm the specific load-in plan
-          with the coordinator ahead of time and arrive briefed,
-          early and presentable, because that matters more at
-          Berkshire venues than most.
+          Well-known Berkshire wedding venues include Coworth Park,
+          Cliveden House, Royal Berkshire Hotel, Donnington Valley,
+          Stoke Park, The Vineyard, Easthampstead Park, Bisham Abbey
+          and Greenlands. Coverage stretches from just over the border
+          in Surrey (Beaverbrook, Great Fosters) through to just over
+          the border in Buckinghamshire and Oxfordshire. If your venue
+          isn&rsquo;t on that list, tell us; the county has more good
+          venues than any one snapshot captures.
         </p>
         <p>
-          Berkshire wedding crowds pull a strong London-corporate
-          skew. Guests arriving down from the City for the
-          weekend, City lawyers and creative-industry friends in
-          the same room, and a floor that expects polish to match
-          the venue. The setlist flexes accordingly: Arctic
-          Monkeys, The Killers and Kings of Leon for the late
-          floor, Oasis and Stereophonics for the mid-evening,
-          modern-pop crossover (Harry Styles, Dua Lipa, Sam
-          Fender) layered through for the chart-aware younger
-          guests. Wedding non-negotiables (Mr Brightside,
-          Don&rsquo;t Stop Me Now, Sweet Caroline) take the
-          back-half peaks. Between sets a DJ playlist
-          (collaborated with you) keeps the floor moving. We learn
-          one custom first dance per booking.
+          Berkshire wedding crowds carry a strong London-commute
+          skew. Guests arriving down from the City for the weekend,
+          creative-industry and finance friends in the same room, a
+          floor that expects the closing set to match the venue.
+          Setlist-wise: Arctic Monkeys, The Killers and Kings of Leon
+          for the late floor. Oasis and Stereophonics for the
+          sing-along middle. Modern chart-pop crossover (Harry
+          Styles, Dua Lipa, Sam Fender) layered through for the
+          chart-aware younger guests. Wedding non-negotiables (Mr
+          Brightside, Don&rsquo;t Stop Me Now, Sweet Caroline) hit
+          the back-half peaks. Between sets a DJ playlist, agreed
+          with you in advance, keeps the room moving. One custom
+          first dance per booking is included.
         </p>
         <p>
-          Curfews and sound limits vary venue by venue across
-          Berkshire. Country-estate and racing-set venues
-          typically run firm cut-offs managed by in-house
-          production teams. Thames Valley riverside venues
-          sometimes inherit residential-neighbour cut-offs from
-          local planning conditions. Every venue has its own
-          rules, in-house limiters or coordinator-managed
-          arrangements. We confirm the specific cut-off and any
-          sound restrictions with the venue the week before, and
-          pace the closing set so it lands at the actual end of
-          the night.
+          Berkshire venues carry variable curfews. Country estates
+          and racing-set hotels often run firm cut-offs managed by
+          in-house production teams. Thames Valley riverside venues
+          sometimes inherit residential cut-offs from local planning
+          conditions. Rules get confirmed with the coordinator
+          before the day rather than assumed, and the closing set
+          gets paced accordingly.
         </p>
         <p>
-          If you&rsquo;re booking a Berkshire wedding and want a band that
-          matches the venue&rsquo;s standards while still emptying the bar
-          when the dance floor opens, we&rsquo;d love to hear from you.
+          If you&rsquo;re planning a Berkshire wedding and want a band
+          that reads the room the venue&rsquo;s brought together, send
+          the date and venue.
         </p>
       </>
     ),
@@ -185,24 +172,24 @@ export const berkshire: CountyRecord = {
   },
   faqs: [
     {
-      q: "Do you travel from Hampshire to Berkshire?",
-      a: "Yes. Berkshire sits inside our regular season patch, roughly 90 minutes' drive from base. No travel surcharge for standard Berkshire coverage. That covers the M4 corridor from Reading and Wokingham through to Ascot and Windsor.",
+      q: "How does a Berkshire wedding brief typically differ from a Hampshire one?",
+      a: "Berkshire venues sit in a more production-managed and London-corporate context on average. Country estates like Cliveden and Coworth Park come with in-house production teams and firm cut-offs. Hampshire tends to run slightly more permissive at the country-house end. Neither is harder or easier to play; the coordinator setup is just different.",
     },
     {
-      q: "Do you know the Berkshire wedding venues?",
-      a: "Yes. Well-known Berkshire wedding venues include Cliveden House, Oakley Court, Coworth Park, The Vineyard, Wasing Park, Royal Berkshire Hotel, Beaverbrook (just over the border in Surrey), Great Fosters and the Elephant Hotel. If your venue isn't on that list, tell us — we're happy to talk you through what to expect.",
+      q: "What are M4 traffic implications for a Berkshire wedding load-in?",
+      a: "M4 westbound on a Friday afternoon and eastbound on a Sunday afternoon can add 45-90 minutes to standard drive times. Suppliers who don't factor this into load-in schedules routinely arrive later than they'd planned. It's worth building buffer time into the day's schedule, particularly for country-estate venues with strict load-in windows.",
     },
     {
-      q: "What curfews are typical at Berkshire wedding venues?",
-      a: "Country-estate venues (Cliveden, Coworth Park, Wasing Park) generally allow later finishes. Country hotels and village-hall venues in built-up areas may run earlier cut-offs from local planning. We confirm the specific curfew and any sound-limiter setup with the coordinator the week before, and pace the closing set to land at the actual end of the night.",
+      q: "How do sound-limiter rules typically look at the Thames Valley venues?",
+      a: "Marlow, Henley and Cookham riverside venues sit inside residential belts that carry their own planning conditions. Curfews and dB limits vary venue-by-venue. Country-estate venues away from the river (Cliveden, Coworth Park) tend to run under more permissive rules. Confirm with the coordinator ahead of the day.",
     },
     {
-      q: "What kind of setlist works for a Berkshire wedding?",
-      a: "Berkshire crowds skew slightly more London-commute than typical Hampshire, so the modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) tends to land well alongside the indie/rock backbone (Arctic Monkeys, Kings of Leon, The Killers). Wedding non-negotiables (Mr Brightside, Don't Stop Me Now, Sweet Caroline) hit the back-half peaks. Full set list on the repertoire page.",
+      q: "Which Berkshire sub-areas book most heavily for weddings?",
+      a: "The strongest concentrations sit around Ascot, Sunningdale and Windsor (racing-set and country-estate venues), the Thames Valley strip from Marlow through Henley, and the Reading-Wokingham commuter belt. Newbury and the western county pull a slightly more relaxed booking pattern.",
     },
     {
-      q: "How quickly can you confirm availability for a Berkshire date?",
-      a: "Within 24 hours of your enquiry. Send us the date, venue and any thoughts on the vibe and we'll come back with a tailored quote.",
+      q: "How does a London-commute guest list shape the setlist?",
+      a: "Guests travelling out from the City for the weekend often bring chart-aware musical expectations. Modern crossover (Harry Styles, Dua Lipa, Sam Fender) tends to land well in the mid-evening alongside the indie/rock backbone. Wedding non-negotiables still hit the back-half peaks. Full set list is on the repertoire page.",
     },
   ],
 };

@@ -49,32 +49,29 @@ export const oxfordshire: CountyRecord = {
     eyebrow: "Wedding band · Oxfordshire",
     heading: (
       <>
-        From Oxford colleges
+        History is the venue
         <br />
-        to Cotswolds country houses.
+        in Oxfordshire.
       </>
     ),
     body: (
       <>
         <p>
-          Oxfordshire is one of the country&rsquo;s strongest wedding
-          regions and one of our most-requested. Oxford&rsquo;s historic
-          colleges (Wolfson, Worcester, Trinity, Magdalen) host weddings
-          that demand a band capable of matching the room without being
-          precious about it. The Cotswolds end of the county delivers the
-          country-house brief: Blenheim Palace, Le Manoir, the string of
-          estates around Chipping Norton.
+          Oxfordshire runs on a very particular kind of wedding
+          setting. The colleges of the city — Wolfson, Worcester,
+          Trinity, Magdalen — host weddings in rooms that are older
+          than most countries. The country-house circuit at the
+          Cotswolds end of the county (Blenheim Palace, Le Manoir,
+          the Chipping Norton belt) trades on architectural drama.
+          Even the barn and gastronomy venues sit in Cotswold
+          honey-stone villages that anchor the day&rsquo;s tone before
+          the band even sets up.
         </p>
         <p>
-          Backbeat has played at Wolfson College, Oxford (five-star review
-          from Anthony &amp; Timothy below) and we cover the wider county
-          including Witney, Henley, Burford and Banbury regularly. As a
-          Hampshire-based band the drive is a comfortable hour or so. We
-          also play{" "}
-          <Link href="/wedding-bands/hampshire" className={linkClass}>
-            Hampshire
-          </Link>
-          ,{" "}
+          Oxfordshire sits inside our regular season patch. From base
+          the drive is roughly 90 minutes to central Oxford, longer
+          to the Chipping Norton end but not dramatically so. Same
+          for{" "}
           <Link href="/wedding-bands/berkshire" className={linkClass}>
             Berkshire
           </Link>{" "}
@@ -82,66 +79,57 @@ export const oxfordshire: CountyRecord = {
           <Link href="/wedding-bands/wiltshire" className={linkClass}>
             Wiltshire
           </Link>{" "}
-          regularly, so the bulk of our season sits inside an
-          hour-and-a-half&rsquo;s drive of base. No travel surcharges, no
-          overnight accommodation, no anxious 4am drive back from the
-          Cotswolds.
+          on either side. The county doesn&rsquo;t sit at the edge of
+          our range; it sits inside it.
         </p>
         <p>
-          The county splits roughly into four wedding-venue types:
-          Oxford college weddings with their own quad-and-hall
-          rhythm, Cotswolds country estates, private-estate
-          marquees in the Chipping Norton belt, and the
-          gastronomic country-house circuit. Each has its own
-          rhythm. A college wedding is a different evening to a
-          country-estate marquee, and the set list, lighting rig
-          and stage volume flex around which one you&rsquo;ve
-          booked.
+          Wedding-venue types in Oxfordshire split roughly four ways.
+          Oxford college weddings run on their own quad-and-hall
+          rhythm, with events teams managing load-in through
+          historic buildings. Cotswolds country estates offer the
+          country-house wedding template with local architectural
+          flavour. Private-estate marquees in the Chipping Norton
+          belt add another dimension. The gastronomic country-house
+          circuit (Le Manoir, the string of Michelin-related venues)
+          brings a specific dinner-first pacing that shapes the
+          closing set.
         </p>
         <p>
-          Oxfordshire has a logistical layer most couples
-          don&rsquo;t expect. Oxford&rsquo;s city centre and
-          college quarter sit inside heritage-protected pedestrian
-          and residential streets with tighter vehicle access.
-          College venues each carry their own load-in arrangements
-          through their events team. Country-estate venues sit on
-          gated drives and delivery windows, often on rural
-          single-track lanes. We confirm the specific load-in
-          plan with the coordinator ahead of time rather than
-          learning it on the night.
+          Well-known Oxfordshire wedding venues include Wolfson
+          College, Blenheim Palace, Le Manoir aux Quat&rsquo;Saisons,
+          Caswell House, Cornwell Manor, The Old Swan &amp; Minster
+          Mill, Eynsham Hall, Great Tew Estate and the Chipping
+          Norton estate circuit. If your venue isn&rsquo;t on that
+          list, tell us; Oxfordshire has more good venues than any
+          one snapshot captures.
         </p>
         <p>
-          Oxfordshire wedding crowds are musically wide-open:
-          global guests at college weddings, multi-generational
-          families at country houses, and friend groups that range
-          from City lawyers to choral scholars. The setlist flexes
-          accordingly: Arctic Monkeys, The Killers and Kings of
-          Leon for the late floor, Oasis and Stereophonics for the
-          mid-evening, modern-pop crossover (Harry Styles, Dua
-          Lipa, Sam Fender) layered through for the chart-aware
-          younger guests. Wedding non-negotiables (Mr Brightside,
-          Don&rsquo;t Stop Me Now, Sweet Caroline) take the
-          back-half peaks. Between sets a DJ playlist
-          (collaborated with you) keeps the floor moving. We learn
-          one custom first dance per booking.
+          Oxfordshire wedding crowds are musically wide-open. Global
+          guests at college weddings, multi-generational families at
+          country houses, friend groups that range from City lawyers
+          to choral scholars. The setlist has to bridge that spread.
+          Arctic Monkeys, The Killers and Kings of Leon for the late
+          floor. Oasis and Stereophonics for the sing-along middle.
+          Modern chart-pop crossover (Harry Styles, Dua Lipa, Sam
+          Fender) layered through. Wedding non-negotiables (Mr
+          Brightside, Don&rsquo;t Stop Me Now, Sweet Caroline) hit the
+          back-half peaks. Between sets a DJ playlist, agreed with
+          you in advance, keeps the room moving. One custom first
+          dance per booking is included.
         </p>
         <p>
-          Curfews and sound limits vary venue by venue across
-          Oxfordshire. Oxford college and city-centre venues
-          typically run earlier cut-offs from local planning
-          conditions and college rules. Country estates and
-          private-land venues often allow later finishes, but
-          every venue has its own rules, in-house limiters or
-          coordinator-managed arrangements. We confirm the
-          specific cut-off and any sound restrictions with the
-          venue the week before, and pace the closing set so it
-          lands at the actual end of the night.
+          Curfews are unusually varied across Oxfordshire. Oxford
+          college and city-centre venues typically run earlier
+          cut-offs from local planning and college rules. Country
+          estates and private-land venues in the Cotswolds often
+          allow later finishes. Heritage-protected rooms sometimes
+          have specific decibel constraints. Rules get confirmed
+          with the coordinator ahead of the day, not on it.
         </p>
         <p>
-          If you&rsquo;re planning an Oxfordshire wedding and want a band
-          that turns up briefed for the venue and reads the room
-          properly, send us your date. We&rsquo;d love to be on your
-          shortlist.
+          If you&rsquo;re planning an Oxfordshire wedding and want a
+          band that reads the setting as part of the brief, send the
+          date and venue.
         </p>
       </>
     ),
@@ -181,4 +169,26 @@ export const oxfordshire: CountyRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "What's different about a college wedding compared to a country-estate wedding?",
+      a: "Oxford colleges are historic buildings with their own events teams managing load-in through architecturally sensitive spaces. Load-in windows are often tighter and the visual staging expectation is quieter. Country estates in the Cotswolds run more permissively on stage setup but often carry firmer curfews from residential neighbours. Two genuinely different wedding-day briefs.",
+    },
+    {
+      q: "Do Oxford college weddings usually have specific music restrictions?",
+      a: "Yes, and they vary by college. Some rooms carry strict dB limits due to heritage-protected fabric. Others are more flexible. Rules are set by the individual college's events team and worth confirming during venue selection, not on the day.",
+    },
+    {
+      q: "How do Cotswolds village venues typically compare to Oxford city venues?",
+      a: "Cotswolds village venues (honey-stone country houses, converted barns, estate marquees) tend toward more relaxed evening pacing, later curfews and outdoor-drinks-reception energy. Oxford city venues (colleges, city-centre hotels) are more formal, more tightly scheduled and closer-hemmed by residential neighbours. Setlist and stage volume flex around which end you're at.",
+    },
+    {
+      q: "What does an Oxfordshire wedding guest list usually look like?",
+      a: "Musically wide-open. College weddings often pull international guests. Country-house weddings pull multi-generational family groups and London-weekend friends. Setlists work best when they read across generations and genres rather than skewing hard in one direction.",
+    },
+    {
+      q: "Is the Cotswolds end of Oxfordshire really as far as it looks from the South Coast?",
+      a: "Not really. The drive from base to Chipping Norton or Burford is about 2 hours in normal traffic. Longer than a Hampshire wedding, but well inside our regular working geography. Bookings in that belt sit inside our usual season pattern, not as special-occasion trips.",
+    },
+  ],
 };

@@ -30,7 +30,7 @@ export const isleOfWight: CountyRecord = {
     ],
   },
   hero: {
-    eyebrow: "Isle of Wight · Solent · Ferry-ready",
+    eyebrow: "Isle of Wight · Solent · Ferry-timed",
     heading: (
       <>
         Wedding bands
@@ -39,8 +39,7 @@ export const isleOfWight: CountyRecord = {
     ),
     subhead: (
       <>
-        Mainland-based live indie &amp; rock band that travels to the
-        island regularly. From{" "}
+        Live indie &amp; rock, Solent-side. From{" "}
         <span className="font-semibold text-white">£1,900</span>.
       </>
     ),
@@ -49,29 +48,32 @@ export const isleOfWight: CountyRecord = {
     eyebrow: "Wedding band · Isle of Wight",
     heading: (
       <>
-        Crossing the Solent
+        Island weddings hinge
         <br />
-        isn&rsquo;t a problem.
+        on the ferry.
       </>
     ),
     body: (
       <>
         <p>
-          Isle of Wight weddings have a different rhythm to mainland ones.
-          Guests arriving on multiple ferries across the day, suppliers
-          coordinating around tide-led crossings, late nights that have to
-          stop being late at exactly the right time so suppliers catch
-          the last sailing. That logistics layer is part of the brief, and
-          we plan around it.
+          On the mainland, wedding logistics fall into predictable
+          shapes. Load-in windows, coordinator hand-offs, taxis home.
+          On the Isle of Wight, one variable rewrites everything else:
+          the ferry. When it sails, when it stops, whose guest list is
+          on which crossing, and what happens to a car left at
+          Portsmouth. That single constraint shapes the running order,
+          the closing set and whether suppliers pack down at 10:30pm to
+          catch the last Wightlink. Island weddings don&rsquo;t play by
+          mainland rules, and pretending otherwise is where they come
+          apart.
         </p>
         <p>
-          We&rsquo;re a Southampton-side, Hampshire-based band, so the
-          ferry from Southampton or Portsmouth is a routine part of an
-          island gig for us. We also play{" "}
+          Backbeat is a{" "}
           <Link href="/wedding-bands/hampshire" className={linkClass}>
             Hampshire
           </Link>
-          ,{" "}
+          -based band, and the crossing sits inside our normal working
+          geography. Same for{" "}
           <Link href="/wedding-bands/dorset" className={linkClass}>
             Dorset
           </Link>{" "}
@@ -79,74 +81,62 @@ export const isleOfWight: CountyRecord = {
           <Link href="/wedding-bands/west-sussex" className={linkClass}>
             West Sussex
           </Link>{" "}
-          regularly, so the South Coast is genuinely home turf and the
-          crossing is the only thing that changes about an island
-          booking. We arrive on an earlier crossing than we strictly need
-          to, with a full back-up of cables and load-in-ready kit, because
-          the answer to &ldquo;can we just nip back for it?&rdquo; on the
-          Isle of Wight is no.
+          on either side. The Solent isn&rsquo;t an obstacle for a
+          South-Coast-based band; it&rsquo;s a scheduling variable that
+          gets factored into a quote up front rather than negotiated on
+          the morning of.
         </p>
         <p>
-          Three Solent crossings serve the island and each one suits a
-          different kind of booking. Wightlink Portsmouth-Fishbourne is
-          the workhorse crossing for the east of the island (Ryde,
-          Bembridge, Shanklin). Red Funnel Southampton-East Cowes is the
-          natural option for Cowes, Newport and the centre of the island.
-          Wightlink Lymington-Yarmouth is the West Wight option for venues
-          like The George and Tapnell Farm. We pick the crossing that
-          fits your venue and your timeline rather than the one
-          that&rsquo;s cheapest, and we factor it into the quote up front.
+          Three crossings serve the island and each one suits different
+          venues. Wightlink Portsmouth-Fishbourne covers the east
+          (Ryde, Bembridge, Shanklin, Sandown). Red Funnel
+          Southampton-East Cowes serves Cowes, Newport and the centre.
+          Wightlink Lymington-Yarmouth is the West Wight route for
+          Yarmouth-side venues like The George and Tapnell Farm.
+          Picking the right crossing for a venue and load-in time
+          isn&rsquo;t complicated, but it&rsquo;s the sort of decision
+          mainland-only suppliers routinely get wrong on the day.
         </p>
         <p>
-          Island wedding venues span from the grandeur of Osborne House
-          and Quarr Abbey through to relaxed farm and beach venues at
-          Tapnell or Compton Bay. We&rsquo;re fully self-contained: PA,
-          lighting, all instruments. Even venues with limited
-          infrastructure get a proper live-band sound and look. For
-          coastal and farm venues where power can be fragile, we bring a
-          small generator backup so a tripped breaker mid-set isn&rsquo;t
-          the end of the night.
+          Island wedding venues cover a wider spectrum than most couples
+          expect. The grandeur of Osborne House sits alongside the
+          medieval calm of Quarr Abbey, the coastal informality of
+          Tapnell Farm, the yacht-club energy of Cowes and the
+          country-hotel comfort of the Ventnor stretch. Each venue type
+          sets a different closing-set brief. The music that carries a
+          mid-May afternoon at Osborne House is not the music that
+          closes down a farm marquee at Tapnell on a July Saturday, and
+          treating them as if they are is where island wedding music
+          goes flat.
         </p>
         <p>
-          Ferry timing is where island weddings catch couples out. The
-          last car ferries off the island typically run between 11pm and
-          12:30am depending on the route and the season, and once
-          they&rsquo;ve gone, you&rsquo;re stuck until the morning. We
-          plan around it. Either we stay on the island overnight (and
-          factor that into the quote up front) or the closing set ends in
-          time to make the last sailing with kit packed. Both are fine.
-          The wrong answer is finding out on the day.
+          The single biggest logistical trap for an island wedding is the
+          last ferry off. Depending on the route and the season, it
+          sails somewhere between 11pm and 12:30am, and once it&rsquo;s
+          gone, mainland guests are stuck until morning. That constraint
+          reshapes how the night runs. Sometimes the answer is an
+          overnight for suppliers; sometimes it&rsquo;s a tighter
+          running order that lands the closing set before the exodus.
+          Either is workable if it&rsquo;s agreed weeks in advance
+          rather than half an hour before the ferry.
         </p>
         <p>
-          Island weddings often have a guest list that splits roughly
-          half and half between local Wight residents and mainland
-          friends and family who have made the crossing. The set has to
-          flatter both. The local end skews indie-rock heavy (Arctic
-          Monkeys, Kings of Leon, The Killers, Oasis), the mainland
-          younger guests bring requests for the modern-pop crossover
-          (Harry Styles, Dua Lipa, Sam Fender), and the wedding
+          Island wedding guest lists tend to sit roughly half local, half
+          mainland-travelled. The music has to flatter both. Late-floor
+          requests lean Arctic Monkeys, Kings of Leon and The Killers.
+          Oasis and Stereophonics carry the sing-along middle. Modern
+          chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender)
+          layers through for the younger contingent. Wedding
           non-negotiables (Mr Brightside, Don&rsquo;t Stop Me Now, Sweet
-          Caroline) bridge the two when the floor calls for them. Between
-          sets a DJ playlist (collaborated with you) keeps the floor
-          moving. We learn one custom first dance per booking.
+          Caroline) hit the back-half peaks. Between sets a DJ playlist,
+          agreed with you in advance, keeps the room moving. One custom
+          first dance per booking is included.
         </p>
         <p>
-          Island timing isn&rsquo;t really about the venue&rsquo;s curfew,
-          it&rsquo;s about the ferry. Most island weddings end earlier
-          than mainland equivalents because the last car ferries off the
-          island typically run between 11pm and 12:30am depending on the
-          route. Mainland guests need to make a sailing or stay over.
-          We pace the running order so the closing set lands when the
-          floor&rsquo;s still there, not after the parents have already
-          left for the 11pm Wightlink. Confirming the ferry plan with
-          the venue before the day is the bit most couples don&rsquo;t
-          think to do until the morning of, and we ask up front.
-        </p>
-        <p>
-          If you&rsquo;re planning an Isle of Wight wedding and want a
-          mainland band that treats the crossing as part of the job
-          rather than an obstacle, send us your date and venue.
-          We&rsquo;ll come back within 24 hours.
+          If you&rsquo;re planning a wedding on the Isle of Wight and
+          want the crossing already priced in and the closing set built
+          around the ferry rather than against it, send the date and
+          venue.
         </p>
       </>
     ),
@@ -188,24 +178,24 @@ export const isleOfWight: CountyRecord = {
   },
   faqs: [
     {
-      q: "How do you get to the Isle of Wight for a wedding?",
-      a: "By ferry. We use Wightlink Portsmouth-Fishbourne, Red Funnel Southampton-East Cowes, or Wightlink Lymington-Yarmouth depending on which side of the island your venue is on. We factor the crossing cost into your quote up front — no surprises.",
+      q: "Which Solent crossing suits which island venues?",
+      a: "It's venue-driven. Portsmouth-Fishbourne (Wightlink) is the natural route for east-of-island venues around Ryde, Bembridge, Shanklin and Sandown. Southampton-East Cowes (Red Funnel) suits Cowes, Newport and the centre. Lymington-Yarmouth (Wightlink) is the West Wight route for Yarmouth-side venues. The right crossing usually falls out of the venue's postcode and the load-in time.",
     },
     {
-      q: "Do you have to stay overnight on the island?",
-      a: "It depends on your closing time versus the last ferry off the island (typically between 11pm and 12:30am, route-dependent). Either we plan the closing set to make the last sailing with kit packed, or we stay overnight and factor that into the quote. Both are fine — we agree it up front.",
+      q: "When does the closing set need to end for mainland guests to catch the last ferry?",
+      a: "Last car ferries off the island typically sail between 11pm and 12:30am, depending on the route and the season. If a chunk of the guest list is mainland-travelled and needs to make that sailing, the closing set has to land while the floor is still there, not once the parents have already left for the 11pm Wightlink. Confirming ferry times against the running order is a conversation for the planning stage, not the day itself.",
     },
     {
-      q: "What if something goes wrong with your kit on the island?",
-      a: "We plan around it. We arrive on an earlier crossing than we strictly need to, and we bring backup cables and spare essentials for the parts that could fail. The answer to \"can we just nip back for it?\" on the Isle of Wight is no, so we don't rely on being able to.",
+      q: "Is overnight accommodation for suppliers usually needed?",
+      a: "It depends on the closing time. If the last set finishes after the last ferry, an overnight is usually the cleaner option than a rushed pack-down and a dash for the boat. If the running order lands the closing set with time to pack and make a sailing, an overnight isn't necessary. It's worth agreeing which model applies at the point of booking rather than the week before.",
     },
     {
-      q: "Do you know Isle of Wight wedding venues?",
-      a: "Yes. Well-known island wedding venues include Quarr Abbey, Osborne House, Robin Hill, The George Hotel, Tapnell Farm, North House, The Hambrough, Royal Hotel Ventnor, Haven Hall and Cowes Yacht Haven. If yours isn't on that list, tell us — we're happy to talk you through what to expect.",
+      q: "What does an island guest list typically ask for musically?",
+      a: "Island wedding guest lists split roughly half local, half mainland-travelled, and the setlist tends to flatter both. Late-floor material leans Arctic Monkeys, Kings of Leon and The Killers. Oasis and Stereophonics carry the sing-along middle. Modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) layers through for the younger contingent. Wedding non-negotiables like Mr Brightside and Sweet Caroline hit the back-half peaks.",
     },
     {
-      q: "How quickly can you confirm availability for an Isle of Wight wedding?",
-      a: "Within 24 hours of your enquiry. Send us the date, venue and any thoughts on your ferry timings and we'll come back with a tailored quote.",
+      q: "How quickly can you confirm availability for an Isle of Wight date?",
+      a: "Usually within 24 hours of an enquiry. Send the date, the venue and any thoughts on ferry timings and we'll come back with availability plus a quote that already has the crossing priced in.",
     },
   ],
 };

@@ -49,25 +49,27 @@ export const surrey: CountyRecord = {
     eyebrow: "Wedding band · Surrey",
     heading: (
       <>
-        Surrey weddings,
+        Green-belt country
         <br />
-        played the way they should be.
+        in commuter distance.
       </>
     ),
     body: (
       <>
         <p>
-          Surrey is one of our most-played counties. We&rsquo;re just over the
-          Hampshire border, so Guildford, Farnham, Dorking, Weybridge and the
-          wider M25 belt are inside our home patch and there are no bolt-on
-          travel fees pushing the budget around.
+          Surrey occupies an unusual space in the wedding-venue
+          landscape. Physically it&rsquo;s the London-adjacent green
+          belt, but geographically most of its country-house and barn
+          venues feel further from the M25 than they are. That
+          balance is what draws couples to book here: a Weybridge or
+          Sunningdale country-estate wedding gives a Cotswolds-feel
+          setting inside a 45-minute drive of central London. It also
+          shapes the guest list.
         </p>
         <p>
-          Booking a band that&rsquo;s already familiar with Surrey weddings
-          matters more than couples expect. No overnight accommodation, no
-          anxious 4am drive back, no surcharges for a Saturday in peak season.
-          Most weeks of the season we&rsquo;re somewhere between Hampshire and
-          the M25, and we also cover{" "}
+          Surrey sits just over the Hampshire border from base, so
+          Guildford, Farnham, Dorking, Weybridge and the M25 belt are
+          inside our regular season patch. Same for{" "}
           <Link href="/wedding-bands/hampshire" className={linkClass}>
             Hampshire
           </Link>
@@ -79,66 +81,64 @@ export const surrey: CountyRecord = {
           <Link href="/wedding-bands/berkshire" className={linkClass}>
             Berkshire
           </Link>{" "}
-          regularly.
+          on either side. The county doesn&rsquo;t sit outside our home
+          patch even though it&rsquo;s not in Hampshire.
         </p>
         <p>
-          Surrey weddings tend to split into three camps:
-          country-house weddings, golf club functions at
-          members&rsquo; venues, and barn weddings tucked around
-          the Surrey Hills. Each has its own rhythm. A country-house
-          ballroom is a different evening to a Surrey Hills barn,
-          and the set list, lighting rig and stage volume flex
-          around which one you&rsquo;ve booked.
+          Wedding-venue types in Surrey break into three broad
+          groupings. Country-house venues (Pennyhill Park, Great
+          Fosters, Wotton House) at the top end. Members&rsquo;
+          country and golf clubs (St George&rsquo;s Hill, Foxhills)
+          adding a slightly different flavour. Rural barn venues
+          tucked into the Surrey Hills (Gate Street Barn, Bury Court
+          Barn) at the more relaxed end. Each of those calls for a
+          different closing-set brief, and the set list, stage volume
+          and lighting rig flex around which of them you&rsquo;ve
+          booked.
         </p>
         <p>
-          Surrey has a logistical layer most couples don&rsquo;t
-          expect. Country-estate venues carry their own gated
-          drives and delivery windows. Surrey Hills barns often
-          sit at the end of single-track lanes. M25 and A3 traffic
-          on a Friday afternoon shapes when suppliers actually
-          arrive. We confirm the specific load-in plan with the
-          coordinator ahead of time rather than learning it on the
-          night.
+          Well-known Surrey wedding venues include Pennyhill Park,
+          Great Fosters, Wotton House, Loseley Park, Foxhills,
+          Beaverbrook, Botleys Mansion, Northcote House, Burrows Lea,
+          Bury Court Barn and Gate Street Barn. If your venue
+          isn&rsquo;t on that list, tell us; the county has a deep
+          venue circuit and no one snapshot captures all of it.
         </p>
         <p>
-          Some of our most loved gigs have been Surrey ones. We&rsquo;ve
-          played the Royal Military Academy at Sandhurst, kept the dance
-          floor going past midnight at Gate Street Barn near Bramley, and
-          finished out the night for a packed room at St George&rsquo;s Hill
-          Golf Club. Each of those clients left a five-star review.
+          Surrey wedding crowds pull a strong London-commute mix. City
+          finance and creative-industry friends in the same room,
+          parents who lived through Britpop the first time round,
+          younger guests bringing chart-aware requests. Setlist:
+          Arctic Monkeys, The Killers and Kings of Leon for the late
+          floor. Oasis and Stereophonics for the sing-along middle.
+          Modern chart-pop crossover (Harry Styles, Dua Lipa, Sam
+          Fender) layered through. Wedding non-negotiables (Mr
+          Brightside, Don&rsquo;t Stop Me Now, Sweet Caroline) hit the
+          back-half peaks. Between sets a DJ playlist, agreed with you
+          in advance, keeps the room moving. One custom first dance
+          per booking is included.
         </p>
         <p>
-          Surrey wedding crowds pull a particular mix: London
-          commuters and their City friends, parents who remember
-          Britpop the first time round, and younger guests asking
-          for whatever&rsquo;s top of the chart that week. The
-          setlist flexes accordingly: Arctic Monkeys, The Killers
-          and Kings of Leon for the late floor, Oasis and
-          Stereophonics for the mid-evening, modern-pop crossover
-          (Harry Styles, Dua Lipa, Sam Fender) layered through for
-          the chart-aware younger guests. Wedding non-negotiables
-          (Mr Brightside, Don&rsquo;t Stop Me Now, Sweet Caroline)
-          take the back-half peaks. Between sets a DJ playlist
-          (collaborated with you) keeps the floor moving. We learn
-          one custom first dance per booking.
+          Curfews and sound limits are more variable across Surrey
+          than most similar counties. Members&rsquo; golf and country
+          clubs typically run earlier cut-offs driven by
+          member-courtesy rules alongside planning conditions.
+          Country-house and private-land venues often allow later
+          finishes. Surrey Hills barns depend heavily on the specific
+          neighbours. Rules get confirmed with the coordinator ahead
+          of time, not on the day.
         </p>
         <p>
-          Curfews and sound limits vary venue by venue across
-          Surrey. Golf-club and residential-edge venues typically
-          run earlier cut-offs from local planning conditions and
-          member-courtesy rules. Country-house and barn venues on
-          private grounds often allow later finishes, but every
-          venue has its own rules, in-house limiters or
-          coordinator-managed arrangements. We confirm the
-          specific cut-off and any sound restrictions with the
-          venue the week before, and pace the closing set so it
-          lands at the actual end of the night.
+          One Surrey-specific practicality: M25 and A3 traffic
+          patterns matter for both suppliers and guests. Friday
+          afternoon and Sunday evening are the two windows that
+          reshape drive times noticeably. Worth factoring into ceremony
+          timing and load-in planning.
         </p>
         <p>
-          For Surrey couples looking for a wedding band with proper
-          experience of the local venues, a calm professional set-up and a
-          dance floor record that holds up, we&rsquo;d love to be on your
-          shortlist.
+          If you&rsquo;re planning a Surrey wedding and want a band
+          that reads the county&rsquo;s London-adjacent-but-rural
+          character properly, send the date and venue.
         </p>
       </>
     ),
@@ -179,24 +179,24 @@ export const surrey: CountyRecord = {
   },
   faqs: [
     {
-      q: "Do you travel from Hampshire to Surrey?",
-      a: "Yes. Surrey sits inside our regular season patch, roughly 90 minutes' drive from base. No travel surcharge for standard Surrey coverage. That covers the county from Guildford and Farnham through to Weybridge, Dorking and the M25 belt.",
+      q: "How does Surrey's London-adjacent geography actually affect a wedding day?",
+      a: "It changes two things: the guest list and the traffic pattern. Guest lists pull more London-based friends than most South-East counties, which shapes the setlist toward chart-aware modern crossover alongside indie/rock. Traffic-wise, Friday afternoon westbound and Sunday evening eastbound M25/A3 flows can add 30-60 minutes to standard drive times, which affects load-in and guest-arrival planning.",
     },
     {
-      q: "Do you know the Surrey wedding venues?",
-      a: "Yes. Well-known Surrey wedding venues include Pennyhill Park, Beaverbrook, Foxhills, Farnham Castle, Loseley Park, Great Fosters (just over the border), Northbrook Park, Burrows Lea and Wotton House. If your venue isn't on that list, tell us — we're happy to talk you through what to expect.",
+      q: "What's the practical difference between a country-house Surrey wedding and a golf-club one?",
+      a: "Country houses (Pennyhill Park, Great Fosters, Wotton House) run more like classic destination weddings — full-day pacing, generally later curfews, more permissive stage setup. Members' golf clubs (St George's Hill, Foxhills) run under member-courtesy rules that typically bring earlier cut-offs and slightly different noise expectations, particularly on Sundays.",
     },
     {
-      q: "What are curfews and sound rules like at Surrey venues?",
-      a: "Country hotels and country-estate venues in Surrey often allow later finishes. Village-hall style venues and residential-neighbour rooms can carry earlier cut-offs from local planning. We confirm the specific curfew, sound-limiter setup and any coordinator's rules the week before, and pace the closing set to land at the actual end of the night.",
+      q: "How restrictive are the Surrey Hills barn venues on curfew?",
+      a: "It's very venue-specific and depends heavily on the immediate neighbours. Some Surrey Hills barns have generous private-land rules and go past midnight. Others sit close enough to residential properties that they carry harder cut-offs. Worth confirming with the coordinator before assuming from the postcode.",
     },
     {
-      q: "What kind of setlist works for a Surrey wedding?",
-      a: "Surrey crowds are strongly London-commute influenced — the modern chart-pop crossover (Harry Styles, Dua Lipa, Sam Fender) tends to land well alongside the indie/rock backbone (Arctic Monkeys, Kings of Leon, The Killers). Wedding non-negotiables (Mr Brightside, Don't Stop Me Now, Sweet Caroline) hit the back-half peaks. Full set list is on the repertoire page.",
+      q: "Which parts of Surrey pull the highest concentration of wedding bookings?",
+      a: "The strongest concentrations sit around Weybridge and the M25-adjacent belt (country-estate weddings), Guildford and Farnham (a mix of country-house and Surrey Hills barn), and the Bagshot-Sunningdale strip (Pennyhill Park, Coworth Park just over in Berkshire).",
     },
     {
-      q: "How quickly can you confirm availability for a Surrey date?",
-      a: "Within 24 hours of your enquiry, normally sooner. Send us the date, venue and any thoughts on the vibe and we'll come back with a tailored quote.",
+      q: "How does a Surrey guest list typically compare to a Hampshire one?",
+      a: "Surrey guest lists tend to pull a higher London-commute proportion, which shifts musical expectations toward the modern crossover alongside the indie/rock backbone. Hampshire guest lists lean slightly older and slightly more classic-Britpop in the sing-along middle. The differences are subtle but real, and shape how the middle-evening set gets built.",
     },
   ],
 };

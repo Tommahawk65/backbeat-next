@@ -49,28 +49,30 @@ export const westSussex: CountyRecord = {
     eyebrow: "Wedding band · West Sussex",
     heading: (
       <>
-        Downs, barns,
+        Downs, coast, castles,
         <br />
-        and a band that finishes the night properly.
+        limiters.
       </>
     ),
     body: (
       <>
         <p>
-          West Sussex weddings are some of our favourite to play.
-          The county has a wedding scene that runs from
-          Goodwood&rsquo;s racing-set glamour through to laid-back
-          barn weddings out on the Downs, and almost everywhere has
-          the South Downs as a backdrop. Goodwood House, Wiston
-          House, Amberley Castle, South Lodge, Cowdray House,
-          Upwaltham Barns, Bailiffscourt Hotel and Farbridge Barns
-          are all regularly booked across the county.
+          West Sussex has one of the more distinctive wedding-venue
+          geographies in the South East. The South Downs run
+          east-west through the middle of the county, throwing up
+          barn and estate weddings across their length. The
+          Chichester and Arundel coastal strip delivers a very
+          different feel again: cathedral cities, historic castles,
+          harbour-adjacent hotels. Goodwood sits in a category of
+          its own. The county doesn&rsquo;t really have a
+          &ldquo;typical&rdquo; wedding — it has four or five
+          typicals depending on which corner you&rsquo;re in.
         </p>
         <p>
-          We&rsquo;re a Hampshire-based band, so Chichester, Petworth and
-          Arundel are short, comfortable runs without travel-fee inflation.
-          We cover the wider county including Horsham, Crawley and the Mid
-          Sussex border regularly. We also play{" "}
+          West Sussex sits inside our regular working radius from
+          base. Chichester, Petworth and Arundel are short runs on
+          the coastal side. The Mid Sussex border and Horsham belt
+          are longer but still inside standard territory. Same for{" "}
           <Link href="/wedding-bands/hampshire" className={linkClass}>
             Hampshire
           </Link>
@@ -82,70 +84,59 @@ export const westSussex: CountyRecord = {
           <Link href="/wedding-bands/dorset" className={linkClass}>
             Dorset
           </Link>{" "}
-          regularly, so we know the curfew and sound-limiter quirks at most
-          major South Coast venues from experience rather than a website.
+          on either side.
         </p>
         <p>
-          The county splits roughly into four wedding-venue types:
-          country-estate venues, South Downs barns, Chichester and
-          Arundel country houses, and the Mid Sussex border where
-          the brief is more relaxed. Each has its own rhythm. A
-          downland-barn evening is a different room to an open-air
-          country-estate marquee, and the set list, lighting rig
-          and stage volume flex around which one you&rsquo;ve
-          booked.
+          Well-known West Sussex wedding venues include Goodwood
+          House, The Kennels at Goodwood, Wiston House, Amberley
+          Castle, South Lodge, Cowdray House, Upwaltham Barns,
+          Bailiffscourt Hotel, Farbridge Barns and Findon Place. If
+          your venue isn&rsquo;t on that list, tell us. West Sussex
+          has an unusually deep venue circuit and no one snapshot
+          catches all of it.
         </p>
         <p>
-          West Sussex has a logistical layer most couples
-          don&rsquo;t expect. Country-estate venues carry their own
-          gated drives, in-house production teams and curated
-          supplier lists. South Downs barns often sit on
-          agricultural land at the end of single-track lanes. We
-          confirm the specific load-in plan with the coordinator
-          ahead of time rather than learning it on the night.
+          Sound limiters are a particular West Sussex theme.
+          Agricultural-land barn venues across the Downs often carry
+          in-house dB limiters as a condition of planning
+          permission. Some are set generously; some are set at
+          levels that require genuine care from the band to keep
+          the dance floor lively without tripping the cutoff.
+          It&rsquo;s the sort of context that plays very differently
+          for a band with limiter-room experience than for one
+          without.
         </p>
         <p>
-          West Sussex wedding crowds tend to skew more relaxed than
-          the neighbouring Berkshire and Surrey set. Couples here
-          often want a band that can slide between live-lounge
-          acoustic during dinner and a high-energy late set when
-          the dance floor opens. The setlist flexes accordingly:
-          Arctic Monkeys, The Killers and Kings of Leon for the
-          late floor, Oasis and Stereophonics for the mid-evening,
-          modern-pop crossover (Harry Styles, Dua Lipa, Sam Fender)
-          layered through for the chart-aware younger guests.
-          Wedding non-negotiables (Mr Brightside, Don&rsquo;t Stop
-          Me Now, Sweet Caroline) take the back-half peaks. Between
-          sets a DJ playlist (collaborated with you) keeps the
-          floor moving. We learn one custom first dance per
-          booking.
+          West Sussex wedding crowds tend to sit slightly more
+          relaxed than the neighbouring Berkshire and Surrey set.
+          Country-estate weddings pull London-weekend guests, but
+          the general tone is less production-heavy and less
+          formally-briefed than the M4-corridor equivalents. That
+          shapes how the closing set builds: less compressed peaks,
+          more room to breathe. Setlist-wise: Arctic Monkeys, The
+          Killers and Kings of Leon for the late floor. Oasis and
+          Stereophonics for the sing-along middle. Modern chart-pop
+          crossover (Harry Styles, Dua Lipa, Sam Fender) layered
+          through. Wedding non-negotiables (Mr Brightside,
+          Don&rsquo;t Stop Me Now, Sweet Caroline) hit the back-half
+          peaks. Between sets a DJ playlist, agreed with you in
+          advance, keeps the room moving. One custom first dance per
+          booking is included.
         </p>
         <p>
-          Sound limiters are a particular West Sussex theme. A lot
-          of the barn venues sit on agricultural land where sound
-          cut-outs are part of the planning permission. We carry a
-          stage setup tuned for limiter rooms (in-ear monitoring,
-          electronic kit triggers, a PA that stays clean below the
-          threshold) so the dance floor still lands without
-          tripping the meter mid-chorus.
-        </p>
-        <p>
-          Curfews and sound limits vary venue by venue across West
-          Sussex. Town-centre and residential-neighbour venues
-          typically run earlier cut-offs from local planning
-          conditions. Country-estate and barn venues on private
-          grounds often allow later finishes, but every venue has
-          its own rules, in-house limiters or coordinator-managed
-          arrangements. We confirm the specific cut-off and any
-          sound restrictions with the venue the week before, and
-          pace the closing set so it lands at the actual end of
-          the night.
+          The coastal strip (Chichester, Arundel, Bosham,
+          Bailiffscourt) carries its own particulars. Cathedral-close
+          and residential-neighbour venues sit under earlier planning
+          cut-offs. Coastal hotels can have load-in routes shared with
+          public seafront access. Weather contingencies matter for
+          any outdoor ceremony element. These get factored in during
+          venue selection rather than being handled reactively on
+          the day.
         </p>
         <p>
           If you&rsquo;re planning a West Sussex wedding and want a
-          band that arrives properly briefed and reads the room
-          properly, send us the details. We&rsquo;d love to be on
-          your shortlist.
+          band that reads the Downs-vs-coast-vs-city character of
+          the venue you&rsquo;ve chosen, send the date and venue.
         </p>
       </>
     ),
@@ -185,4 +176,26 @@ export const westSussex: CountyRecord = {
       </>
     ),
   },
+  faqs: [
+    {
+      q: "Which West Sussex venues typically have the strictest sound limiters?",
+      a: "Agricultural-land barn venues across the South Downs often carry in-house dB limiters as a condition of planning permission. The specific limit varies barn-to-barn — some are set generously, others are set at levels that shape the whole closing set. Cathedral-close and residential-neighbour venues in Chichester and Arundel sit under their own planning cut-offs. Rules are venue-specific and worth confirming before the day.",
+    },
+    {
+      q: "What's different about a Downs-side wedding vs a coastal Sussex wedding?",
+      a: "Downs weddings (Wiston, Amberley, Upwaltham, Farbridge) tend toward country-estate and barn settings, more relaxed evening pacing, more permissive stage setup. Coastal weddings (Chichester, Arundel, Bosham, Bailiffscourt) sit closer to residential neighbours and cathedral-close planning rules, and often carry earlier cut-offs. Same county, meaningfully different logistics.",
+    },
+    {
+      q: "How does Goodwood as a venue compare to the rest of West Sussex?",
+      a: "Goodwood sits in a category of its own. Goodwood House and The Kennels are managed under an in-house production template that's more curated than most West Sussex venues. Load-in and coordinator handoffs run to a more formal schedule, and evening pacing is set by the house rather than by supplier preference.",
+    },
+    {
+      q: "Do coastal Sussex weddings need weather contingencies for outdoor elements?",
+      a: "Yes, meaningfully so, particularly for anything scheduled outdoors in shoulder-season months. Even summer coastal ceremonies benefit from a wet-weather backup plan. Live music setup usually stays indoors regardless, but ceremony position and drinks reception layout often need genuine flex.",
+    },
+    {
+      q: "How does a West Sussex wedding guest list typically compare to Surrey or Berkshire ones?",
+      a: "West Sussex crowds sit slightly more relaxed on average than the neighbouring counties. Less overtly London-corporate energy, more mix between local Sussex-set couples and London-weekend guests. Musical expectations reflect that — the setlist has a bit more room to breathe rather than needing to hit compressed high-energy peaks throughout.",
+    },
+  ],
 };
