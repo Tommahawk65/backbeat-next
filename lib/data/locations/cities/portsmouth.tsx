@@ -78,8 +78,8 @@ export const portsmouth: CityRecord = {
             Southampton
           </Link>{" "}
           and{" "}
-          <Link href="/wedding-bands/chichester" className={linkClass}>
-            Chichester
+          <Link href="/wedding-bands/west-sussex" className={linkClass}>
+            West Sussex
           </Link>{" "}
           regularly. No travel surcharges, no overnight accommodation, no
           anxious 4am drive back from anywhere.
