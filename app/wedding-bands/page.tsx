@@ -6,10 +6,10 @@ import { Breadcrumbs } from "@/components/sections/location/Breadcrumbs";
 import { LocationHero } from "@/components/sections/location/LocationHero";
 import { LocationTrustStrip } from "@/components/sections/location/LocationTrustStrip";
 import { LocationCTA } from "@/components/sections/location/LocationCTA";
-import { cities, counties, venuePages } from "@/lib/data/locations";
+import { cities, counties } from "@/lib/data/locations";
 
 const description =
-  "Backbeat is a Hampshire-based wedding band covering the south of England. Live indie and rock music for weddings within 2 hours 30 of Southampton, across Hampshire, Surrey, Berkshire, Sussex, Kent, Dorset, Wiltshire, Somerset, Gloucestershire, Oxfordshire, Buckinghamshire, Bristol, London and East Devon. Packages from £1,900.";
+  "Backbeat is a Hampshire-based wedding band covering the south of England. Live indie and rock music for weddings across Hampshire, Surrey, Berkshire, West Sussex, Dorset, Wiltshire, Oxfordshire and the Isle of Wight. Packages from £1,900.";
 
 export const metadata: Metadata = {
   title: "Wedding Bands Across the South of England",
@@ -140,48 +140,6 @@ export default function WeddingBandsHubPage() {
                     </span>
                   </div>
                   <ArrowRight className="h-4 w-4 flex-none text-accent transition-transform group-hover:translate-x-0.5" />
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section
-        id="venues"
-        className="bg-cream py-16 sm:py-24 md:py-32"
-        aria-labelledby="venues-heading"
-      >
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="eyebrow">Venues we cover</span>
-            <h2
-              id="venues-heading"
-              className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-900 sm:text-5xl md:text-6xl"
-            >
-              Browse by venue.
-            </h2>
-            <p className="mt-6 text-base leading-relaxed text-zinc-600 sm:text-lg">
-              Venue-specific pages with the brief, the room and the dance
-              floor in mind. We play far more venues than this.
-              If yours isn&rsquo;t here, the county page covers it.
-            </p>
-          </div>
-
-          <ul className="mt-10 grid gap-2 sm:mt-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {venuePages.map((venue) => (
-              <li key={venue.slug}>
-                <Link
-                  href={`/wedding-bands/${venue.slug}`}
-                  className="group flex items-center gap-2 rounded border border-zinc-200 bg-white px-3 py-2 transition hover:border-accent/60 hover:bg-cream/60"
-                >
-                  <span className="truncate text-sm font-medium text-zinc-900">
-                    {venue.name}
-                  </span>
-                  <span className="ml-auto truncate text-[10px] uppercase tracking-widest text-zinc-500">
-                    {venue.schema.subAreas[0]}
-                  </span>
-                  <ArrowRight className="h-3 w-3 flex-none text-accent transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </li>
             ))}
