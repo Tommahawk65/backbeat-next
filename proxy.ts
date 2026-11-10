@@ -1,43 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-// Pages pruned in the Aug 2026 cull with no genuinely-relevant successor.
-// Returning 410 signals to Google that these are intentionally gone and
-// should drop out of the index faster than a 404 or soft-404.
-const GONE_SLUGS = new Set<string>([
-  // Counties outside the Hampshire-adjacent service area
-  "kent",
-  "somerset",
-  "gloucestershire",
-  "buckinghamshire",
-  "bristol",
-  "greater-london",
-  "east-devon",
-  // Cities in killed counties with no appropriate redirect target
-  "marlow",
-  "tunbridge-wells",
-  "bath",
-  "cheltenham",
-  "exeter",
-  // Venues in killed counties
-  "buxted-park",
-  "hever-castle",
-  "penshurst-place",
-  "leeds-castle",
-  "babington-house",
-  "priston-mill",
-  "berkeley-castle",
-  "elmore-court",
-  "owlpen-manor",
-  "hedsor-house",
-  "notley-abbey",
-  "stowe-house",
-  "hartwell-house",
-  "fulham-palace",
-  "hampton-court-palace",
-  "hurlingham-club",
-  "kew-gardens",
-  "syon-park",
-]);
+import { GONE_SLUGS } from "@/lib/seo/legacyUrls";
 
 const GONE_BODY = `<!doctype html>
 <html lang="en-GB">
